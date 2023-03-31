@@ -1,0 +1,16 @@
+@import url("../common/variables.css");
+@import url("../common/fonts.css");
+
+body {
+  font-family: var(--primary-font);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--secondary-font);
+}
+
+.main-class {
+  background-color: var(--dark-grey);
+}
