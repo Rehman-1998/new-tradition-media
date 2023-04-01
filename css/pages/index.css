@@ -1,5 +1,6 @@
 @import url("../common/variables.css");
 @import url("../common/fonts.css");
+@import url("../common/header.css");
 
 body {
   font-family: var(--primary-font);
@@ -14,3 +15,30 @@ h3 {
 .main-class {
   background-color: var(--dark-grey);
 }
+
+
+/* Hero Section */
+
+.video-controller {
+  position: absolute;
+  bottom: 60px;
+  right: 30px;
+  color: #fff;
+}
+
+.mute {
+  background: url(../../assets/icons/mute.png);
+  background-size: cover;
+  background-position: center;
+  height: 25px;
+  width: 25px;
+}
+
+.volume {
+  background: url(../../assets/icons/volume.png);
+  background-size: cover;
+  background-position: center;
+  height: 25px;
+  width: 25px;
+}
+
