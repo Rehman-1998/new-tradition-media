@@ -1,7 +1,6 @@
 :root {
   /* Color Variable */
   --main-bg-color: #003366;
-  --main-font: "Poppins", sans-serif;
   --grey-color: #7c7c7c;
   --lightBlue-color: #398fff;
   --linkBlue-color: #1cc1ff;
@@ -24,6 +23,6 @@
   --black-color: #0000000;
 
   /* Font Variable  */
-  --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Roboto", sans-serif;
+  --mont-font: "Mont";
+  --serif-font: "sans-serif";
 }
