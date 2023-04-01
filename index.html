@@ -23,44 +23,40 @@
       <div class="cursor-pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
         aria-controls="offcanvasRight">
         <img class="hamburger-icon cursor-pointer" src="assets/icons/hamburger.png" alt="logo-img">
-        <button class="hamburger" id="hamburger">
-          <span class="hamburger-line"></span>
-          <span class="hamburger-line"></span>
-          <span class="hamburger-line"></span>
-        </button>
       </div>
     </div>
   </header>
 
   <!-- Drawer -->
-
   <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-    <div class="offcanvas-header">
-      <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div class="offcanvas-header container">
+      <img class="logo-img  cursor-pointer" src="assets/logo.png" alt="logo-img">
+      <div class="cursor-pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight">
+        <img class="cursor-pointer hamburger-icon" src="assets/icons/close.png" alt="logo-img">
+      </div>
     </div>
-    <div class="offcanvas-body">
-      jebjlebnjlebf
+    <div class="offcanvas-body container">
+      links
     </div>
   </div>
 
   <!-- Hero -->
-  <div class="row">
-    <div class="col-md-12">
-      <video id="my-video" width="100%" autoplay muted loop>
-        <source src="./assets/video/intro.mp4" type="video/mp4">
-      </video>
-      <div class="position-relative">
-        <div class="video-controller d-flex align-items-center justify-content-between gap-4">
-          <div class="pause video-icon controller-background cursor-pointer" onclick="playToggleVideo()">
-          </div>
-          <div class="mute video-icon mic-background cursor-pointer" onclick="soundToggleVideo()">
+    <div class="row g-0">
+      <div class="col-md-12">
+        <video id="my-video" width="100%" autoplay muted loop>
+          <source src="./assets/video/intro.mp4" type="video/mp4">
+        </video>
+        <div class="position-relative">
+          <div class="video-controller d-flex align-items-center justify-content-between gap-4">
+            <div class="pause video-icon controller-background cursor-pointer" onclick="playToggleVideo()">
+            </div>
+            <div class="mute video-icon mic-background cursor-pointer" onclick="soundToggleVideo()">
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-  </div>
 
   <div style="height: 200px; background-color: blue">
     <h1 class="text-center">Hello World</h1>
