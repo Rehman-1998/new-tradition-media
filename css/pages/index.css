@@ -4,20 +4,6 @@
 @import url("../common/global-styles.css");
 @import url("../common/drawer.css");
 
-body {
-  font-family: var(--primary-font);
-}
-
-h1,
-h2,
-h3 {
-  font-family: var(--secondary-font);
-}
-
-.main-class {
-  background-color: var(--dark-grey);
-}
-
 /* Hero Section */
 
 .video-controller {
@@ -60,7 +46,7 @@ h3 {
   background-color: aqua;
 }
 .gradient-background-color h1 {
-  font-family: "Mont";
+  font-family: var(--mont-font);
   font-size: 104px;
   font-weight: 800;
   color: black;
@@ -68,7 +54,7 @@ h3 {
 }
 
 .gradient-background-color p {
-  font-family: "Rubik";
+  font-family: var(--serif-font);
   font-size: 20px;
   line-height: 24px;
 }

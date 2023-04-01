@@ -23,6 +23,6 @@
   --black-color: #000000;
 
   /* Font Variable  */
-  --mont-font: "Mont";
-  --serif-font: "sans-serif";
+  --mont: "Mont";
+  --sans-serif: sans-serif;
 }

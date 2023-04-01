@@ -1,3 +1,64 @@
+@import url("../common/variables.css");
+
+body {
+  font-family: var(--sans-serif);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 112px;
+}
+h2 {
+  font-size: 100px;
+}
+h3 {
+  font-size: 80px;
+}
+h4 {
+  font-size: 72px;
+}
+h5 {
+  font-size: 48px;
+}
+h6 {
+  font-size: 24px;
+}
+p {
+  font-size: 18px;
+}
+
+/* Cursor class */
 .cursor-pointer {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+/* For Mini Laptop */
+@media screen and (max-width: 1280px) and (min-width: 1025px) {
+}
+/* For Ipad & Ipad Pro */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  h1 {
+    font-size: 64px;
+  }
+  h4 {
+    font-size: 56px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+/* For Mobile Screens */
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 30px;
+  }
+  h4 {
+    font-size: 26px;
+  }
+  p {
+    font-size: 14px;
+  }
 }
