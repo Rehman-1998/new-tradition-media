@@ -1,6 +1,8 @@
 @import url("../common/variables.css");
 @import url("../common/fonts.css");
 @import url("../common/header.css");
+@import url("../common/global-styles.css");
+@import url("../common/drawer.css");
 
 body {
   font-family: var(--primary-font);
@@ -22,23 +24,39 @@ h3 {
 .video-controller {
   position: absolute;
   bottom: 60px;
-  right: 30px;
+  right: 50px;
   color: #fff;
+}
+
+.video-icon {
+  height: 35px;
+  width: 35px;
 }
 
 .mute {
   background: url(../../assets/icons/mute.png);
   background-size: cover;
   background-position: center;
-  height: 25px;
-  width: 25px;
 }
 
 .volume {
   background: url(../../assets/icons/volume.png);
   background-size: cover;
   background-position: center;
-  height: 25px;
-  width: 25px;
+
 }
+
+
+.pause {
+  background: url(../../assets/icons/pause-button.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.play{
+  background: url(../../assets/icons/play-button.png);
+  background-size: cover;
+  background-position: center;
+}
+
 

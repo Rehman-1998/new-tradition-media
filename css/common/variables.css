@@ -18,7 +18,10 @@
   --blackish-color: #464646;
   --sky-color: #dfebf8;
   --light-danger-color: #e3737a;
+
+  /* used in this sider */
   --white-color: #ffffff;
+  --black-color: #0000000;
 
   /* Font Variable  */
   --primary-font: "Open Sans", sans-serif;

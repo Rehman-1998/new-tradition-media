@@ -1,4 +1,3 @@
-
 .logo-img {
     width: 150px;
 }
@@ -10,11 +9,12 @@
     width: 100%;
     transition: background-color 0.5s ease;
     padding: 14px;
+    z-index: 5;
 }
 
 .main-header.scrolled {
     background-color: black;
-  }
+}
 
 .hamburger-icon {
     width: 25px;
