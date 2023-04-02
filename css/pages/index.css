@@ -10,12 +10,11 @@
   position: absolute;
   bottom: 60px;
   right: 50px;
-  color: #fff;
+  color: var(--white-color);
 }
 
 @media screen and (max-width: 800px) and (min-width: 430px) {
   .video-controller {
-    
     bottom: 40px;
     right: 30px;
   }
@@ -34,29 +33,86 @@
   height: 35px;
   width: 35px;
   font-size: 32px;
-  color: #fff;
+  color: var(--white-color);
 }
 
-.video-icon:hover{
-  color: var(--red-color)
+.video-icon:hover {
+  color: var(--red-color);
 }
 
-
-
-.gradient-background-color {
-  background-color: aqua;
+.main-background {
+  background-image: var(--background-color);
 }
 
-.gradient-background-color h1 {
+.red {
+  color: var(--red-color);
+}
+.black {
+  color: var(--black-color);
+}
+.white {
+  color: var(--white-color);
+}
+.title {
   font-family: var(--mont-font);
-  font-size: 104px;
+  font-size: 95px;
   font-weight: 800;
-  color: black;
-  line-height: 109.2px;
+  color: var(--white-color);
+  /* line-height: 109.2px; */
+}
+.subtitle {
+  font-family: var(--mont-font);
+  font-size: 72px;
+  font-weight: 800;
+  color: var(--white-color);
+  /* line-height: 90px; */
+}
+.paragraph {
+  font-family: var(--serif-font);
+  color: var(--white-color);
+  font-size: 20px;
+  /* line-height: 24px; */
+}
+.back-bar {
+  position: relative;
+  z-index: 2;
+}
+.back-bar::after {
+  left: -2.5%;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 10%;
+  height: 40%;
+  width: 104%;
+  background: black;
 }
 
-.gradient-background-color p {
-  font-family: var(--serif-font);
-  font-size: 20px;
-  line-height: 24px;
+/* For Mini Laptop */
+@media screen and (max-width: 1280px) and (min-width: 1025px) {
+}
+/* For Ipad & Ipad Pro */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .title {
+    font-size: 64px;
+  }
+  .subtitle {
+    font-size: 56px;
+  }
+  .paragraph {
+    font-size: 16px;
+  }
+}
+
+/* For Mobile Screens */
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 30px;
+  }
+  .subtitle {
+    font-size: 26px;
+  }
+  .paragraph {
+    font-size: 14px;
+  }
 }

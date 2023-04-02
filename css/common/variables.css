@@ -1,27 +1,18 @@
 :root {
   /* Color Variable */
-  --main-bg-color: #003366;
-  --grey-color: #7c7c7c;
-  --lightBlue-color: #398fff;
-  --linkBlue-color: #1cc1ff;
-  --sky-blue-color: #deebf8;
-  --silver-color: #edeff1;
-  --light-grey: #a0a0a0;
-  --secondary-grey: #b7b7b7;
-  --silver-color: #a9a9a9;
-  --dark-grey: #4f4f4f;
-  --mat-color: #2f2f2f;
-  --main-grey: #f9f9f9;
-  --green-color: #04bd00;
-  --white-color: #fff;
-  --blackish-color: #464646;
-  --sky-color: #dfebf8;
-  --light-danger-color: #e3737a;
+  --background-color: linear-gradient(
+    to bottom,
+    #f20000,
+    #b90021,
+    #7c0425,
+    #400f1c,
+    #000000
+  );
 
   /* used in this sider */
   --white-color: #ffffff;
   --black-color: #000000;
-  --red-color: #EC2A23;
+  --red-color: #f20000;
 
   /* Font Variable  */
   --mont: "Mont";
