@@ -1,117 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- ******  Bootsrtap v5.2.3 CSS Link ****** -->
-    <link href="./bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <!-- ****** AOS Animation  CSS Link ****** -->
-    <link href="./aos/aos.css" rel="stylesheet" />
-    <!-- ****** index CSS Link ****** -->
-    <link href="./css/pages/index.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <!-- Header -->
-    <header class="main-header">
-      <div class="container d-flex align-items-center justify-content-between">
-        <img
-          class="logo-img cursor-pointer"
-          src="assets/logo.png"
-          alt="logo-img"
-        />
-        <div
-          class="cursor-pointer"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasRight"
-          aria-controls="offcanvasRight"
-        >
-          <img
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- ******  Bootsrtap v5.2.3 CSS Link ****** -->
+  <link href="./bootstrap/bootstrap.min.css" rel="stylesheet" />
+  <!-- ****** AOS Animation  CSS Link ****** -->
+  <link href="./aos/aos.css" rel="stylesheet" />
+  <!-- ****** index CSS Link ****** -->
+  <link href="./css/pages/index.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container d-flex align-items-center justify-content-between">
+      <img class="logo-img cursor-pointer" src="assets/logo.png" alt="logo-img" />
+      <div class="cursor-pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight">
+        <!-- <img
             class="hamburger-icon cursor-pointer"
-            src="assets/icons/hamburger.png"
+            src="assets/icons/hamburger-light.png"
             alt="logo-img"
-          />
-        </div>
-      </div>
-    </header>
+          /> -->
+        <div id="header-icon" class="hamburger-icon cursor-pointer light-icon">
 
-    <!-- Drawer -->
-    <div
-      class="offcanvas offcanvas-end w-100"
-      tabindex="-1"
-      id="offcanvasRight"
-      aria-labelledby="offcanvasRightLabel"
-    >
-      <div class="offcanvas-header container">
-        <img
-          class="logo-img cursor-pointer"
-          src="assets/logo.png"
-          alt="logo-img"
-        />
-        <div
-          class="cursor-pointer"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasRight"
-          aria-controls="offcanvasRight"
-        >
-          <img
-            class="cursor-pointer hamburger-icon"
-            src="assets/icons/close.png"
-            alt="logo-img"
-          />
-        </div>
-      </div>
-      <div class="offcanvas-body container">links</div>
-    </div>
-
-    <!-- Hero -->
-    <div class="row g-0">
-      <div class="col-md-12">
-        <video id="my-video" width="100%" autoplay muted loop>
-          <source src="./assets/video/intro.mp4" type="video/mp4" />
-        </video>
-        <div class="position-relative">
-          <div
-            class="video-controller d-flex align-items-center justify-content-between gap-4"
-          >
-            <div
-              class="pause video-icon controller-background cursor-pointer"
-              onclick="playToggleVideo()"
-            ></div>
-            <div
-              class="mute video-icon mic-background cursor-pointer"
-              onclick="soundToggleVideo()"
-            ></div>
-          </div>
         </div>
       </div>
     </div>
-    <!-- Section -->
-    <div class="container-fluid gradient-background-color py-5">
-      <div class="container py-5">
-        <div class="row">
-          <div class="col-md-7">
-            <h1>WE BELIEVE IN THE POWER OF OUT-OF-HOME.</h1>
-            <p>
-              At New Tradition, we strive to bring the most premium out-of-home
-              inventory to the top brands in the top US markets. Real estate is
-              at the core of our business, developing new & exciting assets on
-              the biggest buildings, over the busiest highways, and in the
-              trendiest neighborhoods across the country
-            </p>
-            <p>What can we say? We like to #MakeAStatement.</p>
-          </div>
-          <div class="col-md-5"></div>
+  </header>
+
+  <!-- Drawer -->
+  <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header container">
+      <img class="logo-img cursor-pointer" src="assets/logo.png" alt="logo-img" />
+      <div class="cursor-pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight">
+        <i class="fa-solid fa-xmark drawer-close-icon"></i>
+      </div>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-unstyled menu-list">
+        <li class="menu-item inline-block"><a href="#" class="menu-item-link">HOME</a></li>
+        <li class="menu-item inline-block"><a href="#" class="menu-item-link ">MARKETS</a></li>
+        <li class="menu-item inline-block"><a href="#" class="menu-item-link ">CONTACT US</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <div class="row g-0">
+    <div class="col-md-12">
+      <video id="my-video" width="100%" autoplay muted loop>
+        <source src="./assets/video/intro.mp4" type="video/mp4" />
+      </video>
+      <div class="position-relative">
+        <div class="video-controller d-flex align-items-center justify-content-between gap-4">
+          <i class="fa-regular fa-circle-pause controller-background video-icon cursor-pointer"
+            onclick="playToggleVideo()"></i>
+          <i class="fa-solid fa-volume-xmark video-icon mic-background" onclick="soundToggleVideo()"></i>
         </div>
       </div>
     </div>
-    <!-- ****** Bootsrtap v5.2.3 Js Link ****** -->
-    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+  </div>
 
-    <!-- ****** AOS Animation Js Link ****** -->
-    <script src="./aos/aos.js"></script>
-    <script src="./js/index.js"></script>
-  </body>
+  <!-- Section -->
+  <div class="container-fluid gradient-background-color py-5">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-7">
+          <h1>WE BELIEVE IN THE POWER OF OUT-OF-HOME.</h1>
+          <p>
+            At New Tradition, we strive to bring the most premium out-of-home
+            inventory to the top brands in the top US markets. Real estate is
+            at the core of our business, developing new & exciting assets on
+            the biggest buildings, over the busiest highways, and in the
+            trendiest neighborhoods across the country
+          </p>
+          <p>What can we say? We like to #MakeAStatement.</p>
+        </div>
+        <div class="col-md-5"></div>
+      </div>
+    </div>
+  </div>
+  <!-- ****** Bootsrtap v5.2.3 Js Link ****** -->
+  <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+
+  <!-- ****** AOS Animation Js Link ****** -->
+  <script src="./aos/aos.js"></script>
+
+  <!-- ****** font awesoem icons ****** -->
+  <script src="https://kit.fontawesome.com/71a7ac9f1f.js" crossorigin="anonymous"></script>
+  <script src="./js/index.js"></script>
+</body>
+
 </html>

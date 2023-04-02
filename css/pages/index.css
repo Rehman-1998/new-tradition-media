@@ -16,31 +16,15 @@
 .video-icon {
   height: 35px;
   width: 35px;
+  font-size: 32px;
+  color: #fff;
 }
 
-.mute {
-  background: url(../../assets/icons/mute.png);
-  background-size: cover;
-  background-position: center;
+.video-icon:hover{
+  color: var(--red-color)
 }
 
-.volume {
-  background: url(../../assets/icons/volume.png);
-  background-size: cover;
-  background-position: center;
-}
 
-.pause {
-  background: url(../../assets/icons/pause-button.png);
-  background-size: cover;
-  background-position: center;
-}
-
-.play {
-  background: url(../../assets/icons/play-button.png);
-  background-size: cover;
-  background-position: center;
-}
 
 .gradient-background-color {
   background-color: aqua;

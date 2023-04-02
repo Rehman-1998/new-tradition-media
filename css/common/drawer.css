@@ -1,5 +1,23 @@
 .offcanvas {
     transition: transform 0.8s ease, opacity 0.8s ease !important;
-    background-color: #000000;
+    background-color: var(--white-color);
     border: 0 !important;
+}
+
+.drawer-close-icon {
+    font-size: 25px;
+}
+
+
+.menu-item-link {
+    font-size: 64px;
+    font-family: var(--mont);
+    line-height: 1.2;
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.menu-item-link:hover {
+    background-color: red;
+    color: var(--white-color);
 }

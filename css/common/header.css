@@ -1,5 +1,6 @@
 .logo-img {
-    width: 150px;
+    width: 40px;
+    height: 40px;
 }
 
 .main-header {
@@ -8,12 +9,27 @@
     left: 0;
     width: 100%;
     transition: background-color 0.5s ease;
-    padding: 14px;
+    padding: 5px 0px;
     z-index: 5;
 }
 
+.light-icon {
+    background: url(../../assets/icons/hamburger-light.png);
+    background-size: cover;
+    background-position: center;
+    height: 22px;
+}
+
+
+.dark-icon {
+    background: url(../../assets/icons/hamburger-dark.png);
+    background-size: cover;
+    background-position: center;
+    height: 22px;
+}
+
 .main-header.scrolled {
-    background-color: black;
+    background-color: var(--white-color)
 }
 
 .hamburger-icon {
