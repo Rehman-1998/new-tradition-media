@@ -13,6 +13,23 @@
   color: #fff;
 }
 
+@media screen and (max-width: 800px) and (min-width: 430px) {
+  .video-controller {
+    
+    bottom: 40px;
+    right: 30px;
+  }
+}
+
+
+@media screen and (max-width: 430px) {
+  .video-controller {
+    bottom: 25px;
+    right: 20px;
+  }
+}
+
+
 .video-icon {
   height: 35px;
   width: 35px;
@@ -29,6 +46,7 @@
 .gradient-background-color {
   background-color: aqua;
 }
+
 .gradient-background-color h1 {
   font-family: var(--mont-font);
   font-size: 104px;

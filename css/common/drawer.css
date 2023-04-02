@@ -4,20 +4,79 @@
     border: 0 !important;
 }
 
+.offcanvas-header {
+    padding: 10px 64px 10px 64px;
+}
+
 .drawer-close-icon {
     font-size: 25px;
+}
+
+.menu-list {
+    overflow: hidden;
 }
 
 
 .menu-item-link {
     font-size: 64px;
     font-family: var(--mont);
-    line-height: 1.2;
+    line-height: 1.6;
     text-decoration: none;
     color: var(--black-color);
+    padding: 10px 64px 10px 64px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s linear;
+    overflow: hidden !important;
 }
 
+/* For Ipad & Ipad Pro */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .menu-item-link {
+        font-size: 64px;
+    }
+}
+
+/* For Mobile Screens */
+@media screen and (max-width: 767px) and (min-width: 340px) {
+    .menu-item-link {
+        font-size: 40px;
+    }
+
+    .menu-item-link {
+        line-height: 1.8;
+    }
+}
+
+/* For Mobile Screens */
+@media screen and (max-width: 339px) {
+    .menu-item-link {
+        font-size: 30px;
+    }
+
+    .menu-item-link {
+        line-height: 1.8;
+    }
+}
+
+
 .menu-item-link:hover {
-    background-color: red;
     color: var(--white-color);
+}
+
+.menu-item-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: all 0.3s linear;
+}
+
+.menu-item-link:hover.menu-item-link:before {
+    transform: translateX(0);
+    z-index: -1;
 }
