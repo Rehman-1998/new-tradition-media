@@ -19,12 +19,18 @@
     bottom: 40px;
     right: 30px;
   }
+  .country-section span::before {
+    top: 0px;
+  }
 }
 
 @media screen and (max-width: 430px) {
   .video-controller {
     bottom: 25px;
     right: 20px;
+  }
+  .country-section span::before {
+    top: -1px;
   }
 }
 
@@ -40,23 +46,58 @@
 }
 
 /* Country Section */
-.country-section h1 {
+.country-section span {
   cursor: pointer;
   position: relative;
   white-space: nowrap;
 }
-.country-section h1::before {
+.country-section span::before {
   content: attr(data-text);
   position: absolute;
-  top: 0;
+  top: -3px;
   left: 0;
   width: 0;
   color: red;
   overflow: hidden;
   transition: all 2s linear;
 }
-.country-section h1:hover::before {
+.country-section span:hover::before {
   width: 100%;
+}
+
+/* Image section CSS */
+.image-section img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+/* Form section CSS */
+.form-section label {
+  font-size: 13px;
+  text-transform: capitalize;
+  font-family: var(--sans-serif);
+  margin-bottom: 8px;
+}
+.form-section input {
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #000;
+  margin: 0;
+  font-size: 18px;
+  width: 100%;
+  padding: 3px;
+  margin-bottom: 32px;
+}
+.form-section textarea {
+  background-color: #f6f6f6;
+  border: 0;
+  padding: 16px;
+  height: 180px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 180px;
+  max-height: 360px;
 }
 
 

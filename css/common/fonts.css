@@ -5,3 +5,8 @@
   src: url(../../assets/fonts/Mont-HeavyDEMO.otf) format("opentype"),
     url(../../assets/fonts/Mont-ExtraLightDEMO.otf) format("opentype");
 }
+
+@font-face {
+  font-family: "Mont-light";
+  src: url(../../assets/fonts/Mont-ExtraLightDEMO.otf) format("opentype");
+}
