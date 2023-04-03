@@ -1,0 +1,96 @@
+.footer-container {
+    background: var(--black-color);
+}
+
+.footer-title {
+    font-size: 24px;
+    font-family: var(--sans-serif);
+}
+
+.footer-subtitle {
+    font-size: 15px;
+    font-family: var(--sans-serif);
+    color: var(--red-color);
+}
+
+.right-border {
+    border-right: 2px solid var(--white-color);
+}
+
+.footer-icon {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.footer-icon:hover {
+    color: var(--red-color) !important;
+}
+
+.white-line {
+    border-top: 2px solid white;
+}
+
+.copy-right-text {
+    font-size: 12px;
+    font-family: var(--sans-serif);
+}
+
+.border-top {
+    border-top: 2px solid white;
+}
+
+
+/* For Mini Laptop */
+@media screen and (max-width: 1280px) and (min-width: 1025px) {
+    .footer-title {
+        font-size: 20px;
+    }
+
+    .footer-subtitle {
+        font-size: 13px;
+    }
+
+}
+
+/* For Ipad & Ipad Pro */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .footer-title {
+        font-size: 18px;
+    }
+
+    .footer-subtitle {
+        font-size: 12px;
+    }
+
+}
+
+/* For Mobile Screens */
+@media screen and (max-width: 767px) {
+    .footer-title {
+        font-size: 17px;
+    }
+
+    .footer-subtitle {
+        font-size: 12px;
+    }
+
+    .right-border {
+        border-right: none;
+    }
+
+    .links-container {
+        display: none;
+    }
+
+    .office-container {
+        margin-top: 20px;
+    }
+
+    .copy-right-text {
+        text-align: center;
+    }
+
+    .footer-icon {
+        font-size: 18px;
+    }
+}

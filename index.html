@@ -1,156 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- ******  Bootsrtap v5.2.3 CSS Link ****** -->
-    <link href="./bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <!-- ****** AOS Animation  CSS Link ****** -->
-    <link href="./aos/aos.css" rel="stylesheet" />
-    <!-- ****** index CSS Link ****** -->
-    <link href="./css/pages/index.css" rel="stylesheet" />
-    <link href="./css/common/global-styles.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <!-- Header -->
-    <header class="main-header">
-      <div class="container d-flex align-items-center justify-content-between">
-        <img
-          class="logo-img cursor-pointer"
-          src="assets/logo.png"
-          alt="logo-img"
-        />
-        <div
-          class="cursor-pointer"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasRight"
-          aria-controls="offcanvasRight"
-        >
-          <!-- <img
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- ******  Bootsrtap v5.2.3 CSS Link ****** -->
+  <link href="./bootstrap/bootstrap.min.css" rel="stylesheet" />
+  <!-- ****** AOS Animation  CSS Link ****** -->
+  <link href="./aos/aos.css" rel="stylesheet" />
+  <!-- ****** index CSS Link ****** -->
+  <link href="./css/pages/index.css" rel="stylesheet" />
+  <link href="./css/common/global-styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container d-flex align-items-center justify-content-between">
+      <img class="logo-img cursor-pointer" src="assets/logo.png" alt="logo-img" />
+      <div class="cursor-pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight">
+        <!-- <img
             class="hamburger-icon cursor-pointer"
             src="assets/icons/hamburger-light.png"
             alt="logo-img"
           /> -->
-          <div
-            id="header-icon"
-            class="hamburger-icon cursor-pointer light-icon"
-          ></div>
-        </div>
+        <div id="header-icon" class="hamburger-icon cursor-pointer light-icon"></div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- Drawer -->
-    <div
-      class="offcanvas offcanvas-end w-100"
-      tabindex="-1"
-      id="offcanvasRight"
-      aria-labelledby="offcanvasRightLabel"
-    >
-      <div class="offcanvas-header">
-        <img
-          class="logo-img cursor-pointer"
-          src="assets/logo.png"
-          alt="logo-img"
-        />
-        <div
-          class="cursor-pointer"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasRight"
-          aria-controls="offcanvasRight"
-        >
-          <i class="fa-solid fa-xmark drawer-close-icon"></i>
-        </div>
-      </div>
-
-      <div class="offcanvas-body px-0">
-        <ul class="list-unstyled menu-list">
-          <li class="menu-item inline-block">
-            <a href="#" class="menu-item-link">HOME</a>
-          </li>
-          <li class="menu-item inline-block">
-            <a href="#" class="menu-item-link">BRANDS</a>
-          </li>
-          <li class="menu-item inline-block">
-            <a href="#" class="menu-item-link">MARKETS</a>
-          </li>
-          <li class="menu-item inline-block">
-            <a href="#" class="menu-item-link">SERVICES</a>
-          </li>
-          <li class="menu-item inline-block">
-            <a href="#" class="menu-item-link">CONTACT</a>
-          </li>
-        </ul>
+  <!-- Drawer -->
+  <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <img class="logo-img cursor-pointer" src="assets/logo.png" alt="logo-img" />
+      <div class="cursor-pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight">
+        <i class="fa-solid fa-xmark drawer-close-icon"></i>
       </div>
     </div>
 
-    <!-- Hero -->
-    <div class="row g-0">
-      <div class="col-md-12">
-        <video id="my-video" width="100%" autoplay muted loop>
-          <source src="./assets/video/intro.mp4" type="video/mp4" />
-        </video>
-        <div class="position-relative">
-          <div
-            class="video-controller d-flex align-items-center justify-content-between gap-4"
-          >
-            <i
-              class="fa-regular fa-circle-pause controller-background video-icon cursor-pointer"
-              onclick="playToggleVideo()"
-            ></i>
-            <i
-              class="fa-solid fa-volume-xmark video-icon mic-background"
-              onclick="soundToggleVideo()"
-            ></i>
-          </div>
+    <div class="offcanvas-body px-0">
+      <ul class="list-unstyled menu-list">
+        <li class="menu-item inline-block">
+          <a href="#" class="menu-item-link">HOME</a>
+        </li>
+        <li class="menu-item inline-block">
+          <a href="#" class="menu-item-link">BRANDS</a>
+        </li>
+        <li class="menu-item inline-block">
+          <a href="#" class="menu-item-link">MARKETS</a>
+        </li>
+        <li class="menu-item inline-block">
+          <a href="#" class="menu-item-link">SERVICES</a>
+        </li>
+        <li class="menu-item inline-block">
+          <a href="#" class="menu-item-link">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <div class="row g-0">
+    <div class="col-md-12">
+      <video id="my-video" width="100%" autoplay muted loop>
+        <source src="./assets/video/intro.mp4" type="video/mp4" />
+      </video>
+      <div class="position-relative">
+        <div class="video-controller d-flex align-items-center justify-content-between gap-4">
+          <i class="fa-regular fa-circle-pause controller-background video-icon cursor-pointer"
+            onclick="playToggleVideo()"></i>
+          <i class="fa-solid fa-volume-xmark video-icon mic-background" onclick="soundToggleVideo()"></i>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Section -->
-    <div class="container-fluid main-background py-5">
-      <div class="py-5 ps-4">
+  <!-- Section -->
+  <div class="container-fluid main-background py-5">
+    <div class="py-5 ps-4">
+      <div class="row">
+        <div class="col-md-10">
+          <h1 class="title">
+            WE BELIEVE IN <br />
+            THE POWER OF <br />
+            <span class="back-bar">OUT-OF-HOME.</span>
+          </h1>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-8">
+          <p class="paragraph">
+            At New Tradition, we strive to bring the most premium out-of-home
+            inventory to the top brands in the top US markets. Real estate is
+            at the core of our business, developing new & exciting assets on
+            the biggest buildings, over the busiest highways, and in the
+            trendiest neighborhoods across the country
+          </p>
+          <p class="paragraph">
+            What can we say? We like to
+            <span class="red">#MakeAStatement.</span>
+          </p>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="footer-container">
+
+    <div class="row p-4">
+      <!-- Contact Us -->
+      <div class="col-md-3 col-sm-12 right-border">
+        <h4 class="footer-title text-light">Contact Us</h4>
+        <h5 class="footer-subtitle">LET'S CHAT</h5>
+        <h5 class="footer-subtitle text-light fw-bold">contact@newtradition.com</h5>
+        <div class="d-flex gap-4">
+          <i class="fa-brands fa-instagram text-light footer-icon"></i>
+          <i class="fa-brands fa-linkedin-in text-light footer-icon"></i>
+          <i class="fa-brands fa-facebook-f text-light footer-icon"></i>
+          <i class="fa-brands fa-vimeo-v text-light footer-icon"></i>
+        </div>
+      </div>
+      <!-- Our Offices -->
+      <div class="col-md-5 col-sm-12 px-lg-4 px-2 right-border office-container">
+        <h4 class="footer-title text-light">Our Offices</h4>
         <div class="row">
-          <div class="col-md-10">
-            <h1 class="title">
-              WE BELIEVE IN <br />
-              THE POWER OF <br />
-              <span class="back-bar">OUT-OF-HOME.</span>
-            </h1>
+          <div class="col-6">
+            <h5 class="footer-subtitle">NYC</h5>
+            <h5 class="footer-subtitle text-light">584 Broadway</h5>
+            <h5 class="footer-subtitle text-light">New York, NY 10012</h5>
           </div>
-          <div class="col-md-2"></div>
+          <div class="col-6">
+            <h5 class="footer-subtitle">LA</h5>
+            <h5 class="footer-subtitle text-light">3007 Washington Blvd</h5>
+            <h5 class="footer-subtitle text-light">Marina Del Rey, CA 90292</h5>
+          </div>
         </div>
-        <div class="row mt-5">
-          <div class="col-md-8">
-            <p class="paragraph">
-              At New Tradition, we strive to bring the most premium out-of-home
-              inventory to the top brands in the top US markets. Real estate is
-              at the core of our business, developing new & exciting assets on
-              the biggest buildings, over the busiest highways, and in the
-              trendiest neighborhoods across the country
-            </p>
-            <p class="paragraph">
-              What can we say? We like to
-              <span class="red">#MakeAStatement.</span>
-            </p>
+      </div>
+      <div class="col-md-4 links-container">
+        <div class="d-flex justify-content-evenly">
+          <div>
+            <h4 class="footer-title text-light">Brands</h4>
+            <h4 class="footer-title text-light">Countries</h4>
+            <h4 class="footer-title text-light">Services</h4>
+            <h4 class="footer-title text-light">About</h4>
           </div>
-          <div class="col-md-4"></div>
+          <div>
+            <h4 class="footer-title text-light">Contact</h4>
+          </div>
         </div>
       </div>
     </div>
-    <!-- ****** Bootsrtap v5.2.3 Js Link ****** -->
-    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <div class="row border-top">
+      <div class="col-md-6 px-4 py-4">
+        <span class="text-light copy-right-text"> © 2023 NEWTRADITIONMEDIA. ALL RIGHTS RESERVED.</span>
+      </div>
+      <div class="col-md-6"></div>
 
-    <!-- ****** AOS Animation Js Link ****** -->
-    <script src="./aos/aos.js"></script>
+    </div>
+  </footer>
+  <!-- ****** Bootsrtap v5.2.3 Js Link ****** -->
+  <script src="./bootstrap/bootstrap.bundle.min.js"></script>
 
-    <!-- ****** font awesoem icons ****** -->
-    <script
-      src="https://kit.fontawesome.com/71a7ac9f1f.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/index.js"></script>
-  </body>
+  <!-- ****** AOS Animation Js Link ****** -->
+  <script src="./aos/aos.js"></script>
+
+  <!-- ****** font awesoem icons ****** -->
+  <script src="https://kit.fontawesome.com/71a7ac9f1f.js" crossorigin="anonymous"></script>
+  <script src="./js/index.js"></script>
+</body>
+
 </html>
