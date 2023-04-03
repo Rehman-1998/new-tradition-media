@@ -36,11 +36,37 @@ p {
 .cursor-pointer {
   cursor: pointer;
 }
-
+/* Button class */
+.custom-button {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: relative;
+  color: #000;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 8px 32px;
+  border-radius: 24px;
+  margin: 0;
+}
+/* Background-color classess */
 .main-background {
   background-image: var(--background-color);
 }
-
+.background-black {
+  background-color: var(--black-color);
+}
+.background-white {
+  background-color: var(--white-color);
+}
+.background-red {
+  background-color: var(--red-color);
+}
+.background-green {
+  background-color: var(--green-color);
+}
+/* Colors classess */
 .red {
   color: var(--red-color);
 }
@@ -50,21 +76,22 @@ p {
 .white {
   color: var(--white-color);
 }
+.green {
+  color: var(--green-color);
+}
+/* Title classess */
 .title {
   font-family: var(--mont-font);
   font-size: 95px;
   font-weight: 800;
-  color: var(--white-color);
 }
 .subtitle {
   font-family: var(--mont-font);
   font-size: 72px;
   font-weight: 800;
-  color: var(--white-color);
 }
 .paragraph {
   font-family: var(--serif-font);
-  color: var(--white-color);
   font-size: 20px;
 }
 .back-bar {
