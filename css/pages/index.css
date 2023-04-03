@@ -58,3 +58,59 @@
 .country-section h1:hover::before {
   width: 100%;
 }
+
+
+/* Slider Style */
+.client-container {
+  background-color: var(--background-color) !important;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 50px;
+  object-fit: contain;
+}
+
+.swiper-scrollbar-drag {
+  height: 15px !important;
+  border-radius: 0px !important;
+  background: var(--white-color) !important;
+}
+
+/* Change the color of the scrollbar thumb */
+.swiper-scrollbar-thumb {
+  background-color: red !important;
+  color: red !important;
+}
+
+.swiper-scrollbar {
+ 
+ background: none !important;
+}
+
+.slider-img-col {
+  height: 70px;
+}
+
+.slider-title {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.slider-arrow {
+  font-size: 35px;
+}

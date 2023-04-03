@@ -49,3 +49,4 @@ function soundToggleVideo() {
     background.classList.add("fa-volume-xmark");
   }
 }
+
