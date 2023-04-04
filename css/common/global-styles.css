@@ -117,6 +117,7 @@ p {
   position: relative;
   z-index: 2;
 }
+
 .back-bar::after {
   left: -2.5%;
   content: "";

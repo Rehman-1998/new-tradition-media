@@ -14,25 +14,6 @@
   color: var(--white-color);
 }
 
-@media screen and (max-width: 800px) and (min-width: 430px) {
-  .video-controller {
-    bottom: 40px;
-    right: 30px;
-  }
-  .country-section span::before {
-    top: 0px;
-  }
-}
-
-@media screen and (max-width: 430px) {
-  .video-controller {
-    bottom: 25px;
-    right: 20px;
-  }
-  .country-section span::before {
-    top: -1px;
-  }
-}
 
 .video-icon {
   height: 35px;
@@ -51,10 +32,11 @@
   position: relative;
   white-space: nowrap;
 }
+
 .country-section span::before {
   content: attr(data-text);
   position: absolute;
-  top: -3px;
+  top: 0;
   left: 0;
   width: 0;
   color: red;
@@ -154,4 +136,171 @@
 
 .slider-arrow {
   font-size: 35px;
+}
+
+ /* Testimonail section */
+ .testimonial-title{
+   font-size: 65px;
+   font-family: var(--mont);
+   text-align: start;
+   font-weight: 800;
+ }
+
+ .testimonial-title-back-bar {
+  position: relative;
+  z-index: 2;
+ }
+
+ .testimonial-title-back-bar::after {
+  left: 0%;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 0%;
+  height: 40%;
+  width: 100%;
+  background: black;
+}
+
+.testimonial-wrapper {
+  height: 450px !important;
+}
+
+.testimonial-caption {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+ /* counter section */
+ .counter-container {
+    background-color: var(--black-color);
+ }
+
+ .counter-title-container{
+   display: inline-block;
+   background-color: var(--red-color);
+ }
+
+ .counter-title {
+  font-size: 40px;
+  font-family: var(--sans-serif);
+  font-weight: 800;
+}
+
+.counter-value-text {
+  font-size: 60px;
+  font-family: var(--sans-serif);
+  font-weight: 800;
+}
+
+ .counter-feedback-text {
+   font-size: 30px;
+   font-family: var(--sans-serif);
+   font-weight: 800;
+   color: var(--red-color);
+ }
+
+ .counter-label {
+  font-size: 20px;
+  font-family: var(--sans-serif);
+  font-weight: 800;
+ }
+
+/* For Mini Laptop */
+@media screen and (max-width: 1280px) and (min-width: 1025px) {
+  .testimonial-title{
+    font-size: 45px;
+  }
+
+  .slider-title {
+    font-size: 27px;
+  }
+
+  .testimonial-wrapper {
+    height: 350px !important;
+  }
+
+  .counter-title {
+    font-size: 35px;
+  }
+  
+  .counter-value-text {
+    font-size: 50px;
+  }
+  
+   .counter-feedback-text {
+     font-size: 25px;
+   }
+  
+
+}
+/* For Ipad & Ipad Pro */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .testimonial-title{
+    font-size: 35px;
+  }
+  .slider-title {
+    font-size: 22px;
+    
+  }
+  .testimonial-wrapper {
+    height: 300px !important;
+  }
+
+  .counter-title {
+    font-size: 22px;
+  }
+  
+  .counter-value-text {
+    font-size: 30px;
+  }
+  
+   .counter-feedback-text {
+     font-size: 20px;
+   }
+  
+}
+
+/* For Mobile Screens */
+@media screen and (max-width: 767px) {
+  .testimonial-title{
+    font-size: 20px;
+  }
+
+  .slider-title {
+    font-size: 19px;
+    
+  }
+
+  .testimonial-wrapper {
+    height: 280px !important;
+  }
+
+  .counter-title {
+    font-size: 18px;
+  }
+  
+  .counter-value-text {
+    font-size: 25px;
+  }
+  
+   .counter-feedback-text {
+     font-size: 18px;
+   }
+  
+}
+
+@media screen and (max-width: 800px) and (min-width: 430px) {
+  .video-controller {
+    bottom: 40px;
+    right: 30px;
+  }
+
+}
+
+@media screen and (max-width: 430px) {
+  .video-controller {
+    bottom: 25px;
+    right: 20px;
+  }
 }

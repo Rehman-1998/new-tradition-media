@@ -1,3 +1,5 @@
+
+@import url(./variables.css);
 .offcanvas {
   transition: transform 0.8s ease, opacity 0.8s ease !important;
   background-color: var(--white-color);
@@ -38,7 +40,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: red;
+  background: var(--background-color);
   height: 100%;
   width: 100%;
   transform: translateX(-100%);

@@ -1,13 +1,15 @@
 :root {
   /* Color Variable */
-  --background-color: linear-gradient(
+  /* --background-color: linear-gradient(
     to bottom,
     #f20000,
     #b90021,
     #7c0425,
     #400f1c,
     #000000
-  );
+  ); */
+
+  --background-color: linear-gradient(180deg, #EC2924 0%, rgba(0, 0, 0, 0.79) 100%);
 
   /* used in this sider */
   --white-color: #ffffff;
