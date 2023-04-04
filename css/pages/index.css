@@ -232,6 +232,10 @@
    .counter-feedback-text {
      font-size: 25px;
    }
+
+   .slider-arrow {
+    font-size: 30px;
+  }
   
 
 }
@@ -259,6 +263,10 @@
    .counter-feedback-text {
      font-size: 20px;
    }
+
+   .slider-arrow {
+    font-size: 25px;
+  }
   
 }
 
@@ -288,6 +296,10 @@
    .counter-feedback-text {
      font-size: 18px;
    }
+
+   .slider-arrow {
+    font-size: 20px;
+  }
   
 }
 
