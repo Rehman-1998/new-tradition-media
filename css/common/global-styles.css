@@ -50,6 +50,7 @@ p {
   color: #000;
   text-decoration: none;
   background-color: #fff;
+  color: var(--white-color);
   padding: 8px 32px;
   border-radius: 24px;
   margin: 0;
@@ -62,6 +63,9 @@ p {
 /* Background-color classess */
 .main-background {
   background-image: var(--background-color);
+}
+.red-background {
+  background-color: var(--red-color);
 }
 .background-black {
   background-color: var(--black-color);
