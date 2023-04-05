@@ -1,0 +1,123 @@
+@import url("../common/variables.css");
+@import url("../common/fonts.css");
+@import url("../common/header.css");
+@import url("../common/global-styles.css");
+@import url("../common/drawer.css");
+@import url("../common/footer.css");
+
+.market-main-section {
+  margin-top: 100px;
+}
+
+.market-title {
+  color: grey;
+  cursor: pointer;
+  font-family: var(--mont-font);
+  font-size: 95px;
+  font-weight: 800;
+}
+.market-title:hover {
+  color: var(--black-color);
+}
+.market-title.active {
+  position: relative;
+  display: inline-block;
+  color: var(--black-color);
+  z-index: 2;
+}
+.market-title.active::after {
+  left: 0%;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 0%;
+  height: 40%;
+  width: 100%;
+  background: var(--red-color);
+}
+
+.market-image {
+  position: relative;
+}
+.market-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.market-image-bar {
+  padding: 12px 24px;
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+}
+.market-image-bar span {
+  font-size: 18px;
+}
+/* Cover Market Image */
+.market-image-cover {
+  position: relative;
+}
+.market-image-cover img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.market-image-bar-cover {
+  padding: 12px 24px;
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+}
+.market-image-bar-cover span {
+  font-size: 18px;
+}
+
+.markets-scroll-arrow {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  /* top: -48px; */
+  margin: 0 auto;
+  z-index: 1;
+  width: 24px;
+  cursor: pointer;
+  animation: arrow-banner-down 2s infinite;
+}
+/* Define the animation */
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to the SVG icon */
+.icon {
+  animation-name: moveUpDown;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/* For Mini Laptop */
+@media screen and (max-width: 1280px) and (min-width: 1025px) {
+}
+/* For Ipad & Ipad Pro */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .market-title {
+    font-size: 60px;
+  }
+}
+
+/* For Mobile Screens */
+@media screen and (max-width: 767px) {
+  .market-title {
+    font-size: 25px;
+  }
+}
