@@ -13,7 +13,7 @@
   color: grey;
   cursor: pointer;
   font-family: var(--mont-font);
-  font-size: 95px;
+  font-size: 75px;
   font-weight: 800;
 }
 .market-title:hover {
@@ -111,7 +111,7 @@
 /* For Ipad & Ipad Pro */
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .market-title {
-    font-size: 60px;
+    font-size: 45px;
   }
 }
 
