@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3 Big wheels</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+
+    <!-- **  Bootsrtap v5.2.3 CSS Link ** -->
+    <link href="./bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <!-- ** AOS Animation  CSS Link ** -->
+    <link href="./aos/aos.css" rel="stylesheet" />
+    <!-- ** index CSS Link ** -->
+    <link href="./css/pages/index.css" rel="stylesheet" />
+    <!-- ** Markets CSS Link ** -->
+    <link rel="stylesheet" href="./css/pages/markets.css" />
+    <link href="./css/common/global-styles.css" rel="stylesheet" />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="main-header background-black">
+      <div class="container d-flex align-items-center justify-content-between">
+        <img
+          class="logo-img cursor-pointer"
+          src="assets/logo.png"
+          alt="logo-img"
+        />
+        <div
+          class="cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          <div
+            id="header-icon"
+            class="hamburger-icon cursor-pointer light-icon"
+          ></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Drawer -->
+    <div
+      class="offcanvas offcanvas-end w-100"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <img
+          class="logo-img cursor-pointer"
+          src="assets/logo.png"
+          alt="logo-img"
+        />
+        <div
+          class="cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          <i class="fa-solid fa-xmark drawer-close-icon"></i>
+        </div>
+      </div>
+
+      <div class="offcanvas-body px-0">
+        <ul class="list-unstyled menu-list">
+          <li class="menu-item inline-block">
+            <a href="#" class="menu-item-link">HOME</a>
+          </li>
+          <li class="menu-item inline-block">
+            <a href="#" class="menu-item-link">BRANDS</a>
+          </li>
+          <li class="menu-item inline-block">
+            <a href="#" class="menu-item-link">MARKETS</a>
+          </li>
+          <li class="menu-item inline-block">
+            <a href="#" class="menu-item-link">SERVICES</a>
+          </li>
+          <li class="menu-item inline-block">
+            <a href="#" class="menu-item-link">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Section 1 Start -->
+    <div class="container-fluid background-white market-main-section">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="2500"
+        class="ps-4 pt-md-5 pb-5"
+      >
+        <div class="row">
+          <div class="col-md-4 col-4">
+            <h1 class="market-title active">NYC</h1>
+          </div>
+          <div class="col-md-4 col-4">
+            <h1 class="market-title">LA</h1>
+          </div>
+          <div class="col-md-4 col-4">
+            <h1 class="market-title">CHI</h1>
+          </div>
+          <div class="col-md-4 col-4">
+            <h1 class="market-title">SF</h1>
+          </div>
+          <div class="col-md-4 col-4">
+            <h1 class="market-title">ATL</h1>
+          </div>
+          <div class="col-md-4 col-4">
+            <h1 class="market-title">DC</h1>
+          </div>
+          <div class="col-md-4 col-4">
+            <h1 class="market-title">BOS</h1>
+          </div>
+          <div class="col-md-4 col-4">
+            <h1 class="market-title">sea</h1>
+          </div>
+          <div class="col-md-4 col-4">
+            <h1 class="market-title">mia</h1>
+          </div>
+          <div class="col-md-4 col-4">
+            <h1 class="market-title">port</h1>
+          </div>
+          <div class="col-md-4 col-4">
+            <h1 class="market-title">nash</h1>
+          </div>
+          <div class="col-md-4 col-4">
+            <h1 class="market-title">vegas</h1>
+          </div>
+        </div>
+        <!-- Scrollbar -->
+        <div class="row mt-5">
+          <div class="col-md-12">
+            <div class="markets-scroll-arrow icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+              >
+                <g stroke="#000" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m12 5v14"></path>
+                  <path d="m19 12-7 7-7-7"></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 1 End -->
+
+    <!-- Section 2 start -->
+    <div class="row background-black g-0">
+      <div class="col-md-6 pt-5 pb-md-0 pb-5">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2500"
+          class="ps-4 pe-md-5 pe-4"
+        >
+          <h5 class="text-uppercase darkmont red">NEW YORK</h5>
+          <p class="paragraph white justify">
+            New York is our home market. We manage some of the most premium
+            large format ad placements in the most desirable neighborhoods,
+            helping brands deliver their messaging to the most sought after
+            audiences, in the most contextually relevant locations. Our marquee
+            asset is located at 1 Times Square, the iconic and
+            internationally-recognized home of the New Year’s Eve Ball Drop and
+            the #1 billboard in New York.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div data-aos="fade-up" data-aos-duration="2500" class="market-image">
+          <img src="./assets/images/nyc.jpg" alt="" />
+          <div class="market-image-bar">
+            <span>DIGITAL | <strong>TIMES SQUARE</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 2 End -->
+    <!-- Section 3 Start -->
+    <div class="row g-0">
+      <div class="col-md-12">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2500"
+          class="market-image-cover"
+        >
+          <img src="./assets/images/nyc.jpg" alt="" />
+          <div class="market-image-bar background-skyblue black">
+            <span>DIGITAL | <strong>TIMES SQUARE</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 3 End -->
+    <!-- Section 4 Start -->
+    <div class="row g-0">
+      <div class="col-md-6">
+        <div data-aos="fade-up" data-aos-duration="2500" class="market-image">
+          <img src="./assets/images/nyc2.jpg" alt="" />
+          <div class="market-image-bar background-red white">
+            <span>HANDPAINT | <strong>MEATPACKING</strong></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div data-aos="fade-up" data-aos-duration="2500" class="market-image">
+          <img src="./assets/images/nyc3.jpg" alt="" />
+          <div class="market-image-bar background-red white">
+            <span>STATIC | <strong>NOHO</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 5 End -->
+
+    <!-- Section 6 Start  section -->
+    <div class="row g-0">
+      <div class="col-md-12">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2500"
+          class="market-image-cover"
+        >
+          <img src="./assets/images/nyc4.jpg" alt="" />
+          <div class="market-image-bar background-red white">
+            <span>STATIC | <strong>MEATPACKING</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 6 End  section -->
+    <!-- Section 7 Start -->
+    <div class="row g-0">
+      <div class="col-md-6">
+        <div data-aos="fade-up" data-aos-duration="2500" class="market-image">
+          <img src="./assets/images/nyc5.jpg" alt="" />
+          <div class="market-image-bar background-red white">
+            <span>STATIC | <strong>WILLIAMSBURG</strong></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div data-aos="fade-up" data-aos-duration="2500" class="market-image">
+          <img src="./assets/images/nyc6.jpg" alt="" />
+          <div class="market-image-bar background-red white">
+            <span>HANDPAINT | <strong>MEATPACKING</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 7 End -->
+    <!-- Section 8 Start  section -->
+    <div class="row g-0">
+      <div class="col-md-12">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2500"
+          class="market-image-cover"
+        >
+          <img src="./assets/images/nyc7.jpg" alt="" />
+          <div class="market-image-bar background-red white">
+            <span>STATIC | <strong>SOHO</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 8 End  section -->
+    <!-- Section 9 Start -->
+    <div class="row g-0">
+      <div class="col-md-6">
+        <div data-aos="fade-up" data-aos-duration="2500" class="market-image">
+          <img src="./assets/images/nyc8.jpg" alt="" />
+          <div class="market-image-bar background-skyblue black">
+            <span>DIGITAL | <strong>MIDTOWN</strong></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div data-aos="fade-up" data-aos-duration="2500" class="market-image">
+          <img src="./assets/images/nyc9.jpg" alt="" />
+          <div class="market-image-bar background-red white">
+            <span>STATIC | <strong>SOHO</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 9 End -->
+    <!-- Section 10 Start  section -->
+    <div class="row g-0">
+      <div class="col-md-12">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2500"
+          class="market-image-cover"
+        >
+          <img src="./assets/images/nyc10.jpg" alt="" />
+          <div class="market-image-bar background-red white">
+            <span>STATIC | <strong>MEATPACKING</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 10 End  section -->
+    <!-- Section 11 Start -->
+    <div class="row g-0">
+      <div class="col-md-6">
+        <div data-aos="fade-up" data-aos-duration="2500" class="market-image">
+          <img src="./assets/images/nyc11.jpg" alt="" />
+          <div class="market-image-bar background-skyblue black">
+            <span>DIGITAL | <strong>TIMES SQUARE</strong></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div data-aos="fade-up" data-aos-duration="2500" class="market-image">
+          <img src="./assets/images/nyc12.jpg" alt="" />
+          <div class="market-image-bar background-red white">
+            <span>STATIC | <strong>SOHO</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 11 End -->
+    <!-- Section 12 Start  section -->
+    <div class="row g-0">
+      <div class="col-md-12">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2500"
+          class="market-image-cover"
+        >
+          <img src="./assets/images/nyc13.jpg" alt="" />
+          <div class="market-image-bar background-red white">
+            <span>STATIC | <strong>MIDTOWN EAST</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 12 End  section -->
+    <!-- Section 13 Start -->
+    <div class="row g-0">
+      <div class="col-md-6">
+        <div data-aos="fade-up" data-aos-duration="2500" class="market-image">
+          <img src="./assets/images/nyc14.jpg" alt="" />
+          <div class="market-image-bar background-skyblue black">
+            <span>DIGITAL | <strong>TIMES SQUARE</strong></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div data-aos="fade-up" data-aos-duration="2500" class="market-image">
+          <img src="./assets/images/nyc15.jpg" alt="" />
+          <div class="market-image-bar background-red white">
+            <span>STATIC | <strong>LONG ISLAND CITY</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 13 End -->
+    <!-- footer -->
+    <footer class="footer-container container-fluid p-4">
+      <div class="row">
+        <!-- Contact Us -->
+        <div class="col-md-3 col-sm-12 right-border">
+          <h4 class="footer-title text-light">Contact Us</h4>
+          <h5 class="footer-subtitle">LET'S CHAT</h5>
+          <h5 class="footer-subtitle text-light fw-bold">
+            branding@3bigwheels.com
+          </h5>
+          <div class="d-flex gap-4">
+            <i class="fa-brands fa-instagram text-light footer-icon"></i>
+            <i class="fa-brands fa-linkedin-in text-light footer-icon"></i>
+            <i class="fa-brands fa-facebook-f text-light footer-icon"></i>
+            <i class="fa-brands fa-vimeo-v text-light footer-icon"></i>
+          </div>
+        </div>
+        <!-- Our Offices -->
+        <div
+          class="col-md-5 col-sm-12 px-lg-4 px-2 right-border office-container"
+        >
+          <h4 class="footer-title text-light">Our Offices</h4>
+          <div class="row">
+            <!-- First Office -->
+            <div class="col-6">
+              <h5 class="footer-subtitle">SAN DIEGO</h5>
+              <h5 class="footer-subtitle text-light">
+                8910 University Center Ln
+              </h5>
+              <h5 class="footer-subtitle text-light">San Diego, CA 92122</h5>
+            </div>
+            <!-- Seconds Office -->
+            <div class="col-6">
+              <h5 class="footer-subtitle"></h5>
+              <h5 class="footer-subtitle text-light"></h5>
+              <h5 class="footer-subtitle text-light"></h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-4 links-container">
+          <div class="d-flex justify-content-evenly">
+            <div>
+              <h4 class="footer-title text-light">Services</h4>
+              <h4 class="footer-title text-light">Brands</h4>
+              <h4 class="footer-title text-light">Countries</h4>
+            </div>
+            <div>
+              <h4 class="footer-title text-light">About</h4>
+              <h4 class="footer-title text-light">Contact</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row ps-4">
+        <div class="col-md-6 py-4">
+          <span class="text-light copy-right-text">
+            © 2023 NEWTRADITIONMEDIA. ALL RIGHTS RESERVED.</span
+          >
+        </div>
+        <div class="col-md-6"></div>
+      </div>
+    </footer>
+    <!-- ** Bootsrtap v5.2.3 Js Link ** -->
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- ** AOS Animation Js Link ** -->
+    <script src="./aos/aos.js"></script>
+
+    <!-- ** font awesoem icons ** -->
+    <script
+      src="https://kit.fontawesome.com/71a7ac9f1f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      // Get the icon element
+      const icon = document.querySelector(".icon");
+
+      // Add a click event listener
+      icon.addEventListener("click", () => {
+        // Scroll the page to the bottom
+        window.scrollBy(0, 1000);
+      });
+    </script>
+  </body>
+</html>

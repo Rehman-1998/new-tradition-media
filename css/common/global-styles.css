@@ -6,7 +6,6 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
 h1 {
   font-size: 112px;
 }
@@ -32,7 +31,10 @@ h6 {
 p {
   font-size: 18px;
 }
-
+/* Text align */
+.justify {
+  text-align: justify;
+}
 /* Cursor class */
 .cursor-pointer {
   cursor: pointer;
@@ -112,6 +114,13 @@ p {
 .paragraph {
   font-family: var(--serif-font);
   font-size: 20px;
+}
+/* Font Classess */
+.darkmont {
+  font-family: var(--mont-font);
+}
+.lightmont {
+  font-family: var(--mont-light);
 }
 .back-bar {
   position: relative;
