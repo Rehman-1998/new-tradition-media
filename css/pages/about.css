@@ -6,8 +6,69 @@
 @import url("../common/footer.css");
 
 
+/* Hero Section styles */
+.hero-container {
+    height: 500px;
+    background: var(--background-color);
+}
+
+.hero-divider-line {
+    border-top: 2px solid var(--white-color) !important;
+    width: 55%
+}
+
+#spin {
+    color: red;
+}
+
+#spin:after {
+    content: "";
+    display: inline-block;
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        content: "CREATIVITY"
+    }
+
+    20% {
+        content: "!@#$&%*(!%";
+    }
+
+    27% {
+        content: "ADVERTISING"
+    }
+
+    47% {
+        content: "!@#$&%*(!%"
+    }
+
+    52% {
+        content: "OUT-OF-HOME"
+    }
+
+    72% {
+        content: "!@#$%%*(!%"
+    }
+
+    92% {
+        content: "GOIN BIG"
+    }
+
+    100% {
+        content: "!@#$%%*(!%"
+    }
+
+}
 /* Section 1 styles */
 .main-title {
+    font-size: 64px;
+    font-family: var(--sans-sarif);
+    font-weight: 800;
+}
+
+.hero-title {
     font-size: 64px;
     font-family: var(--mont);
     font-weight: 800;
@@ -55,6 +116,8 @@
     background-color: var(--black-color);
 }
 
+
+
 .form-sidebar {
     background-color: var(--red-color);
     width: 90%;
@@ -78,7 +141,7 @@
 
 .accordion-button:focus {
     box-shadow: none !important;
-    border-color: rgba(0,0,0,.125) !important;
+    border-color: rgba(0, 0, 0, .125) !important;
 }
 
 .faq-title {
@@ -89,4 +152,107 @@
 
 .accordion-button:hover {
     color: var(--red-color) !important;
+}
+
+/* For Ipad & Ipad Pro */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .hero-title {
+        font-size: 45px;
+    }
+
+    .main-title {
+        font-size: 50px;
+    }
+
+    .sub-title {
+        font-size: 20px;
+    }
+
+    .info-text {
+        font-size: 18px;
+    }
+
+    .info-box-title {
+        font-size: 40px;
+    }
+
+    .faq-title {
+        font-size: 20px;
+    }
+
+    .faq-title {
+        font-size: 22px;
+    }
+
+    .hero-divider-line {
+        width: 75%
+    }
+
+}
+
+/* For Mobile Screens */
+@media screen and (max-width: 767px) and (min-width: 340px) {
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .main-title {
+        font-size: 35px;
+    }
+
+    .sub-title {
+        font-size: 18px;
+    }
+
+    .info-text {
+        font-size: 16px;
+    }
+
+    .info-box-title {
+        font-size: 30px;
+    }
+
+    .faq-title {
+        font-size: 18px;
+    }
+
+    .faq-title {
+        font-size: 20px;
+    }
+
+    .hero-divider-line {
+        width: 80%
+    }
+}
+
+/* For Mobile Screens */
+@media screen and (max-width: 339px) {
+    .hero-container {
+        height: 350px;
+    }
+
+    .hero-title {
+        font-size: 20px;
+    }
+
+    .main-title {
+        font-size: 25px;
+    }
+
+    .sub-title {
+        font-size: 16px;
+    }
+
+    .info-text {
+        font-size: 14px;
+    }
+
+    .info-box-title {
+        font-size: 20px;
+    }
+
+    .faq-title {
+        font-size: 14px;
+    }
+
 }
