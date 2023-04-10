@@ -92,9 +92,9 @@ input:not(:placeholder-shown) + label {
 }
 
 .animated-label {
-  font-size: 64px;
+  font-size: 64px !important;
   font-family: var(--mont);
-  color: var(--white-color);
+  color: var(--white-color) !important;
 }
 
 .contact-input {
@@ -113,26 +113,16 @@ input:not(:placeholder-shown) + label {
 label {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-40%);
   left: 10px;
   color: #999;
-  font-size: 16px;
-  transition: all 0.2s ease-out;
-}
-
-.text-area-label {
-  position: absolute !important;
-  top: 30% !important;
-  transform: translateY(-50%) !important;
-  left: 10px !important;
-  color: #999 !important;
   font-size: 16px !important;
-  transition: all 0.2s ease-out !important;
+  transition: all 0.2s ease-out;
 }
 
 .contact-input:focus + label {
   top: 0%;
-  font-size: 30px;
+  font-size: 30px !important;
   font-family: var(--mont);
   color: var(--white-color);
 }
@@ -147,6 +137,48 @@ label {
 .contact-input:focus + label {
   top: 0%;
   font-size: 30px;
+  font-family: var(--mont);
+  color: var(--white-color);
+}
+
+.animated-label.filled {
+  top: 0%;
+  font-size: 30px !important;
+  font-family: var(--mont);
+  color: var(--white-color);
+}
+
+
+
+
+/* Textarea styling */
+
+.text-label {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-30%);
+  left: 10px;
+  color: #999;
+  font-size: 16px;
+  transition: all 0.2s ease-out;
+}
+
+.contact-text-input {
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  background: transparent;
+  outline: none !important;
+  color: var(--white-color);
+  font-family: var(--mont);
+  font-size: 64px;
+}
+
+.contact-text-input:focus + label {
+  top: 0%;
+  font-size: 30px !important;
   font-family: var(--mont);
   color: var(--white-color);
 }
