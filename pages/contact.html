@@ -26,6 +26,17 @@
 
 <body>
 
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container d-flex align-items-center justify-content-between">
+      <img class="logo-img cursor-pointer" src="../assets/logo.png" alt="logo-img" />
+      <div class="cursor-pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight">
+        <div id="header-icon" class="hamburger-icon cursor-pointer light-icon"></div>
+      </div>
+    </div>
+  </header>
+
   <!-- Drawer -->
   <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header">
@@ -61,18 +72,18 @@
   </div>
 
   <!-- Section 1 Start -->
-  <div class="container-fluid py-5 background-black">
+  <div class="container-fluid pts-5 background-black">
     <div class="container py-5">
-      <h1 class="title text-uppercase red py-5">
+      <h1 class="title text-uppercase red pt-5">
         make a <br />
         statement <br />
-        with u
+        with us
       </h1>
     </div>
   </div>
   <!-- Section 1 End -->
   <!-- Section 2 start -->
-  <div class="container-fluid py-5 background-black">
+  <div class="container-fluid  background-black form-container">
     <div class="container">
       <div class="row">
         <div class="col-md-8">
@@ -88,12 +99,18 @@
             <textarea rows="2" cols="50" id="name-input-2" class="contact-text-input" placeholder="message"></textarea>
             <label for="name-input-2" class="text-label">TELL US MORE</label>
           </div>
+          <div>
+            <button class="custom-send-button">Send</button>
+          </div>
         </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-3 d-flex justify-content-center">
+        <div class="col-md-3 address-container pt-5">
           <!-- Office Addres -->
           <div>
-            <h6 class="red">New York Office</h6>
+            <h6 class="red address-title">New York Office</h6>
+            <div class="mt-4">
+              <p class="text-light m-0">588 Broadway</p>
+              <p class="text-light m-0">New York, NY 10012 </p>
+            </div>
           </div>
         </div>
       </div>

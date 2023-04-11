@@ -5,87 +5,6 @@
 @import url("../common/drawer.css");
 @import url("../common/footer.css");
 
-/* label {
-  font-size: 100px;
-  padding-top: 0px !important;
-  color: var(--white-color);
-  line-height: 0;
-  overflow: unset !important;
-}
-
-.form-floating > input,
-.form-floating > label {
-  position: absolute;
-  pointer-events: none;
-  left: 0;
-  top: calc(50% - 0.5em);
-  transition: top 0.2s ease-in-out, font-size 0.2s ease-in-out;
-}
-.form-floating > .form-control:focus {
-  background: transparent;
-}
-.form-floating > input {
-  background: transparent;
-  border-radius: 0;
-  border: none;
-  border-bottom: 4px solid #ccc;
-  color: var(--white-color) !important;
-}
-
-.form-floating > input:focus {
-  border-color: white;
-  box-shadow: none;
-}
-
-.form-floating > input:not(:placeholder-shown) ~ label,
-.form-floating > input:focus ~ label {
-  top: 0;
-  font-size: 0.875rem;
-  color: none;
-}
-
-.form-floating > .form-control:not(:placeholder-shown) ~ label,
-.form-floating > .form-select ~ label {
-  opacity: unset;
-  transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
-  color: white;
-}
-
-.form-floating > input:focus:not(:placeholder-shown) ~ label {
-  color: #fff;
-  font-size: 20px;
-} */
-
-/* .input-field {
-  position: relative;
-  margin-bottom: 20px;
-}
-
-input {
-  font-size: 16px;
-  padding: 10px;
-  border: none;
-  border-bottom: 2px solid #ccc;
-  width: 100%;
-}
-
-label {
-  position: absolute;
-  top: 16px;
-  left: 10px;
-  color: #999;
-  font-size: 16px;
-  transition: all 0.2s ease-out;
-  pointer-events: none;
-}
-
-input:focus + label,
-input:not(:placeholder-shown) + label {
-  top: 6px;
-  font-size: 12px;
-  color: #333;
-} */
-
 .input-field {
   position: relative;
   margin-bottom: 20px;
@@ -100,7 +19,7 @@ input:not(:placeholder-shown) + label {
   outline: none !important;
   color: var(--white-color);
   font-family: var(--mont);
-  font-size: 64px ;
+  font-size: 64px;
 }
 
 .contact-input::placeholder {
@@ -119,7 +38,7 @@ input:not(:placeholder-shown) + label {
   transition: all 0.2s ease-out;
 }
 
-.contact-input:focus+ .animated-label,
+.contact-input:focus+.animated-label,
 .contact-input:not(:placeholder-shown)+.animated-label {
   top: 0%;
   font-size: 30px !important;
@@ -137,7 +56,7 @@ input:not(:placeholder-shown) + label {
   outline: none !important;
   color: var(--white-color);
   font-family: var(--mont);
-  font-size: 64px ;
+  font-size: 64px;
 }
 
 .contact-text-input::placeholder {
@@ -158,7 +77,7 @@ input:not(:placeholder-shown) + label {
 }
 
 
-.contact-text-input:focus+ .text-label,
+.contact-text-input:focus+.text-label,
 .contact-text-input:not(:placeholder-shown)+.text-label {
   top: 0;
   font-size: 30px !important;
@@ -167,3 +86,186 @@ input:not(:placeholder-shown) + label {
 }
 
 
+/* Adress Box Style */
+.address-title {
+  font-size: 20px;
+  font-family: var(--sans-serif) !important;
+  font-weight: 700;
+}
+
+.custom-send-button {
+  font-size: 38px;
+  font-weight: 800;
+  font-family: var(--mont);
+  padding: 0px 120px;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  border: 2px solid var(--black-color) !important;
+}
+
+.custom-send-button:hover {
+  background-color: var(--black-color);
+  border: 2px solid var(--white-color) !important;
+  color: var(--white-color);
+  border-radius: 30px;
+  border: none;
+}
+
+.address-container {
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  padding-bottom: 200px;
+}
+
+/* For Ipad & Ipad Pro */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .contact-input {
+    font-size: 44px;
+  }
+
+  .animated-label {
+    font-size: 44px !important;
+  }
+
+  .contact-input:focus+.animated-label,
+  .contact-input:not(:placeholder-shown)+.animated-label {
+
+    font-size: 22px !important;
+
+  }
+
+  .contact-text-input {
+
+    font-size: 44px;
+  }
+
+  .text-label {
+    font-size: 44px !important;
+
+  }
+
+  .contact-text-input:focus+.text-label,
+  .contact-text-input:not(:placeholder-shown)+.text-label {
+    font-size: 24px !important;
+
+  }
+
+  .address-title {
+    font-size: 18px;
+
+  }
+
+  .custom-send-button {
+    font-size: 28px;
+    padding: 0px 80px;
+  }
+  .form-container {
+    padding-bottom: 150px;
+  }
+}
+
+/* For Mobile Screens */
+@media screen and (max-width: 767px) and (min-width: 340px) {
+  .contact-input {
+    font-size: 30px;
+  }
+
+  .animated-label {
+    font-size: 30px !important;
+  }
+
+  .contact-input:focus+.animated-label,
+  .contact-input:not(:placeholder-shown)+.animated-label {
+
+    font-size: 18px !important;
+
+  }
+
+  .contact-text-input {
+
+    font-size: 30px;
+  }
+
+  .text-label {
+    font-size: 30px !important;
+
+  }
+
+  .contact-text-input:focus+.text-label,
+  .contact-text-input:not(:placeholder-shown)+.text-label {
+    font-size: 20px !important;
+
+  }
+
+  .address-title {
+    font-size: 18px;
+
+  }
+
+  .custom-send-button {
+    font-size: 22px;
+    padding: 0px 60px;
+  }
+
+  .address-container {
+    display: flex;
+    justify-content: start;
+  }
+
+  .form-container {
+    padding-bottom: 80px;
+  }
+}
+
+/* For Mobile Screens */
+@media screen and (max-width: 339px) {
+  .contact-input {
+    font-size: 24px;
+  }
+
+  .animated-label {
+    font-size: 24px !important;
+  }
+
+  .contact-input:focus+.animated-label,
+  .contact-input:not(:placeholder-shown)+.animated-label {
+    font-size: 16px !important;
+  }
+
+  .contact-text-input {
+    font-size: 24px;
+  }
+
+  .text-label {
+    font-size: 24px !important;
+  }
+
+  .contact-text-input:focus+.text-label,
+  .contact-text-input:not(:placeholder-shown)+.text-label {
+    font-size: 24px !important;
+  }
+
+  .address-title {
+    font-size: 16px;
+  }
+
+  .custom-send-button {
+    font-size: 18px;
+    padding: 0px 50px;
+  }
+
+  .address-container {
+    display: flex;
+    justify-content: start;
+  }
+
+  .form-container {
+    padding-bottom: 30px;
+  }
+
+}
