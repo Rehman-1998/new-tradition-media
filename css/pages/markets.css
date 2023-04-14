@@ -9,36 +9,27 @@
   margin-top: 100px;
 }
 
-.market-title {
-  color: grey;
-  cursor: pointer;
-  font-family: var(--mont-font);
-  font-size: 75px;
-  font-weight: 800;
-}
-.market-title:hover {
-  color: var(--black-color);
-}
-.market-title.active {
-  position: relative;
-  display: inline-block;
-  color: var(--black-color);
-  z-index: 2;
-}
-.market-title.active::after {
-  left: 0%;
-  content: "";
-  position: absolute;
-  z-index: -1;
-  bottom: 0%;
-  height: 40%;
+.market-title-image {
   width: 100%;
-  background: var(--red-color);
+  height: auto;
+  object-fit: cover;
 }
 
-.sony-logo {
+.market-logo {
   width: 300px;
   height: 70px;
+  object-fit: cover;
+}
+/* Go Pro Logo */
+.goPro-logo {
+  width: 300px;
+  height: 100px;
+  object-fit: cover;
+}
+/* Tdf Logo */
+.tdf-logo {
+  width: 350px;
+  height: 90px;
   object-fit: cover;
 }
 .market-image {
@@ -53,15 +44,7 @@
   height: 400px;
   object-fit: cover;
 }
-.market-image-bar {
-  padding: 12px 24px;
-  position: absolute;
-  bottom: 80px;
-  right: 0;
-}
-.market-image-bar span {
-  font-size: 18px;
-}
+
 /* Cover Market Image */
 .market-image-cover {
   position: relative;
@@ -70,15 +53,6 @@
   width: 100%;
   height: auto;
   object-fit: cover;
-}
-.market-image-bar-cover {
-  padding: 12px 24px;
-  position: absolute;
-  bottom: 80px;
-  right: 0;
-}
-.market-image-bar-cover span {
-  font-size: 18px;
 }
 
 .markets-scroll-arrow {
@@ -119,21 +93,56 @@
 }
 /* For Ipad & Ipad Pro */
 @media screen and (max-width: 1024px) and (min-width: 768px) {
-  .market-title {
-    font-size: 45px;
+  .market-image video {
+    height: auto;
   }
 }
 
 /* For Mobile Screens */
 @media screen and (max-width: 767px) {
-  .market-title {
-    font-size: 25px;
+  .market-image video {
+    height: auto;
+  }
+  .tdf-logo {
+    width: 300px;
+    height: 70px;
+    object-fit: cover;
   }
 }
 
-@media screen and (max-width: 300px) {
-  .sony-logo {
-    width: 200px;
-    height: 70px;
-  }
+/* For market Title CSS */
+/* .market-title {
+  color: grey;
+  cursor: pointer;
+  font-family: var(--mont-font);
+  font-size: 75px;
+  font-weight: 800;
+} */
+/* .market-title-image:hover {
+  color: var(--black-color);
 }
+.market-title-image.active {
+  position: relative;
+  display: inline-block;
+  color: var(--black-color);
+  z-index: 2;
+}
+.market-title-image.active::after {
+  left: 0%;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 0%;
+  height: 40%;
+  width: 100%;
+  background: var(--red-color);
+} */
+/* .market-image-bar {
+  padding: 12px 24px;
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+}
+.market-image-bar span {
+  font-size: 18px;
+} */
