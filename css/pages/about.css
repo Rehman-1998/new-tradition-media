@@ -24,45 +24,47 @@
 #spin:after {
     content: "";
     display: inline-block;
-    animation: spin 4s linear infinite;
+    animation: spin 8s linear infinite;
 }
 
 @keyframes spin {
-    0% {
-        content: "CREATIVITY"
+    14.28% {
+        content: "15 MARKETERS"
     }
 
-    20% {
-        content: "!@#$&%*(!%";
+    28.56% {
+        content: "12 DESIGNERS";
     }
 
-    27% {
-        content: "ADVERTISING"
+    42.84% {
+        content: "9 VIDEOGRAPHERS"
     }
 
-    47% {
-        content: "!@#$&%*(!%"
+    57.12% {
+        content: "5 PROGRAMMERS"
     }
 
-    52% {
-        content: "OUT-OF-HOME"
+    71.4% {
+        content: "3 DRONE PILOTS"
     }
 
-    72% {
-        content: "!@#$%%*(!%"
-    }
-
-    92% {
-        content: "GOIN BIG"
+    85.68% {
+        content: "2 PHOTOGRAPHERS"
     }
 
     100% {
-        content: "!@#$%%*(!%"
+        content: "1 MOLLY MAE DOG"
     }
 
 }
 /* Section 1 styles */
 .main-title {
+    font-size: 64px;
+    font-family: var(--sans-sarif);
+    font-weight: 800;
+}
+
+.office-main-title {
     font-size: 64px;
     font-family: var(--sans-sarif);
     font-weight: 800;
@@ -95,7 +97,12 @@
     position: absolute;
     bottom: -70px;
     right: 0;
+}
 
+.info-2-box-main-container {
+    position: absolute;
+    bottom: -70px;
+    left: 0;
 }
 
 .blank-section {
@@ -164,6 +171,11 @@
         font-size: 50px;
     }
 
+    .office-main-title {
+        font-size: 44px;
+        
+    }
+
     .sub-title {
         font-size: 20px;
     }
@@ -198,6 +210,10 @@
 
     .main-title {
         font-size: 35px;
+    }
+
+    .office-main-title {
+        font-size: 20px;
     }
 
     .sub-title {
@@ -237,6 +253,10 @@
 
     .main-title {
         font-size: 25px;
+    }
+
+    .office-main-title {
+        font-size: 18px;
     }
 
     .sub-title {
