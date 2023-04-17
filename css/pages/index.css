@@ -34,6 +34,13 @@
   cursor: pointer;
 }
 
+.country-title {
+  font-family: var(--mont);
+  font-size: 100px;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
 .country-section span::before {
   content: attr(data-text);
   position: absolute;
@@ -44,6 +51,7 @@
   overflow: hidden;
   transition: all 1s linear;
 }
+
 .country-section span:hover::before {
   width: 100%;
 }
@@ -210,6 +218,10 @@
 
 /* For Mini Laptop */
 @media screen and (max-width: 1280px) and (min-width: 1025px) {
+  .country-title {
+    font-size: 64px;
+  }
+
   .testimonial-title{
     font-size: 45px;
   }
@@ -242,6 +254,10 @@
 }
 /* For Ipad & Ipad Pro */
 @media screen and (max-width: 1024px) and (min-width: 768px) {
+  .country-title {
+    font-size: 64px;
+  }
+
   .testimonial-title{
     font-size: 35px;
   }
@@ -273,6 +289,10 @@
 
 /* For Mobile Screens */
 @media screen and (max-width: 767px) {
+  .country-title {
+    font-size: 64px;
+  }
+
   .testimonial-title{
     font-size: 20px;
   }
