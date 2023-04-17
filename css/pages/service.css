@@ -1,0 +1,89 @@
+@import url("../common/variables.css");
+@import url("../common/fonts.css");
+@import url("../common/header.css");
+@import url("../common/global-styles.css");
+@import url("../common/drawer.css");
+@import url("../common/footer.css");
+
+.service-container {
+  height: 500px;
+  background: var(--background-color);
+}
+.service-heading {
+  font-size: 100px;
+  font-family: var(--mont);
+  font-weight: 800;
+}
+.service-title {
+  font-size: 64px;
+  font-family: var(--mont);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.service-sub-title {
+  font-size: 24px;
+  cursor: pointer;
+  font-weight: 400;
+}
+.service-divider {
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+  border-bottom: 3px solid #000;
+}
+
+.service-sub-title:hover {
+  color: var(--red-color);
+}
+
+/* For Ipad & Ipad Pro */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .service-heading {
+    font-size: 70px;
+    font-family: var(--mont);
+    font-weight: 800;
+  }
+  .service-title {
+    font-size: 45px;
+  }
+  .service-sub-title {
+    font-size: 22px;
+  }
+}
+
+/* For Mobile Screens */
+@media screen and (max-width: 767px) and (min-width: 340px) {
+  .service-heading {
+    font-size: 40px;
+    font-family: var(--mont);
+    font-weight: 800;
+  }
+  .service-container {
+    height: 300px;
+  }
+  .service-title {
+    font-size: 28px;
+  }
+  .service-sub-title {
+    font-size: 20px;
+  }
+}
+
+/* For Mobile Screens */
+@media screen and (max-width: 339px) {
+  .service-heading {
+    font-size: 40px;
+    font-family: var(--mont);
+    font-weight: 800;
+  }
+  .service-container {
+    height: 300px;
+  }
+
+  .service-title {
+    font-size: 20px;
+  }
+  .service-sub-title {
+    font-size: 16px;
+  }
+}
