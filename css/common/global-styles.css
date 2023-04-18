@@ -176,7 +176,8 @@ p {
 }
 
 /* For Mini Laptop */
-@media screen and (max-width: 1280px) and (min-width: 1025px) {}
+@media screen and (max-width: 1280px) and (min-width: 1025px) {
+}
 
 /* For Ipad & Ipad Pro */
 @media screen and (max-width: 1024px) and (min-width: 768px) {
@@ -229,5 +230,11 @@ p {
 
   .paragraph {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .title {
+    font-size: 25px;
   }
 }

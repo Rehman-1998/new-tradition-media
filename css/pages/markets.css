@@ -10,7 +10,7 @@
 }
 
 .market-title-image {
-  width: 100%;
+  width: 250px;
   height: auto;
   object-fit: cover;
 }
@@ -96,6 +96,11 @@
   .market-image video {
     height: auto;
   }
+  .market-title-image {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+  }
 }
 
 /* For Mobile Screens */
@@ -106,6 +111,18 @@
   .tdf-logo {
     width: 300px;
     height: 70px;
+    object-fit: cover;
+  }
+  .market-title-image {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 300px) {
+  .market-logo {
+    width: 170px;
+    height: 35px;
     object-fit: cover;
   }
 }

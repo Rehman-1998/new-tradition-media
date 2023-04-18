@@ -14,7 +14,6 @@
   color: var(--white-color);
 }
 
-
 .video-icon {
   height: 35px;
   width: 35px;
@@ -36,7 +35,7 @@
 
 .country-title {
   font-family: var(--mont);
-  font-size: 100px;
+  font-size: 112px;
   font-weight: 900;
   line-height: 1.1;
 }
@@ -62,7 +61,6 @@
   height: 500px;
   object-fit: cover;
 }
-
 
 /* Form section CSS */
 .form-section label {
@@ -91,7 +89,6 @@
   min-height: 180px;
   max-height: 360px;
 }
-
 
 /* Slider Style */
 .client-container {
@@ -131,8 +128,7 @@
 }
 
 .swiper-scrollbar {
- 
- background: none !important;
+  background: none !important;
 }
 
 .slider-img-col {
@@ -148,20 +144,20 @@
   font-size: 35px;
 }
 
- /* Testimonail section */
- .testimonial-title{
-   font-size: 65px;
-   font-family: var(--mont);
-   text-align: start;
-   font-weight: 800;
- }
+/* Testimonail section */
+.testimonial-title {
+  font-size: 65px;
+  font-family: var(--mont);
+  text-align: start;
+  font-weight: 800;
+}
 
- .testimonial-title-back-bar {
+.testimonial-title-back-bar {
   position: relative;
   z-index: 2;
- }
+}
 
- .testimonial-title-back-bar::after {
+.testimonial-title-back-bar::after {
   left: 0%;
   content: "";
   position: absolute;
@@ -181,17 +177,17 @@
   font-weight: 500;
 }
 
- /* counter section */
- .counter-container {
-    background-color: var(--black-color);
- }
+/* counter section */
+.counter-container {
+  background-color: var(--black-color);
+}
 
- .counter-title-container{
-   display: inline-block;
-   background-color: var(--red-color);
- }
+.counter-title-container {
+  display: inline-block;
+  background-color: var(--red-color);
+}
 
- .counter-title {
+.counter-title {
   font-size: 40px;
   font-family: var(--sans-serif);
   font-weight: 800;
@@ -203,26 +199,26 @@
   font-weight: 800;
 }
 
- .counter-feedback-text {
-   font-size: 30px;
-   font-family: var(--sans-serif);
-   font-weight: 800;
-   color: var(--red-color);
- }
+.counter-feedback-text {
+  font-size: 30px;
+  font-family: var(--sans-serif);
+  font-weight: 800;
+  color: var(--red-color);
+}
 
- .counter-label {
+.counter-label {
   font-size: 20px;
   font-family: var(--sans-serif);
   font-weight: 800;
- }
+}
 
 /* For Mini Laptop */
 @media screen and (max-width: 1280px) and (min-width: 1025px) {
   .country-title {
-    font-size: 64px;
+    font-size: 80px;
   }
 
-  .testimonial-title{
+  .testimonial-title {
     font-size: 45px;
   }
 
@@ -237,33 +233,30 @@
   .counter-title {
     font-size: 35px;
   }
-  
+
   .counter-value-text {
     font-size: 50px;
   }
-  
-   .counter-feedback-text {
-     font-size: 25px;
-   }
 
-   .slider-arrow {
+  .counter-feedback-text {
+    font-size: 25px;
+  }
+
+  .slider-arrow {
     font-size: 30px;
   }
-  
-
 }
 /* For Ipad & Ipad Pro */
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .country-title {
-    font-size: 64px;
+    font-size: 70px;
   }
 
-  .testimonial-title{
+  .testimonial-title {
     font-size: 35px;
   }
   .slider-title {
     font-size: 22px;
-    
   }
   .testimonial-wrapper {
     height: 300px !important;
@@ -272,34 +265,32 @@
   .counter-title {
     font-size: 22px;
   }
-  
+
   .counter-value-text {
     font-size: 30px;
   }
-  
-   .counter-feedback-text {
-     font-size: 20px;
-   }
 
-   .slider-arrow {
+  .counter-feedback-text {
+    font-size: 20px;
+  }
+
+  .slider-arrow {
     font-size: 25px;
   }
-  
 }
 
 /* For Mobile Screens */
 @media screen and (max-width: 767px) {
   .country-title {
-    font-size: 64px;
+    font-size: 30px;
   }
 
-  .testimonial-title{
+  .testimonial-title {
     font-size: 20px;
   }
 
   .slider-title {
     font-size: 19px;
-    
   }
 
   .testimonial-wrapper {
@@ -309,19 +300,18 @@
   .counter-title {
     font-size: 18px;
   }
-  
+
   .counter-value-text {
     font-size: 25px;
   }
-  
-   .counter-feedback-text {
-     font-size: 18px;
-   }
 
-   .slider-arrow {
+  .counter-feedback-text {
+    font-size: 18px;
+  }
+
+  .slider-arrow {
     font-size: 20px;
   }
-  
 }
 
 @media screen and (max-width: 800px) and (min-width: 430px) {
@@ -329,12 +319,20 @@
     bottom: 40px;
     right: 30px;
   }
-
 }
 
 @media screen and (max-width: 430px) {
   .video-controller {
     bottom: 25px;
     right: 20px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .country-title {
+    font-size: 20px;
+  }
+  .title {
+    font-size: 25px;
   }
 }
