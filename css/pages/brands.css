@@ -5,17 +5,17 @@
 @import url("../common/drawer.css");
 @import url("../common/footer.css");
 
-.market-main-section {
+.brands-main-section {
   margin-top: 100px;
 }
 
-.market-title-image {
+.brands-title-image {
   width: 250px;
   height: auto;
   object-fit: cover;
 }
 
-.market-logo {
+.brands-logo {
   width: 300px;
   height: 70px;
   object-fit: cover;
@@ -32,30 +32,30 @@
   height: 90px;
   object-fit: cover;
 }
-.market-image {
+.brands-image {
   position: relative;
 }
-.market-image video {
+.brands-image video {
   width: 100%;
   height: 400px;
 }
-.market-image img {
+.brands-image img {
   width: 100%;
   height: 400px;
   object-fit: cover;
 }
 
-/* Cover Market Image */
-.market-image-cover {
+/* Cover brands Image */
+.brands-image-cover {
   position: relative;
 }
-.market-image-cover img {
+.brands-image-cover img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.markets-scroll-arrow {
+.brands-scroll-arrow {
   position: relative;
   left: 0;
   right: 0;
@@ -93,10 +93,10 @@
 }
 /* For Ipad & Ipad Pro */
 @media screen and (max-width: 1024px) and (min-width: 768px) {
-  .market-image video {
+  .brands-image video {
     height: auto;
   }
-  .market-title-image {
+  .brands-title-image {
     width: 200px;
     height: auto;
     object-fit: cover;
@@ -105,7 +105,7 @@
 
 /* For Mobile Screens */
 @media screen and (max-width: 767px) {
-  .market-image video {
+  .brands-image video {
     height: auto;
   }
   .tdf-logo {
@@ -113,14 +113,14 @@
     height: 70px;
     object-fit: cover;
   }
-  .market-title-image {
+  .brands-title-image {
     width: 100px;
     height: auto;
     object-fit: cover;
   }
 }
 @media screen and (max-width: 300px) {
-  .market-logo {
+  .brands-logo {
     width: 170px;
     height: 35px;
     object-fit: cover;

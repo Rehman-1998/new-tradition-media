@@ -48,7 +48,7 @@ p {
 /* Button class */
 .custom-button {
   display: inline-block;
-  font-family: var(--mont-light);
+  font-family: var(--mont);
   font-size: 16px;
   line-height: 24px;
   font-weight: 800;

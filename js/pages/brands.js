@@ -1,8 +1,7 @@
 function playMarketToggleVideo(button) {
   var video = button.parentNode.parentNode.previousElementSibling;
-  //   var background = button.querySelector(".market-controller-background");
   var background = button.parentNode.querySelector(
-    ".market-controller-background"
+    ".brands-controller-background"
   );
 
   if (video.paused) {
@@ -18,8 +17,7 @@ function playMarketToggleVideo(button) {
 
 function soundMarketToggleVideo(button) {
   var video = button.parentNode.parentNode.previousElementSibling;
-  //   var background = button.querySelector(".market-mic-background");
-  var background = button.parentNode.querySelector(".market-mic-background");
+  var background = button.parentNode.querySelector(".brands-mic-background");
 
   if (video.muted) {
     video.muted = false;
@@ -31,11 +29,3 @@ function soundMarketToggleVideo(button) {
     background.classList.add("fa-volume-xmark");
   }
 }
-
-// var videos = document.querySelectorAll(".market-video");
-
-// videos.forEach(function (video) {
-//   video.addEventListener("ended", function () {
-//     // Handle the end of the video
-//   });
-// });

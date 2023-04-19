@@ -1,514 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- favicon -->
-    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
 
-    <!-- **  Bootsrtap v5.2.3 CSS Link ** -->
-    <link href="../bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <!-- ** AOS Animation  CSS Link ** -->
-    <link href="../aos/aos.css" rel="stylesheet" />
-    <!-- ** index CSS Link ** -->
-    <link href="../css/pages/service.css" rel="stylesheet" />
-    <link href="../css/common/global-styles.css" rel="stylesheet" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
 
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <title>Service</title>
-  </head>
+  <!-- **  Bootsrtap v5.2.3 CSS Link ** -->
+  <link href="../bootstrap/bootstrap.min.css" rel="stylesheet" />
+  <!-- ** AOS Animation  CSS Link ** -->
+  <link href="../aos/aos.css" rel="stylesheet" />
+  <!-- ** index CSS Link ** -->
+  <link href="../css/pages/service.css" rel="stylesheet" />
+  <link href="../css/common/global-styles.css" rel="stylesheet" />
 
-  <body>
-    <!-- Header -->
-    <header class="main-header">
-      <div class="container d-flex align-items-center justify-content-between">
-        <img
-          class="logo-img cursor-pointer"
-          src="../assets/logo.png"
-          alt="logo-img"
-        />
-        <div
-          class="cursor-pointer"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasRight"
-          aria-controls="offcanvasRight"
-        >
-          <div
-            id="header-icon"
-            class="hamburger-icon cursor-pointer light-icon"
-          ></div>
-        </div>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <title>3 Big Wheels</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="../index.html">
+        <img class="logo-img cursor-pointer" src="../assets/logo.png" alt="logo-img" />
+      </a>
+      <div class="cursor-pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight">
+        <div id="header-icon" class="hamburger-icon cursor-pointer light-icon"></div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- Drawer -->
-    <div
-      class="offcanvas offcanvas-end w-100"
-      tabindex="-1"
-      id="offcanvasRight"
-      aria-labelledby="offcanvasRightLabel"
-    >
-      <div class="offcanvas-header">
-        <img
-          class="logo-img cursor-pointer"
-          src="../assets/logo.png"
-          alt="logo-img"
-        />
-        <div
-          class="cursor-pointer"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasRight"
-          aria-controls="offcanvasRight"
-        >
-          <i class="fa-solid fa-xmark drawer-close-icon"></i>
-        </div>
-      </div>
-
-      <div class="offcanvas-body px-0">
-        <ul class="list-unstyled menu-list">
-          <li class="menu-item inline-block">
-            <a href="../index.html" class="menu-item-link">HOME</a>
-          </li>
-          <li class="menu-item inline-block">
-            <a href="./markets.html" class="menu-item-link">BRANDS</a>
-          </li>
-          <li class="menu-item inline-block">
-            <a href="#" class="menu-item-link">MARKETS</a>
-          </li>
-          <li class="menu-item inline-block">
-            <a href="./service.html" class="menu-item-link">SERVICES</a>
-          </li>
-          <li class="menu-item inline-block">
-            <a href="./about.html" class="menu-item-link">ABOUT</a>
-          </li>
-          <li class="menu-item inline-block">
-            <a href="./contact.html" class="menu-item-link">CONTACT</a>
-          </li>
-        </ul>
+  <!-- Drawer -->
+  <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <a href="../index.html">
+        <img class="logo-img cursor-pointer" src="../assets/logo.png" alt="logo-img" />
+      </a>
+      <div class="cursor-pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight">
+        <i class="fa-solid fa-xmark drawer-close-icon"></i>
       </div>
     </div>
 
-    <!-- ******** Our Services Section Start ****** -->
-    <section class="service-container d-flex align-items-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h3 class="service-heading text-light text-uppercase">
-              Our Services
-            </h3>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ******** Our Services Section End ****** -->
-    <!-- ******** Text Section Start ****** -->
-    <section>
-      <div class="container my-5">
-        <!-- INT ROW Start -->
-        <div class="row">
-          <div class="col-md-6">
-            <h3
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-title text-uppercase black"
-            >
-              International Marketing
-            </h3>
-          </div>
-          <div class="col-md-6">
-            <h5
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-sub-title"
-            >
-              Strategy
-            </h5>
-            <h5
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-sub-title"
-            >
-              Brand + Positioning
-            </h5>
-            <h5
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-sub-title"
-            >
-              Creative Direction
-            </h5>
-            <h5
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-sub-title"
-            >
-              Campaign Development
-            </h5>
-            <h5
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-sub-title"
-            >
-              Consumer Insights
-            </h5>
-            <h5
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-sub-title"
-            >
-              Launch Planning
-            </h5>
-            <h5
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-sub-title"
-            >
-              Advertising
-            </h5>
-            <h5
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-sub-title"
-            >
-              Digital + Social
-            </h5>
-            <h5
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-sub-title"
-            >
-              Localization
-            </h5>
-            <h5
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-sub-title"
-            >
-              Website Design + Development
-            </h5>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-divider"
-            ></div>
-          </div>
-        </div>
-        <!-- INT ROW End -->
-        <!-- Content Creation Start -->
-        <div class="row">
-          <div class="col-md-6">
-            <h3
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-title text-uppercase black"
-            >
-              CONTENT CREATION
-            </h3>
-          </div>
-          <div class="col-md-6">
-            <h5
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-sub-title"
-            >
-              Production
-            </h5>
-            <h5
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-sub-title"
-            >
-              Cinematic Storytelling
-            </h5>
-            <h5
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-sub-title"
-            >
-              Brand Identity Through Content
-            </h5>
-            <h5
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-sub-title"
-            >
-              Immersive Photography
-            </h5>
-            <h5
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-sub-title"
-            >
-              Virtual Reality
-            </h5>
-            <h5
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-sub-title"
-            >
-              Spherical
-            </h5>
-            <h5
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-sub-title"
-            >
-              Live Integration
-            </h5>
-            <h5
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-sub-title"
-            >
-              Live 360
-            </h5>
-            <h5
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-sub-title"
-            >
-              360 Distribution Plan
-            </h5>
+    <div class="offcanvas-body px-0">
+      <ul class="list-unstyled menu-list">
+        <li class="menu-item inline-block">
+          <a href="../index.html" class="menu-item-link">HOME</a>
+        </li>
+        <li class="menu-item inline-block">
+          <a href="./brands.html" class="menu-item-link">BRANDS</a>
+        </li>
+        <li class="menu-item inline-block">
+          <a href="#" class="menu-item-link">MARKETS</a>
+        </li>
+        <li class="menu-item inline-block">
+          <a href="./service.html" class="menu-item-link">SERVICES</a>
+        </li>
+        <li class="menu-item inline-block">
+          <a href="./about.html" class="menu-item-link">ABOUT</a>
+        </li>
+        <li class="menu-item inline-block">
+          <a href="./contact.html" class="menu-item-link">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-            <div class="service-divider"></div>
-          </div>
-        </div>
-        <!-- Content Creation End -->
-        <!-- LifeStyle Section Start  -->
-        <div class="row">
-          <div class="col-md-6">
-            <h3
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-title text-uppercase black"
-            >
-              LIFESTYLE
-            </h3>
-          </div>
-          <div class="col-md-6">
-            <h5
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-sub-title"
-            >
-              Strategy
-            </h5>
-            <h5
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-sub-title"
-            >
-              Creative Direction
-            </h5>
-            <h5
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-sub-title"
-            >
-              Campaign Development
-            </h5>
-            <h5
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-sub-title"
-            >
-              Photography
-            </h5>
-            <h5
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-sub-title"
-            >
-              Advertising
-            </h5>
-            <h5
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-sub-title"
-            >
-              Digital + Social
-            </h5>
-
-            <div class="service-divider"></div>
-          </div>
-        </div>
-        <!-- LifeStyle Section End  -->
-        <!-- Go-to-Market Section Start  -->
-        <div class="row">
-          <div class="col-md-6">
-            <h3
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-title text-uppercase black"
-            >
-              GO-TO-MARKET
-            </h3>
-          </div>
-          <div class="col-md-6">
-            <h5
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-sub-title"
-            >
-              Product / Market Fit
-            </h5>
-            <h5
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-sub-title"
-            >
-              Market Exploration
-            </h5>
-            <h5
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-sub-title"
-            >
-              Target Market + Persona Development
-            </h5>
-            <h5
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-sub-title"
-            >
-              Launch Planning
-            </h5>
-            <h5
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-sub-title"
-            >
-              Product Launch
-            </h5>
-            <h5
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-sub-title"
-            >
-              Demand Generation
-            </h5>
-
-            <div class="service-divider"></div>
-          </div>
-        </div>
-        <!-- Go-to-Market Section Section End  -->
-        <!-- CONSULTING Section Start  -->
-        <div class="row">
-          <div class="col-md-6">
-            <h3
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-title text-uppercase black"
-            >
-              CONSULTING
-            </h3>
-          </div>
-          <div class="col-md-6">
-            <h5
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="service-sub-title"
-            >
-              3 Big Wheels offers consulting services on a project or hourly
-              basis.
-            </h5>
-
-            <div class="service-divider"></div>
-          </div>
-        </div>
-        <!-- CONSULTING Section Section End  -->
-      </div>
-    </section>
-    <!-- ******** Text Section End ****** -->
-    <!-- footer -->
-    <footer class="footer-container container-fluid p-4">
+  <!-- ******** Our Services Section Start ****** -->
+  <section class="service-container d-flex align-items-center">
+    <div class="container">
       <div class="row">
-        <!-- Contact Us -->
-        <div class="col-md-3 col-sm-12 right-border">
-          <h4 class="footer-title text-light">Contact Us</h4>
-          <h5 class="footer-subtitle mt-lg-4 mt-md-4 mt-3">LET'S CHAT</h5>
-          <h5 class="footer-subtitle text-light fw-bold">
-            info@3bigwheels.com
+        <div class="col-md-12">
+          <h3 class="service-heading text-light text-uppercase">
+            Our Services
+          </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ******** Our Services Section End ****** -->
+  <!-- ******** Text Section Start ****** -->
+  <section>
+    <div class="container my-5">
+      <!-- INT ROW Start -->
+      <div class="row">
+        <div class="col-md-6">
+          <h3 data-aos="fade-up" data-aos-duration="2500" class="service-title text-uppercase black">
+            International Marketing
+          </h3>
+        </div>
+        <div class="col-md-6">
+          <h5 data-aos="fade-up" data-aos-duration="2500" class="service-sub-title">
+            Strategy
           </h5>
+          <h5 data-aos="fade-up" data-aos-duration="2500" class="service-sub-title">
+            Brand + Positioning
+          </h5>
+          <h5 data-aos="fade-up" data-aos-duration="2500" class="service-sub-title">
+            Creative Direction
+          </h5>
+          <h5 data-aos="fade-up" data-aos-duration="2500" class="service-sub-title">
+            Campaign Development
+          </h5>
+          <h5 data-aos="fade-up" data-aos-duration="2500" class="service-sub-title">
+            Consumer Insights
+          </h5>
+          <h5 data-aos="fade-up" data-aos-duration="2500" class="service-sub-title">
+            Launch Planning
+          </h5>
+          <h5 data-aos="fade-up" data-aos-duration="2500" class="service-sub-title">
+            Advertising
+          </h5>
+          <h5 data-aos="fade-up" data-aos-duration="2500" class="service-sub-title">
+            Digital + Social
+          </h5>
+          <h5 data-aos="fade-up" data-aos-duration="2500" class="service-sub-title">
+            Localization
+          </h5>
+          <h5 data-aos="fade-up" data-aos-duration="2500" class="service-sub-title">
+            Website Design + Development
+          </h5>
+          <div data-aos="fade-up" data-aos-duration="2500" class="service-divider"></div>
         </div>
-        <!-- Our Offices -->
-        <div
-          class="col-md-5 col-sm-12 px-lg-4 px-2 right-border office-container"
-        >
-          <h4 class="footer-title text-light">Our Offices</h4>
-          <div class="row">
-            <!-- First Office -->
-            <div class="col-6 mt-3">
-              <h5 class="footer-subtitle">SAN DIEGO</h5>
-              <h5 class="footer-subtitle text-light">
-                8910 University Center Ln
-              </h5>
-              <h5 class="footer-subtitle text-light">San Diego, CA 92122</h5>
-            </div>
-            <!-- Seconds Office -->
-            <div class="col-6">
-              <h5 class="footer-subtitle"></h5>
-              <h5 class="footer-subtitle text-light"></h5>
-              <h5 class="footer-subtitle text-light"></h5>
-            </div>
+      </div>
+      <!-- INT ROW End -->
+      <!-- Content Creation Start -->
+      <div class="row">
+        <div class="col-md-6">
+          <h3 data-aos="fade-up" data-aos-duration="2500" class="service-title text-uppercase black">
+            CONTENT CREATION
+          </h3>
+        </div>
+        <div class="col-md-6">
+          <h5 data-aos="fade-up" data-aos-duration="2500" class="service-sub-title">
+            Production
+          </h5>
+          <h5 data-aos="fade-up" data-aos-duration="2500" class="service-sub-title">
+            Cinematic Storytelling
+          </h5>
+          <h5 data-aos="fade-up" data-aos-duration="2500" class="service-sub-title">
+            Brand Identity Through Content
+          </h5>
+          <h5 data-aos="fade-up" data-aos-duration="2500" class="service-sub-title">
+            Immersive Photography
+          </h5>
+          <h5 data-aos="fade-up" data-aos-duration="2500" class="service-sub-title">
+            Virtual Reality
+          </h5>
+          <h5 data-aos="fade-up" data-aos-duration="2500" class="service-sub-title">
+            Spherical
+          </h5>
+          <h5 data-aos="fade-up" data-aos-duration="2500" class="service-sub-title">
+            Live Integration
+          </h5>
+          <h5 data-aos="fade-up" data-aos-duration="2500" class="service-sub-title">
+            Live 360
+          </h5>
+          <h5 data-aos="fade-up" data-aos-duration="2500" class="service-sub-title">
+            360 Distribution Plan
+          </h5>
+
+          <div class="service-divider"></div>
+        </div>
+      </div>
+      <!-- Content Creation End -->
+      <!-- LifeStyle Section Start  -->
+      <div class="row">
+        <div class="col-md-6">
+          <h3 data-aos="fade-up" data-aos-duration="2500" class="service-title text-uppercase black">
+            LIFESTYLE
+          </h3>
+        </div>
+        <div class="col-md-6">
+          <h5 data-aos="fade-up" data-aos-duration="2500" class="service-sub-title">
+            Strategy
+          </h5>
+          <h5 data-aos="fade-up" data-aos-duration="2500" class="service-sub-title">
+            Creative Direction
+          </h5>
+          <h5 data-aos="fade-up" data-aos-duration="2500" class="service-sub-title">
+            Campaign Development
+          </h5>
+          <h5 data-aos="fade-up" data-aos-duration="2500" class="service-sub-title">
+            Photography
+          </h5>
+          <h5 data-aos="fade-up" data-aos-duration="2500" class="service-sub-title">
+            Advertising
+          </h5>
+          <h5 data-aos="fade-up" data-aos-duration="2500" class="service-sub-title">
+            Digital + Social
+          </h5>
+
+          <div class="service-divider"></div>
+        </div>
+      </div>
+      <!-- LifeStyle Section End  -->
+      <!-- Go-to-Market Section Start  -->
+      <div class="row">
+        <div class="col-md-6">
+          <h3 data-aos="fade-up" data-aos-duration="2500" class="service-title text-uppercase black">
+            GO-TO-MARKET
+          </h3>
+        </div>
+        <div class="col-md-6">
+          <h5 data-aos="fade-up" data-aos-duration="2500" class="service-sub-title">
+            Product / Market Fit
+          </h5>
+          <h5 data-aos="fade-up" data-aos-duration="2500" class="service-sub-title">
+            Market Exploration
+          </h5>
+          <h5 data-aos="fade-up" data-aos-duration="2500" class="service-sub-title">
+            Target Market + Persona Development
+          </h5>
+          <h5 data-aos="fade-up" data-aos-duration="2500" class="service-sub-title">
+            Launch Planning
+          </h5>
+          <h5 data-aos="fade-up" data-aos-duration="2500" class="service-sub-title">
+            Product Launch
+          </h5>
+          <h5 data-aos="fade-up" data-aos-duration="2500" class="service-sub-title">
+            Demand Generation
+          </h5>
+
+          <div class="service-divider"></div>
+        </div>
+      </div>
+      <!-- Go-to-Market Section Section End  -->
+      <!-- CONSULTING Section Start  -->
+      <div class="row">
+        <div class="col-md-6">
+          <h3 data-aos="fade-up" data-aos-duration="2500" class="service-title text-uppercase black">
+            CONSULTING
+          </h3>
+        </div>
+        <div class="col-md-6">
+          <h5 data-aos="fade-up" data-aos-duration="2500" class="service-sub-title">
+            3 Big Wheels offers consulting services on a project or hourly
+            basis.
+          </h5>
+
+          <div class="service-divider"></div>
+        </div>
+      </div>
+      <!-- CONSULTING Section Section End  -->
+    </div>
+  </section>
+  <!-- ******** Text Section End ****** -->
+  <!-- footer -->
+  <footer class="footer-container container-fluid p-4">
+    <div class="row">
+      <!-- Contact Us -->
+      <div class="col-md-3 col-sm-12 right-border">
+        <h4 class="footer-title text-light">Contact Us</h4>
+        <h5 class="footer-subtitle mt-lg-4 mt-md-4 mt-3">LET'S CHAT</h5>
+        <h5 class="footer-subtitle text-light fw-bold">
+          info@3bigwheels.com
+        </h5>
+      </div>
+      <!-- Our Offices -->
+      <div class="col-md-5 col-sm-12 px-lg-4 px-2 right-border office-container">
+        <h4 class="footer-title text-light">Our Offices</h4>
+        <div class="row">
+          <!-- First Office -->
+          <div class="col-6 mt-3">
+            <h5 class="footer-subtitle">SAN DIEGO</h5>
+            <h5 class="footer-subtitle text-light">
+              8910 University Center Ln
+            </h5>
+            <h5 class="footer-subtitle text-light">San Diego, CA 92122</h5>
           </div>
-        </div>
-
-        <div class="col-md-4 links-container">
-          <div class="d-flex justify-content-evenly">
-            <div>
-              <a href="./markets.html" class="text-decoration-none">
-                <h4 class="footer-title text-light">Brands</h4>
-              </a>
-              <a href="#" class="text-decoration-none">
-                <h4 class="footer-title text-light">Marktets</h4>
-              </a>
-              <a href="./service.html" class="text-decoration-none">
-                <h4 class="footer-title text-light">Services</h4>
-              </a>
-            </div>
-            <div>
-              <a href="./about.html" class="text-decoration-none">
-                <h4 class="footer-title text-light">About</h4>
-              </a>
-
-              <a href="./contact.html" class="text-decoration-none">
-                <h4 class="footer-title text-light">Contact</h4>
-              </a>
-            </div>
+          <!-- Seconds Office -->
+          <div class="col-6">
+            <h5 class="footer-subtitle"></h5>
+            <h5 class="footer-subtitle text-light"></h5>
+            <h5 class="footer-subtitle text-light"></h5>
           </div>
         </div>
       </div>
 
-      <div class="row ps-4">
-        <div class="col-md-6 py-4">
-          <span class="text-light copy-right-text">
-            © 2023 3 BIG WHEELS LLC. ALL RIGHTS RESERVED.</span
-          >
+      <div class="col-md-4 links-container">
+        <div class="d-flex justify-content-evenly">
+          <div>
+            <a href="./brands.html" class="text-decoration-none">
+              <h4 class="footer-title text-light">Brands</h4>
+            </a>
+            <a href="#" class="text-decoration-none">
+              <h4 class="footer-title text-light">Marktets</h4>
+            </a>
+            <a href="./service.html" class="text-decoration-none">
+              <h4 class="footer-title text-light">Services</h4>
+            </a>
+          </div>
+          <div>
+            <a href="./about.html" class="text-decoration-none">
+              <h4 class="footer-title text-light">About</h4>
+            </a>
+
+            <a href="./contact.html" class="text-decoration-none">
+              <h4 class="footer-title text-light">Contact</h4>
+            </a>
+          </div>
         </div>
-        <div class="col-md-6"></div>
       </div>
-    </footer>
+    </div>
 
-    <!-- ** Bootsrtap v5.2.3 Js Link ** -->
-    <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+    <div class="row ps-4">
+      <div class="col-md-6 py-4">
+        <span class="text-light copy-right-text">
+          © 2023 3 BIG WHEELS LLC. ALL RIGHTS RESERVED.</span>
+      </div>
+      <div class="col-md-6"></div>
+    </div>
+  </footer>
 
-    <!-- Header JS -->
-    <script src="../js/common/header.js"></script>
+  <!-- ** Bootsrtap v5.2.3 Js Link ** -->
+  <script src="../bootstrap/bootstrap.bundle.min.js"></script>
 
-    <!-- ** AOS Animation Js Link ** -->
-    <script src="../aos/aos.js"></script>
+  <!-- Header JS -->
+  <script src="../js/common/header.js"></script>
 
-    <!-- ** font awesoem icons ** -->
-    <script
-      src="https://kit.fontawesome.com/71a7ac9f1f.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../js/pages/about.js"></script>
-  </body>
+  <!-- ** AOS Animation Js Link ** -->
+  <script src="../aos/aos.js"></script>
+
+  <!-- ** font awesoem icons ** -->
+  <script src="https://kit.fontawesome.com/71a7ac9f1f.js" crossorigin="anonymous"></script>
+  <script src="../js/pages/about.js"></script>
+</body>
+
 </html>

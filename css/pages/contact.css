@@ -5,6 +5,13 @@
 @import url("../common/drawer.css");
 @import url("../common/footer.css");
 
+
+.main-title {
+  font-family: var(--mont);
+  font-size: 98px;
+  font-weight: 800;
+}
+
 .input-field {
   position: relative;
   margin-bottom: 20px;
@@ -134,36 +141,31 @@
 
   .contact-input:focus+.animated-label,
   .contact-input:not(:placeholder-shown)+.animated-label {
-
     font-size: 22px !important;
-
   }
 
   .contact-text-input {
-
     font-size: 44px;
   }
 
   .text-label {
     font-size: 44px !important;
-
   }
 
   .contact-text-input:focus+.text-label,
   .contact-text-input:not(:placeholder-shown)+.text-label {
     font-size: 24px !important;
-
   }
 
   .address-title {
     font-size: 18px;
-
   }
 
   .custom-send-button {
     font-size: 28px;
     padding: 0px 80px;
   }
+
   .form-container {
     padding-bottom: 150px;
   }
@@ -171,6 +173,7 @@
 
 /* For Mobile Screens */
 @media screen and (max-width: 767px) and (min-width: 340px) {
+
   .contact-input {
     font-size: 30px;
   }
@@ -181,30 +184,24 @@
 
   .contact-input:focus+.animated-label,
   .contact-input:not(:placeholder-shown)+.animated-label {
-
     font-size: 18px !important;
-
   }
 
   .contact-text-input {
-
     font-size: 30px;
   }
 
   .text-label {
     font-size: 30px !important;
-
   }
 
   .contact-text-input:focus+.text-label,
   .contact-text-input:not(:placeholder-shown)+.text-label {
     font-size: 20px !important;
-
   }
 
   .address-title {
     font-size: 18px;
-
   }
 
   .custom-send-button {
@@ -268,4 +265,38 @@
     padding-bottom: 30px;
   }
 
+}
+
+
+/* Media Queries for Main title */
+
+@media screen and (max-width: 1400px) and (min-width: 990px) {
+  .main-title {
+    font-size: 78px;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .main-title {
+    font-size: 59px;
+  }
+}
+
+
+@media screen and (max-width: 767px) and (min-width: 505px) {
+  .main-title {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 506px) and (min-width: 338px) {
+  .main-title {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 338px) {
+  .main-title {
+    font-size: 20px;
+  }
 }
