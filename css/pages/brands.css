@@ -11,8 +11,8 @@
 
 .brands-title-image {
   width: 250px;
-  height: auto;
-  object-fit: cover;
+  height: 100px;
+  object-fit: contain;
 }
 
 .brands-logo {
@@ -97,9 +97,9 @@
     height: auto;
   }
   .brands-title-image {
-    width: 200px;
-    height: auto;
-    object-fit: cover;
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
   }
 }
 
