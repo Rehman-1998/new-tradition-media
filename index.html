@@ -22,6 +22,15 @@
 
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!-- Email JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("GJuDtKOV8ASRQhbKG");
+    })();
+  </script>
 </head>
 
 <body>
@@ -452,25 +461,20 @@
         message: message
       };
 
-      emailjs.send('GJuDtKOV8ASRQhbKG', 'template_7nbn43l', templateParams)
+      emailjs.send('service_nmja15j', 'template_7nbn43l', templateParams)
         .then(function (response) {
           console.log('SUCCESS!', response.status, response.text);
-          // Display a success message to the user
+          form.reset();
+          alert("your message send successfully")
+          
         }, function (error) {
           console.log('FAILED...', error);
-          // Display an error message to the user
+
         });
 
-
-      // You can send the form data to a server using AJAX or fetch() here
     });
   </script>
-  <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-  <script>
-    (function () {
-      emailjs.init('service_nmja15j');
-    })();
-  </script>
+
 </body>
 
 </html>

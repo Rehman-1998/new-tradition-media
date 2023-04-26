@@ -22,6 +22,16 @@
 
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!-- Email JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("GJuDtKOV8ASRQhbKG");
+    })();
+  </script>
+
 </head>
 
 <body>
@@ -91,21 +101,23 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8">
-          <div class="input-field pb-3">
-            <input type="email" id="name-input" class="contact-input" placeholder="email" />
-            <label for="name-input" class="animated-label">NAME</label>
-          </div>
-          <div class="input-field pb-3">
-            <input type="email" id="name-input-1" class="contact-input" placeholder="email" />
-            <label for="name-input-1" class="animated-label">EMAIL</label>
-          </div>
-          <div class="input-field pb-3">
-            <textarea rows="2" cols="50" id="name-input-2" class="contact-text-input" placeholder="message"></textarea>
-            <label for="name-input-2" class="text-label">TELL US MORE</label>
-          </div>
-          <div>
-            <button class="custom-send-button">Send</button>
-          </div>
+          <form id="myForm">
+            <div class="input-field pb-3">
+              <input type="text" id="name" class="contact-input" placeholder="email" />
+              <label for="name" class="animated-label">NAME</label>
+            </div>
+            <div class="input-field pb-3">
+              <input type="email" id="email" class="contact-input" placeholder="email" />
+              <label for="email" class="animated-label">EMAIL</label>
+            </div>
+            <div class="input-field pb-3">
+              <textarea rows="2" cols="50" id="message" class="contact-text-input" placeholder="message"></textarea>
+              <label for="message" class="text-label">TELL US MORE</label>
+            </div>
+            <div>
+              <button class="custom-send-button">Send</button>
+            </div>
+          </form>
         </div>
         <div class="col-md-3 address-container pt-5">
           <!-- Office Addres -->
@@ -204,13 +216,33 @@
 
   <!-- Initialize Swiper -->
   <script>
-    const nameInput = document.querySelector("#name-input");
-    const nameLabel = document.querySelector('label[for="name-input"]');
 
-    const nameValue = nameInput.value;
-    console.log("nameValue", nameValue);
+    const form = document.querySelector('#myForm');
 
-      // nameInput.focus();
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const name = document.querySelector('#name').value;
+      const email = document.querySelector('#email').value;
+      const message = document.querySelector('#message').value;
+
+      const templateParams = {
+        name: name,
+        email: email,
+        message: message
+      };
+
+      emailjs.send('service_nmja15j', 'template_df0z41u', templateParams)
+        .then(function (response) {
+          console.log('SUCCESS!', response.status, response.text);
+          form.reset();
+          alert("your message send successfully")
+
+        }, function (error) {
+
+        });
+
+    });
   </script>
 </body>
 
