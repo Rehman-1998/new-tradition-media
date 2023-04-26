@@ -1,262 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
 
-    <!-- favicon -->
-    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
 
-    <!-- **  Bootsrtap v5.2.3 CSS Link ** -->
-    <link href="../bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <!-- ** AOS Animation  CSS Link ** -->
-    <link href="../aos/aos.css" rel="stylesheet" />
-    <!-- ** index CSS Link ** -->
-    <link href="../css/pages/index.css" rel="stylesheet" />
-    <!-- ** Contact CSS Link ** -->
-    <link rel="stylesheet" href="../css/pages/contact.css" />
-    <link href="../css/common/global-styles.css" rel="stylesheet" />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
 
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-  </head>
+  <!-- **  Bootsrtap v5.2.3 CSS Link ** -->
+  <link href="../bootstrap/bootstrap.min.css" rel="stylesheet" />
+  <!-- ** AOS Animation  CSS Link ** -->
+  <link href="../aos/aos.css" rel="stylesheet" />
+  <!-- ** index CSS Link ** -->
+  <link href="../css/pages/index.css" rel="stylesheet" />
+  <!-- ** Contact CSS Link ** -->
+  <link rel="stylesheet" href="../css/pages/contact.css" />
+  <link href="../css/common/global-styles.css" rel="stylesheet" />
 
-  <body>
-    <!-- Header -->
-    <header class="main-header">
-      <div class="container d-flex align-items-center justify-content-between">
-        <a href="../index.html">
-          <img
-            class="logo-img cursor-pointer"
-            src="../assets/logo.png"
-            alt="logo-img"
-          />
-        </a>
-        <div
-          class="cursor-pointer"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasRight"
-          aria-controls="offcanvasRight"
-        >
-          <div
-            id="header-icon"
-            class="hamburger-icon cursor-pointer light-icon"
-          ></div>
-        </div>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="../index.html">
+        <img class="logo-img cursor-pointer" src="../assets/logo.png" alt="logo-img" />
+      </a>
+      <div class="cursor-pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight">
+        <div id="header-icon" class="hamburger-icon cursor-pointer light-icon"></div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- Drawer -->
-    <div
-      class="offcanvas offcanvas-end w-100"
-      tabindex="-1"
-      id="offcanvasRight"
-      aria-labelledby="offcanvasRightLabel"
-    >
-      <div class="offcanvas-header">
-        <a href="../index.html">
-          <img
-            class="logo-img cursor-pointer"
-            src="../assets/logo.png"
-            alt="logo-img"
-          />
-        </a>
-        <div
-          class="cursor-pointer"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasRight"
-          aria-controls="offcanvasRight"
-        >
-          <i class="fa-solid fa-xmark drawer-close-icon"></i>
-        </div>
-      </div>
-
-      <div class="offcanvas-body px-0">
-        <ul class="list-unstyled menu-list">
-          <li class="menu-item inline-block">
-            <a href="../index.html" class="menu-item-link">HOME</a>
-          </li>
-          <li class="menu-item inline-block">
-            <a href="./brands.html" class="menu-item-link">BRANDS</a>
-          </li>
-          <li class="menu-item inline-block">
-            <a href="./markets.html" class="menu-item-link">MARKETS</a>
-          </li>
-          <li class="menu-item inline-block">
-            <a href="./service.html" class="menu-item-link">SERVICES</a>
-          </li>
-          <li class="menu-item inline-block">
-            <a href="./about.html" class="menu-item-link">ABOUT</a>
-          </li>
-          <li class="menu-item inline-block">
-            <a href="./contact.html" class="menu-item-link">CONTACT</a>
-          </li>
-        </ul>
+  <!-- Drawer -->
+  <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <a href="../index.html">
+        <img class="logo-img cursor-pointer" src="../assets/logo.png" alt="logo-img" />
+      </a>
+      <div class="cursor-pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight">
+        <i class="fa-solid fa-xmark drawer-close-icon"></i>
       </div>
     </div>
 
-    <!-- Section 1 Start -->
-    <div class="container-fluid pts-5 background-black">
-      <div class="container py-5">
-        <h1 class="main-title text-uppercase red pt-5">
-          TAKE YOUR FIRST STEP. <br />
-          GO GLOBAL
-        </h1>
-      </div>
+    <div class="offcanvas-body px-0">
+      <ul class="list-unstyled menu-list">
+        <li class="menu-item inline-block">
+          <a href="../index.html" class="menu-item-link">HOME</a>
+        </li>
+        <li class="menu-item inline-block">
+          <a href="./brands.html" class="menu-item-link">BRANDS</a>
+        </li>
+        <li class="menu-item inline-block">
+          <a href="./markets.html" class="menu-item-link">MARKETS</a>
+        </li>
+        <li class="menu-item inline-block">
+          <a href="./service.html" class="menu-item-link">SERVICES</a>
+        </li>
+        <li class="menu-item inline-block">
+          <a href="./about.html" class="menu-item-link">ABOUT</a>
+        </li>
+        <li class="menu-item inline-block">
+          <a href="./contact.html" class="menu-item-link">CONTACT</a>
+        </li>
+      </ul>
     </div>
-    <!-- Section 1 End -->
-    <!-- Section 2 start -->
-    <div class="container-fluid background-black form-container">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <div class="input-field pb-3">
-              <input
-                type="email"
-                id="name-input"
-                class="contact-input"
-                placeholder="email"
-              />
-              <label for="name-input" class="animated-label">NAME</label>
-            </div>
-            <div class="input-field pb-3">
-              <input
-                type="email"
-                id="name-input-1"
-                class="contact-input"
-                placeholder="email"
-              />
-              <label for="name-input-1" class="animated-label">EMAIL</label>
-            </div>
-            <div class="input-field pb-3">
-              <textarea
-                rows="2"
-                cols="50"
-                id="name-input-2"
-                class="contact-text-input"
-                placeholder="message"
-              ></textarea>
-              <label for="name-input-2" class="text-label">TELL US MORE</label>
-            </div>
-            <div>
-              <button class="custom-send-button">Send</button>
-            </div>
-          </div>
-          <div class="col-md-3 address-container pt-5">
-            <!-- Office Addres -->
-            <div>
-              <h6 class="red address-title">SAN DIEGO</h6>
-              <div class="mt-4">
-                <p class="text-light m-0">8910 University Center Ln</p>
-                <p class="text-light m-0">San Diego, CA 92122</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Section 2 end -->
+  </div>
 
-    <!-- footer -->
-    <footer class="footer-container container-fluid p-4">
+  <!-- Section 1 Start -->
+  <div class="container-fluid pts-5 background-black">
+    <div class="container py-5">
+      <h1 class="main-title text-uppercase red pt-5">
+        TAKE YOUR <br />
+        FIRST STEP. <br />
+        GO GLOBAL.
+      </h1>
+    </div>
+  </div>
+  <!-- Section 1 End -->
+
+  <!-- Section 2 start -->
+  <div class="container-fluid background-black form-container">
+    <div class="container">
       <div class="row">
-        <!-- Contact Us -->
-        <div class="col-md-3 col-sm-12 right-border">
-          <h4 class="footer-title text-light">Contact Us</h4>
-          <h5 class="footer-subtitle mt-lg-4 mt-md-4 mt-3">LET'S CHAT</h5>
-          <h5 class="footer-subtitle text-light fw-bold">
-            info@3bigwheels.com
-          </h5>
-        </div>
-        <!-- Our Offices -->
-        <div
-          class="col-md-5 col-sm-12 px-lg-4 px-2 right-border office-container"
-        >
-          <h4 class="footer-title text-light">Our Offices</h4>
-          <div class="row">
-            <!-- First Office -->
-            <div class="col-6 mt-3">
-              <h5 class="footer-subtitle">SAN DIEGO</h5>
-              <h5 class="footer-subtitle text-light">
-                8910 University Center Ln
-              </h5>
-              <h5 class="footer-subtitle text-light">San Diego, CA 92122</h5>
-            </div>
-            <!-- Seconds Office -->
-            <div class="col-6">
-              <h5 class="footer-subtitle"></h5>
-              <h5 class="footer-subtitle text-light"></h5>
-              <h5 class="footer-subtitle text-light"></h5>
-            </div>
+        <div class="col-md-8">
+          <div class="input-field pb-3">
+            <input type="email" id="name-input" class="contact-input" placeholder="email" />
+            <label for="name-input" class="animated-label">NAME</label>
+          </div>
+          <div class="input-field pb-3">
+            <input type="email" id="name-input-1" class="contact-input" placeholder="email" />
+            <label for="name-input-1" class="animated-label">EMAIL</label>
+          </div>
+          <div class="input-field pb-3">
+            <textarea rows="2" cols="50" id="name-input-2" class="contact-text-input" placeholder="message"></textarea>
+            <label for="name-input-2" class="text-label">TELL US MORE</label>
+          </div>
+          <div>
+            <button class="custom-send-button">Send</button>
           </div>
         </div>
-
-        <div class="col-md-4 links-container">
-          <div class="d-flex justify-content-evenly">
-            <div>
-              <a href="./brands.html" class="text-decoration-none">
-                <h4 class="footer-title text-light">Brands</h4>
-              </a>
-              <a href="./markets.html" class="text-decoration-none">
-                <h4 class="footer-title text-light">Marktets</h4>
-              </a>
-              <a href="./service.html" class="text-decoration-none">
-                <h4 class="footer-title text-light">Services</h4>
-              </a>
-            </div>
-            <div>
-              <a href="./about.html" class="text-decoration-none">
-                <h4 class="footer-title text-light">About</h4>
-              </a>
-
-              <a href="./contact.html" class="text-decoration-none">
-                <h4 class="footer-title text-light">Contact</h4>
-              </a>
+        <div class="col-md-3 address-container pt-5">
+          <!-- Office Addres -->
+          <div>
+            <h6 class="red address-title">SAN DIEGO</h6>
+            <div class="mt-4">
+              <p class="text-light m-0">8910 University Center Ln</p>
+              <p class="text-light m-0">San Diego, CA 92122</p>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <!-- Section 2 end -->
 
-      <div class="row ps-4">
-        <div class="col-md-6 py-4">
-          <span class="text-light copy-right-text">
-            © 2023 3 BIG WHEELS LLC. ALL RIGHTS RESERVED.</span
-          >
-        </div>
-        <div class="col-md-6"></div>
+  <!-- footer -->
+  <footer class="footer-container container-fluid p-4">
+    <div class="row">
+      <!-- Contact Us -->
+      <div class="col-md-3 col-sm-12 right-border">
+        <h4 class="footer-title text-light">Contact Us</h4>
+        <h5 class="footer-subtitle mt-lg-4 mt-md-4 mt-3">LET'S CHAT</h5>
+        <h5 class="footer-subtitle text-light fw-bold">
+          info@3bigwheels.com
+        </h5>
       </div>
-    </footer>
+      <!-- Our Offices -->
+      <div class="col-md-5 col-sm-12 px-lg-4 px-2 right-border office-container">
+        <h4 class="footer-title text-light">Our Offices</h4>
+        <div class="row">
+          <!-- First Office -->
+          <div class="col-6 mt-3">
+            <h5 class="footer-subtitle">SAN DIEGO</h5>
+            <h5 class="footer-subtitle text-light">
+              8910 University Center Ln
+            </h5>
+            <h5 class="footer-subtitle text-light">San Diego, CA 92122</h5>
+          </div>
+          <!-- Seconds Office -->
+          <div class="col-6">
+            <h5 class="footer-subtitle"></h5>
+            <h5 class="footer-subtitle text-light"></h5>
+            <h5 class="footer-subtitle text-light"></h5>
+          </div>
+        </div>
+      </div>
 
-    <!-- ** Bootsrtap v5.2.3 Js Link ** -->
-    <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+      <div class="col-md-4 links-container">
+        <div class="d-flex justify-content-evenly">
+          <div>
+            <a href="./brands.html" class="text-decoration-none">
+              <h4 class="footer-title text-light">Brands</h4>
+            </a>
+            <a href="./markets.html" class="text-decoration-none">
+              <h4 class="footer-title text-light">Marktets</h4>
+            </a>
+            <a href="./service.html" class="text-decoration-none">
+              <h4 class="footer-title text-light">Services</h4>
+            </a>
+          </div>
+          <div>
+            <a href="./about.html" class="text-decoration-none">
+              <h4 class="footer-title text-light">About</h4>
+            </a>
 
-    <!-- ** AOS Animation Js Link ** -->
-    <script src="../aos/aos.js"></script>
+            <a href="./contact.html" class="text-decoration-none">
+              <h4 class="footer-title text-light">Contact</h4>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <!-- ** font awesoem icons ** -->
-    <script
-      src="https://kit.fontawesome.com/71a7ac9f1f.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../js/index.js"></script>
+    <div class="row ps-4">
+      <div class="col-md-6 py-4">
+        <span class="text-light copy-right-text">
+          © 2023 3 BIG WHEELS LLC. ALL RIGHTS RESERVED.</span>
+      </div>
+      <div class="col-md-6"></div>
+    </div>
+  </footer>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- ** Bootsrtap v5.2.3 Js Link ** -->
+  <script src="../bootstrap/bootstrap.bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-      const nameInput = document.querySelector("#name-input");
-      const nameLabel = document.querySelector('label[for="name-input"]');
+  <!-- ** AOS Animation Js Link ** -->
+  <script src="../aos/aos.js"></script>
 
-      const nameValue = nameInput.value;
-      console.log("nameValue", nameValue);
+  <!-- ** font awesoem icons ** -->
+  <script src="https://kit.fontawesome.com/71a7ac9f1f.js" crossorigin="anonymous"></script>
+  <script src="../js/index.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    const nameInput = document.querySelector("#name-input");
+    const nameLabel = document.querySelector('label[for="name-input"]');
+
+    const nameValue = nameInput.value;
+    console.log("nameValue", nameValue);
 
       // nameInput.focus();
-    </script>
-  </body>
+  </script>
+</body>
+
 </html>

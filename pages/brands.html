@@ -1,772 +1,495 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Brands</title>
 
-    <!-- favicon -->
-    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brands</title>
 
-    <!-- **  Bootsrtap v5.2.3 CSS Link ** -->
-    <link href="../bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <!-- ** AOS Animation  CSS Link ** -->
-    <link href="../aos/aos.css" rel="stylesheet" />
-    <!-- ** index CSS Link ** -->
-    <link href="../css/pages/index.css" rel="stylesheet" />
-    <!-- ** BRANDS CSS Link ** -->
-    <link rel="stylesheet" href="../css/pages/brands.css" />
-    <link href="../css/common/global-styles.css" rel="stylesheet" />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
 
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-  </head>
+  <!-- **  Bootsrtap v5.2.3 CSS Link ** -->
+  <link href="../bootstrap/bootstrap.min.css" rel="stylesheet" />
+  <!-- ** AOS Animation  CSS Link ** -->
+  <link href="../aos/aos.css" rel="stylesheet" />
+  <!-- ** index CSS Link ** -->
+  <link href="../css/pages/index.css" rel="stylesheet" />
+  <!-- ** BRANDS CSS Link ** -->
+  <link rel="stylesheet" href="../css/pages/brands.css" />
+  <link href="../css/common/global-styles.css" rel="stylesheet" />
 
-  <body>
-    <!-- Header -->
-    <header class="main-header background-black">
-      <div class="container d-flex align-items-center justify-content-between">
-        <a href="../index.html">
-          <img
-            class="logo-img cursor-pointer"
-            src="../assets/logo.png"
-            alt="logo-img"
-          />
-        </a>
-        <div
-          class="cursor-pointer"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasRight"
-          aria-controls="offcanvasRight"
-        >
-          <div
-            id="header-icon"
-            class="hamburger-icon cursor-pointer light-icon"
-          ></div>
-        </div>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="main-header background-black">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="../index.html">
+        <img class="logo-img cursor-pointer" src="../assets/logo.png" alt="logo-img" />
+      </a>
+      <div class="cursor-pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight">
+        <div id="header-icon" class="hamburger-icon cursor-pointer light-icon"></div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- Drawer -->
-    <div
-      class="offcanvas offcanvas-end w-100"
-      tabindex="-1"
-      id="offcanvasRight"
-      aria-labelledby="offcanvasRightLabel"
-    >
-      <div class="offcanvas-header">
-        <a href="../index.html">
-          <img
-            class="logo-img cursor-pointer"
-            src="../assets/logo.png"
-            alt="logo-img"
-          />
-        </a>
-        <div
-          class="cursor-pointer"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasRight"
-          aria-controls="offcanvasRight"
-        >
-          <i class="fa-solid fa-xmark drawer-close-icon"></i>
-        </div>
-      </div>
-
-      <div class="offcanvas-body px-0">
-        <ul class="list-unstyled menu-list">
-          <li class="menu-item inline-block">
-            <a href="../index.html" class="menu-item-link">HOME</a>
-          </li>
-          <li class="menu-item inline-block">
-            <a href="./brands.html" class="menu-item-link">BRANDS</a>
-          </li>
-          <li class="menu-item inline-block">
-            <a href="./markets.html" class="menu-item-link">MARKETS</a>
-          </li>
-          <li class="menu-item inline-block">
-            <a href="./service.html" class="menu-item-link">SERVICES</a>
-          </li>
-          <li class="menu-item inline-block">
-            <a href="./about.html" class="menu-item-link">ABOUT</a>
-          </li>
-          <li class="menu-item inline-block">
-            <a href="./contact.html" class="menu-item-link">CONTACT</a>
-          </li>
-        </ul>
+  <!-- Drawer -->
+  <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <a href="../index.html">
+        <img class="logo-img cursor-pointer" src="../assets/logo.png" alt="logo-img" />
+      </a>
+      <div class="cursor-pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight">
+        <i class="fa-solid fa-xmark drawer-close-icon"></i>
       </div>
     </div>
 
-    <!--  ALl Logo's Section  Start -->
-    <section>
-      <div class="container-fluid background-white brands-main-section">
-        <div class="ps-md-4 pt-md-5 pb-md-5 pb-2">
-          <div class="row">
-            <div
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="col-md-4 col-6 text-center mb-md-5 mb-3"
-            >
-              <!-- <h1 class="brands-title-image active">NYC</h1> -->
-              <img
-                class="brands-title-image active"
-                src="../assets/images/brands/brand-logo/gopro (3).png"
-                alt=""
-              />
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="col-md-4 col-6 text-center mb-md-5 mb-3"
-            >
-              <img
-                class="brands-title-image"
-                src="../assets/images/brands/brand-logo/Sony.png"
-                alt=""
-              />
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="col-md-4 col-6 text-center mb-md-5 mb-3"
-            >
-              <img
-                class="brands-title-image"
-                src="../assets/images/brands/brand-logo/Sony Pictures.png"
-                alt=""
-              />
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="col-md-4 col-6 text-center mb-md-5 mb-3"
-            >
-              <img
-                class="brands-title-image"
-                src="../assets/images/brands/brand-logo/Sony Music.png"
-                alt=""
-              />
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="col-md-4 col-6 text-center mb-md-5 mb-3"
-            >
-              <img
-                class="brands-title-image"
-                src="../assets/images/brands/brand-logo/Salomon.png"
-                alt=""
-              />
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="col-md-4 col-6 text-center mb-md-5 mb-3"
-            >
-              <img
-                class="brands-title-image"
-                src="../assets/images/brands/brand-logo/Assos.png"
-                alt=""
-              />
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="col-md-4 col-6 text-center mb-md-5 mb-3"
-            >
-              <img
-                class="brands-title-image"
-                src="../assets/images/brands/brand-logo/Campagnolo.png"
-                alt=""
-              />
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="col-md-4 col-6 text-center mb-md-5 mb-3"
-            >
-              <img
-                class="brands-title-image"
-                src="../assets/images/brands/brand-logo/chelsea.png"
-                alt=""
-              />
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="col-md-4 col-6 text-center mb-md-5 mb-3"
-            >
-              <img
-                class="brands-title-image"
-                src="../assets/images/brands/brand-logo/complex.png"
-                alt=""
-              />
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="col-md-4 col-6 text-center mb-md-5 mb-3"
-            >
-              <img
-                class="brands-title-image"
-                src="../assets/images/brands/brand-logo/ESPN.png"
-                alt=""
-              />
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="col-md-4 col-6 text-center mb-md-5 mb-3"
-            >
-              <img
-                class="brands-title-image"
-                src="../assets/images/brands/brand-logo/F1.png"
-                alt=""
-              />
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="col-md-4 col-6 text-center mb-md-5 mb-3"
-            >
-              <img
-                class="brands-title-image"
-                src="../assets/images/brands/brand-logo/Fiat.png"
-                alt=""
-              />
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="col-md-4 col-6 text-center mb-md-5 mb-3"
-            >
-              <img
-                class="brands-title-image"
-                src="../assets/images/brands/brand-logo/Moto_Gp_logo.png"
-                alt=""
-              />
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="col-md-4 col-6 text-center mb-md-5 mb-3"
-            >
-              <img
-                class="brands-title-image"
-                src="../assets/images/brands/brand-logo/pandora.png"
-                alt=""
-              />
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="col-md-4 col-6 text-center mb-md-5 mb-3"
-            >
-              <img
-                class="brands-title-image"
-                src="../assets/images/brands/brand-logo/paramount.png"
-                alt=""
-              />
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="col-md-4 col-6 text-center mb-md-5 mb-3"
-            >
-              <img
-                class="brands-title-image"
-                src="../assets/images/brands/brand-logo/PGA.png"
-                alt=""
-              />
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="col-md-4 col-6 text-center mb-md-5 mb-3"
-            >
-              <img
-                class="brands-title-image"
-                src="../assets/images/brands/brand-logo/Red Bull 2.png"
-                alt=""
-              />
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="col-md-4 col-6 text-center mb-md-5 mb-3"
-            >
-              <img
-                class="brands-title-image"
-                src="../assets/images/brands/brand-logo/TdF.png"
-                alt=""
-              />
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="col-md-4 col-6 text-center mb-md-5 mb-3"
-            >
-              <img
-                class="brands-title-image"
-                src="../assets/images/brands/brand-logo/TGR.png"
-                alt=""
-              />
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="2500"
-              class="col-md-4 col-6 text-center mb-md-5 mb-3"
-            >
-              <img
-                class="brands-title-image"
-                src="../assets/images/brands/brand-logo/Vail.png"
-                alt=""
-              />
+    <div class="offcanvas-body px-0">
+      <ul class="list-unstyled menu-list">
+        <li class="menu-item inline-block">
+          <a href="../index.html" class="menu-item-link">HOME</a>
+        </li>
+        <li class="menu-item inline-block">
+          <a href="./brands.html" class="menu-item-link">BRANDS</a>
+        </li>
+        <li class="menu-item inline-block">
+          <a href="./markets.html" class="menu-item-link">MARKETS</a>
+        </li>
+        <li class="menu-item inline-block">
+          <a href="./service.html" class="menu-item-link">SERVICES</a>
+        </li>
+        <li class="menu-item inline-block">
+          <a href="./about.html" class="menu-item-link">ABOUT</a>
+        </li>
+        <li class="menu-item inline-block">
+          <a href="./contact.html" class="menu-item-link">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!--  ALl Logo's Section  Start -->
+  <section>
+    <div class="container-fluid background-white brands-main-section">
+      <div class="ps-md-4 pt-md-5 pb-md-5 pb-2">
+        <div class="row">
+          <div data-aos="fade-up" data-aos-duration="2500" class="col-md-4 col-6 text-center mb-md-5 mb-3">
+            <!-- <h1 class="brands-title-image active">NYC</h1> -->
+            <img class="brands-title-image active" src="../assets/images/brands/brand-logo/gopro (3).png" alt="" />
+          </div>
+          <div data-aos="fade-up" data-aos-duration="2500" class="col-md-4 col-6 text-center mb-md-5 mb-3">
+            <img class="brands-title-image" src="../assets/images/brands/brand-logo/Sony.png" alt="" />
+          </div>
+          <div data-aos="fade-up" data-aos-duration="2500" class="col-md-4 col-6 text-center mb-md-5 mb-3">
+            <img class="brands-title-image" src="../assets/images/brands/brand-logo/Sony Pictures.png" alt="" />
+          </div>
+          <div data-aos="fade-up" data-aos-duration="2500" class="col-md-4 col-6 text-center mb-md-5 mb-3">
+            <img class="brands-title-image" src="../assets/images/brands/brand-logo/Sony Music.png" alt="" />
+          </div>
+          <div data-aos="fade-up" data-aos-duration="2500" class="col-md-4 col-6 text-center mb-md-5 mb-3">
+            <img class="brands-title-image" src="../assets/images/brands/brand-logo/Salomon.png" alt="" />
+          </div>
+          <div data-aos="fade-up" data-aos-duration="2500" class="col-md-4 col-6 text-center mb-md-5 mb-3">
+            <img class="brands-title-image" src="../assets/images/brands/brand-logo/Assos.png" alt="" />
+          </div>
+          <div data-aos="fade-up" data-aos-duration="2500" class="col-md-4 col-6 text-center mb-md-5 mb-3">
+            <img class="brands-title-image" src="../assets/images/brands/brand-logo/Campagnolo.png" alt="" />
+          </div>
+          <div data-aos="fade-up" data-aos-duration="2500" class="col-md-4 col-6 text-center mb-md-5 mb-3">
+            <img class="brands-title-image" src="../assets/images/brands/brand-logo/chelsea.png" alt="" />
+          </div>
+          <div data-aos="fade-up" data-aos-duration="2500" class="col-md-4 col-6 text-center mb-md-5 mb-3">
+            <img class="brands-title-image" src="../assets/images/brands/brand-logo/complex.png" alt="" />
+          </div>
+          <div data-aos="fade-up" data-aos-duration="2500" class="col-md-4 col-6 text-center mb-md-5 mb-3">
+            <img class="brands-title-image" src="../assets/images/brands/brand-logo/ESPN.png" alt="" />
+          </div>
+          <div data-aos="fade-up" data-aos-duration="2500" class="col-md-4 col-6 text-center mb-md-5 mb-3">
+            <img class="brands-title-image" src="../assets/images/brands/brand-logo/F1.png" alt="" />
+          </div>
+          <div data-aos="fade-up" data-aos-duration="2500" class="col-md-4 col-6 text-center mb-md-5 mb-3">
+            <img class="brands-title-image" src="../assets/images/brands/brand-logo/Fiat.png" alt="" />
+          </div>
+          <div data-aos="fade-up" data-aos-duration="2500" class="col-md-4 col-6 text-center mb-md-5 mb-3">
+            <img class="brands-title-image" src="../assets/images/brands/brand-logo/Moto_Gp_logo.png" alt="" />
+          </div>
+          <div data-aos="fade-up" data-aos-duration="2500" class="col-md-4 col-6 text-center mb-md-5 mb-3">
+            <img class="brands-title-image" src="../assets/images/brands/brand-logo/pandora.png" alt="" />
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="2500" class="col-md-4 col-6 text-center mb-md-5 mb-3">
+            <img class="brands-title-image" src="../assets/images/brands/brand-logo/paramount.png" alt="" />
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="2500" class="col-md-4 col-6 text-center mb-md-5 mb-3">
+            <img class="brands-title-image" src="../assets/images/brands/brand-logo/PGA.png" alt="" />
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="2500" class="col-md-4 col-6 text-center mb-md-5 mb-3">
+            <img class="redbull-title-image" src="../assets/images/brands/brand-logo/Red Bull 2.png" alt="" />
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="2500" class="col-md-4 col-6 text-center mb-md-5 mb-3">
+            <img class="brands-title-image" src="../assets/images/brands/brand-logo/TdF.png" alt="" />
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="2500" class="col-md-4 col-6 text-center mb-md-5 mb-3">
+            <img class="brands-title-image" src="../assets/images/brands/brand-logo/TGR.png" alt="" />
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="2500" class="col-md-4 col-6 text-center mb-md-5 mb-3">
+            <img class="brands-title-image" src="../assets/images/brands/brand-logo/Vail.png" alt="" />
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="2500" class="col-md-4 col-6 text-center mb-md-5 mb-3">
+            <img class="brands-title-image" src="../assets/images/brands/brand-logo/Horiz_Lockup_Black.png" alt="" />
+          </div>
+
+        </div>
+        <!-- Scrollbar -->
+        <div class="row mt-5">
+          <div class="col-md-12">
+            <div class="brands-scroll-arrow icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="24" viewBox="0 0 24 24" width="24">
+                <g stroke="#000" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m12 5v14"></path>
+                  <path d="m19 12-7 7-7-7"></path>
+                </g>
+              </svg>
             </div>
           </div>
-          <!-- Scrollbar -->
-          <div class="row mt-5">
-            <div class="col-md-12">
-              <div class="brands-scroll-arrow icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  width="24"
-                >
-                  <g
-                    stroke="#000"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="m12 5v14"></path>
-                    <path d="m19 12-7 7-7-7"></path>
-                  </g>
-                </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  ALl Logo's Section  End -->
+
+  <!--  Sony  Section start -->
+  <section>
+    <div class="row background-white g-0">
+      <div class="col-md-6 pt-5 pb-md-0 pb-5">
+        <div data-aos="fade-up" data-aos-duration="2500" class="ps-4 pe-md-5 pe-4">
+          <img class="brands-logo" src="../assets/images/brands/sonycroplogo.png" alt="" />
+          <p class="paragraph black justify mt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab hic
+            distinctio dolorem placeat non nostrum eaque optio harum
+            repudiandae excepturi neque voluptas fuga quos voluptatibus omnis
+            pariatur vero velit corporis commodi nemo, porro cumque quaerat
+            quia. Et harum sed accusamus.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 mt-md-5 mt-lg-0">
+        <div data-aos="fade-up" data-aos-duration="2500" class="brands-image">
+          <div class="video-wrapper">
+            <video id="brands-video" width="100%" autoplay muted loop>
+              <source src="../assets/video/SONY Video.mp4" type="video/mp4" />
+            </video>
+            <div class="position-relative">
+              <div class="video-controller d-flex align-items-center justify-content-between gap-4">
+                <i class="fa-regular fa-circle-pause brands-controller-background video-icon cursor-pointer"
+                  onclick="playMarketToggleVideo(this)"></i>
+                <i class="fa-solid fa-volume-xmark video-icon brands-mic-background"
+                  onclick="soundMarketToggleVideo(this)"></i>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!--  ALl Logo's Section  End -->
-
-    <!--  Sony  Section start -->
-    <section>
-      <div class="row background-white g-0">
-        <div class="col-md-6 pt-5 pb-md-0 pb-5">
-          <div
-            data-aos="fade-up"
-            data-aos-duration="2500"
-            class="ps-4 pe-md-5 pe-4"
-          >
-            <img
-              class="brands-logo"
-              src="../assets/images/brands/sonycroplogo.png"
-              alt=""
-            />
-            <p class="paragraph black justify mt-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab hic
-              distinctio dolorem placeat non nostrum eaque optio harum
-              repudiandae excepturi neque voluptas fuga quos voluptatibus omnis
-              pariatur vero velit corporis commodi nemo, porro cumque quaerat
-              quia. Et harum sed accusamus.
-            </p>
-          </div>
+    </div>
+    <div class="row g-0">
+      <div class="col-md-12">
+        <div data-aos="fade-up" data-aos-duration="2500" class="brands-image-cover">
+          <img src="../assets/images/brands/SONY Middle.jpg" alt="" />
         </div>
-        <div class="col-md-6 mt-md-5 mt-lg-0">
-          <div data-aos="fade-up" data-aos-duration="2500" class="brands-image">
-            <div class="video-wrapper">
-              <video id="brands-video" width="100%" autoplay muted loop>
-                <source src="../assets/video/SONY Video.mp4" type="video/mp4" />
-              </video>
-              <div class="position-relative">
-                <div
-                  class="video-controller d-flex align-items-center justify-content-between gap-4"
-                >
-                  <i
-                    class="fa-regular fa-circle-pause brands-controller-background video-icon cursor-pointer"
-                    onclick="playMarketToggleVideo(this)"
-                  ></i>
-                  <i
-                    class="fa-solid fa-volume-xmark video-icon brands-mic-background"
-                    onclick="soundMarketToggleVideo(this)"
-                  ></i>
-                </div>
+      </div>
+    </div>
+    <div class="row g-0">
+      <div class="col-md-6">
+        <div data-aos="fade-up" data-aos-duration="2500" class="brands-image">
+          <img src="../assets/images/brands/SONY Lower Left.png" alt="" />
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div data-aos="fade-up" data-aos-duration="2500" class="brands-image">
+          <img src="../assets/images/brands/SONY Lower Right.jpeg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  Sony Section End -->
+  <!-- ****** GoPro Section Start ****** -->
+  <section>
+    <div class="row background-white g-0">
+      <div class="col-md-6 pt-5 pb-md-0 pb-5">
+        <div data-aos="fade-up" data-aos-duration="2500" class="ps-4 pe-md-5 pe-4">
+          <img style="height: 100px" class="brands-logo" src="../assets/images/brands/GoPro.jpg" alt="" />
+          <p class="paragraph black justify mt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab hic
+            distinctio dolorem placeat non nostrum eaque optio harum
+            repudiandae excepturi neque voluptas fuga quos voluptatibus omnis
+            pariatur vero velit corporis commodi nemo, porro cumque quaerat
+            quia. Et harum sed accusamus.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div data-aos="fade-up" data-aos-duration="2500" class="brands-image">
+          <img src="../assets/images/brands/GP Upper Right.jpeg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="row g-0">
+      <div class="col-md-12">
+        <div data-aos="fade-up" data-aos-duration="2500" class="brands-image-cover">
+          <div class="video-wrapper">
+            <video id="brands-video" width="100%" autoplay muted loop>
+              <source src="../assets/video/intro.mp4" type="video/mp4" />
+            </video>
+            <div class="position-relative">
+              <div class="video-controller d-flex align-items-center justify-content-between gap-4">
+                <i class="fa-regular fa-circle-pause brands-controller-background video-icon cursor-pointer"
+                  onclick="playMarketToggleVideo(this)"></i>
+                <i class="fa-solid fa-volume-xmark video-icon brands-mic-background"
+                  onclick="soundMarketToggleVideo(this)"></i>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="row g-0">
-        <div class="col-md-12">
-          <div
-            data-aos="fade-up"
-            data-aos-duration="2500"
-            class="brands-image-cover"
-          >
-            <img src="../assets/images/brands/SONY Middle.jpg" alt="" />
-          </div>
+    </div>
+    <div class="row g-0">
+      <div class="col-md-6">
+        <div data-aos="fade-up" data-aos-duration="2500" class="brands-image">
+          <img src="../assets/images/brands/GP Lower Left.png" alt="" />
         </div>
       </div>
-      <div class="row g-0">
-        <div class="col-md-6">
-          <div data-aos="fade-up" data-aos-duration="2500" class="brands-image">
-            <img src="../assets/images/brands/SONY Lower Left.png" alt="" />
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div data-aos="fade-up" data-aos-duration="2500" class="brands-image">
-            <img src="../assets/images/brands/SONY Lower Right.jpeg" alt="" />
-          </div>
+      <div class="col-md-6">
+        <div data-aos="fade-up" data-aos-duration="2500" class="brands-image">
+          <img src="../assets/images/brands/GP Lower Right.jpg" alt="" />
         </div>
       </div>
-    </section>
-    <!--  Sony Section End -->
-    <!-- ****** GoPro Section Start ****** -->
-    <section>
-      <div class="row background-white g-0">
-        <div class="col-md-6 pt-5 pb-md-0 pb-5">
-          <div
-            data-aos="fade-up"
-            data-aos-duration="2500"
-            class="ps-4 pe-md-5 pe-4"
-          >
-            <img
-              style="height: 100px"
-              class="brands-logo"
-              src="../assets/images/brands/GoPro.jpg"
-              alt=""
-            />
-            <p class="paragraph black justify mt-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab hic
-              distinctio dolorem placeat non nostrum eaque optio harum
-              repudiandae excepturi neque voluptas fuga quos voluptatibus omnis
-              pariatur vero velit corporis commodi nemo, porro cumque quaerat
-              quia. Et harum sed accusamus.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div data-aos="fade-up" data-aos-duration="2500" class="brands-image">
-            <img src="../assets/images/brands/GP Upper Right.jpeg" alt="" />
-          </div>
+    </div>
+  </section>
+  <!-- ****** GoPro  Section End ****** -->
+  <!-- ****** Red Bull RB Section Start ****** -->
+  <section>
+    <div class="row background-white g-0">
+      <div class="col-md-6 pt-5 pb-md-0 pb-5">
+        <div data-aos="fade-up" data-aos-duration="2500" class="ps-4 pe-md-5 pe-4">
+          <img class="brands-logo" src="../assets/images/brands/Red-Bull-horiz.png" alt="" />
+          <p class="paragraph black justify mt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab hic
+            distinctio dolorem placeat non nostrum eaque optio harum
+            repudiandae excepturi neque voluptas fuga quos voluptatibus omnis
+            pariatur vero velit corporis commodi nemo, porro cumque quaerat
+            quia. Et harum sed accusamus.
+          </p>
         </div>
       </div>
-      <div class="row g-0">
-        <div class="col-md-12">
-          <div
-            data-aos="fade-up"
-            data-aos-duration="2500"
-            class="brands-image-cover"
-          >
-            <div class="video-wrapper">
-              <video id="brands-video" width="100%" autoplay muted loop>
-                <source src="../assets/video/intro.mp4" type="video/mp4" />
-              </video>
-              <div class="position-relative">
-                <div
-                  class="video-controller d-flex align-items-center justify-content-between gap-4"
-                >
-                  <i
-                    class="fa-regular fa-circle-pause brands-controller-background video-icon cursor-pointer"
-                    onclick="playMarketToggleVideo(this)"
-                  ></i>
-                  <i
-                    class="fa-solid fa-volume-xmark video-icon brands-mic-background"
-                    onclick="soundMarketToggleVideo(this)"
-                  ></i>
-                </div>
+      <div class="col-md-6">
+        <div data-aos="fade-up" data-aos-duration="2500" class="brands-image">
+          <img src="../assets/images/brands/RB - Upper Right.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="row g-0">
+      <div class="col-md-12">
+        <div data-aos="fade-up" data-aos-duration="2500" class="brands-image-cover background-red">
+          <img src="../assets/images/brands/redbull-cover.jpeg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ****** Red Bull RB Section End ****** -->
+  <!-- ****** TDF Section Start **** -->
+  <section>
+    <div class="row background-white g-0">
+      <div class="col-md-6 pt-5 pb-md-0 pb-5">
+        <div data-aos="fade-up" data-aos-duration="2500" class="ps-4 pe-md-5 pe-4">
+          <img class="tdf-logo" src="../assets/images/brands/TDF-logo (1).png" alt="" />
+          <p class="paragraph black justify mt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab hic
+            distinctio dolorem placeat non nostrum eaque optio harum
+            repudiandae excepturi neque voluptas fuga quos voluptatibus omnis
+            pariatur vero velit corporis commodi nemo, porro cumque quaerat
+            quia. Et harum sed accusamus.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 mt-md-5 mt-lg-0">
+        <div data-aos="fade-up" data-aos-duration="2500" class="brands-image">
+          <div class="video-wrapper">
+            <video id="brands-vide" width="100%" autoplay muted loop>
+              <source src="../assets/video/TdF - Video Middle.mp4" type="video/mp4" />
+            </video>
+            <div class="position-relative">
+              <div class="video-controller d-flex align-items-center justify-content-between gap-4">
+                <i class="fa-regular fa-circle-pause brands-controller-background video-icon cursor-pointer"
+                  onclick="playMarketToggleVideo(this)"></i>
+                <i class="fa-solid fa-volume-xmark video-icon brands-mic-background"
+                  onclick="soundMarketToggleVideo(this)"></i>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="row g-0">
-        <div class="col-md-6">
-          <div data-aos="fade-up" data-aos-duration="2500" class="brands-image">
-            <img src="../assets/images/brands/GP Lower Left.png" alt="" />
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div data-aos="fade-up" data-aos-duration="2500" class="brands-image">
-            <img src="../assets/images/brands/GP Lower Right.jpg" alt="" />
-          </div>
+    </div>
+    <div class="row background-white g-0">
+      <div class="col-md-6">
+        <div data-aos="fade-up" data-aos-duration="2500" class="brands-image">
+          <img src="../assets/images/brands/TdF-Image.jpeg" alt="" />
         </div>
       </div>
-    </section>
-    <!-- ****** GoPro  Section End ****** -->
-    <!-- ****** Red Bull RB Section Start ****** -->
-    <section>
-      <div class="row background-white g-0">
-        <div class="col-md-6 pt-5 pb-md-0 pb-5">
-          <div
-            data-aos="fade-up"
-            data-aos-duration="2500"
-            class="ps-4 pe-md-5 pe-4"
-          >
-            <img
-              class="brands-logo"
-              src="../assets/images/brands/Red-Bull-horiz.png"
-              alt=""
-            />
-            <p class="paragraph black justify mt-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab hic
-              distinctio dolorem placeat non nostrum eaque optio harum
-              repudiandae excepturi neque voluptas fuga quos voluptatibus omnis
-              pariatur vero velit corporis commodi nemo, porro cumque quaerat
-              quia. Et harum sed accusamus.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div data-aos="fade-up" data-aos-duration="2500" class="brands-image">
-            <img src="../assets/images/brands/RB - Upper Right.png" alt="" />
-          </div>
+      <div class="col-md-6">
+        <div data-aos="fade-up" data-aos-duration="2500" class="brands-image">
+          <img src="../assets/images/brands/TdF - Upper Right.png" alt="" />
         </div>
       </div>
-      <div class="row g-0">
-        <div class="col-md-12">
-          <div
-            data-aos="fade-up"
-            data-aos-duration="2500"
-            class="brands-image-cover background-red"
-          >
-            <img src="../assets/images/brands/redbull-cover.jpeg" alt="" />
-          </div>
+    </div>
+  </section>
+  <!-- ****** TDF Section End **** -->
+  <!-- ******* TGR Section Stat ***** -->
+  <section>
+    <div class="row background-white g-0">
+      <div class="col-md-6 pt-5 pb-md-0 pb-5">
+        <div data-aos="fade-up" data-aos-duration="2500" class="ps-4 pe-md-5 pe-4">
+          <img class="brands-logo" src="../assets/images/brands/TGR-logo.png" alt="" />
+          <p class="paragraph black justify mt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab hic
+            distinctio dolorem placeat non nostrum eaque optio harum
+            repudiandae excepturi neque voluptas fuga quos voluptatibus omnis
+            pariatur vero velit corporis commodi nemo, porro cumque quaerat
+            quia. Et harum sed accusamus.
+          </p>
         </div>
       </div>
-    </section>
-    <!-- ****** Red Bull RB Section End ****** -->
-    <!-- ****** TDF Section Start **** -->
-    <section>
-      <div class="row background-white g-0">
-        <div class="col-md-6 pt-5 pb-md-0 pb-5">
-          <div
-            data-aos="fade-up"
-            data-aos-duration="2500"
-            class="ps-4 pe-md-5 pe-4"
-          >
-            <img
-              class="tdf-logo"
-              src="../assets/images/brands/TDF-logo (1).png"
-              alt=""
-            />
-            <p class="paragraph black justify mt-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab hic
-              distinctio dolorem placeat non nostrum eaque optio harum
-              repudiandae excepturi neque voluptas fuga quos voluptatibus omnis
-              pariatur vero velit corporis commodi nemo, porro cumque quaerat
-              quia. Et harum sed accusamus.
-            </p>
-          </div>
+      <div class="col-md-6">
+        <div data-aos="fade-up" data-aos-duration="2500" class="brands-image">
+          <img src="../assets/images/brands/TGR-Upper Right.jpeg" alt="" />
         </div>
-        <div class="col-md-6 mt-md-5 mt-lg-0">
-          <div data-aos="fade-up" data-aos-duration="2500" class="brands-image">
-            <div class="video-wrapper">
-              <video id="brands-vide" width="100%" autoplay muted loop>
-                <source
-                  src="../assets/video/TdF - Video Middle.mp4"
-                  type="video/mp4"
-                />
-              </video>
-              <div class="position-relative">
-                <div
-                  class="video-controller d-flex align-items-center justify-content-between gap-4"
-                >
-                  <i
-                    class="fa-regular fa-circle-pause brands-controller-background video-icon cursor-pointer"
-                    onclick="playMarketToggleVideo(this)"
-                  ></i>
-                  <i
-                    class="fa-solid fa-volume-xmark video-icon brands-mic-background"
-                    onclick="soundMarketToggleVideo(this)"
-                  ></i>
-                </div>
+      </div>
+    </div>
+    <div class="row g-0">
+      <div class="col-md-12">
+        <div data-aos="fade-up" data-aos-duration="2500" class="brands-image-cover">
+          <div class="video-wrapper">
+            <video id="brands-vide" width="100%" autoplay muted loop>
+              <source src="../assets/video/TGR - Video Middle.mp4" type="video/mp4" />
+            </video>
+            <div class="position-relative">
+              <div class="video-controller d-flex align-items-center justify-content-between gap-4">
+                <i class="fa-regular fa-circle-pause brands-controller-background video-icon cursor-pointer"
+                  onclick="playMarketToggleVideo(this)"></i>
+                <i class="fa-solid fa-volume-xmark video-icon brands-mic-background"
+                  onclick="soundMarketToggleVideo(this)"></i>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="row background-white g-0">
-        <div class="col-md-6">
-          <div data-aos="fade-up" data-aos-duration="2500" class="brands-image">
-            <img src="../assets/images/brands/TdF-Image.jpeg" alt="" />
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div data-aos="fade-up" data-aos-duration="2500" class="brands-image">
-            <img src="../assets/images/brands/TdF - Upper Right.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ****** TDF Section End **** -->
-    <!-- ******* TGR Section Stat ***** -->
-    <section>
-      <div class="row background-white g-0">
-        <div class="col-md-6 pt-5 pb-md-0 pb-5">
-          <div
-            data-aos="fade-up"
-            data-aos-duration="2500"
-            class="ps-4 pe-md-5 pe-4"
-          >
-            <img
-              class="brands-logo"
-              src="../assets/images/brands/TGR-logo.png"
-              alt=""
-            />
-            <p class="paragraph black justify mt-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab hic
-              distinctio dolorem placeat non nostrum eaque optio harum
-              repudiandae excepturi neque voluptas fuga quos voluptatibus omnis
-              pariatur vero velit corporis commodi nemo, porro cumque quaerat
-              quia. Et harum sed accusamus.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div data-aos="fade-up" data-aos-duration="2500" class="brands-image">
-            <img src="../assets/images/brands/TGR-Upper Right.jpeg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="row g-0">
-        <div class="col-md-12">
-          <div
-            data-aos="fade-up"
-            data-aos-duration="2500"
-            class="brands-image-cover"
-          >
-            <div class="video-wrapper">
-              <video id="brands-vide" width="100%" autoplay muted loop>
-                <source
-                  src="../assets/video/TGR - Video Middle.mp4"
-                  type="video/mp4"
-                />
-              </video>
-              <div class="position-relative">
-                <div
-                  class="video-controller d-flex align-items-center justify-content-between gap-4"
-                >
-                  <i
-                    class="fa-regular fa-circle-pause brands-controller-background video-icon cursor-pointer"
-                    onclick="playMarketToggleVideo(this)"
-                  ></i>
-                  <i
-                    class="fa-solid fa-volume-xmark video-icon brands-mic-background"
-                    onclick="soundMarketToggleVideo(this)"
-                  ></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ******* TGR Section End ***** -->
+    </div>
+  </section>
+  <!-- ******* TGR Section End ***** -->
 
-    <!-- footer -->
-    <footer class="footer-container container-fluid p-4">
-      <div class="row">
-        <!-- Contact Us -->
-        <div class="col-md-3 col-sm-12 right-border">
-          <h4 class="footer-title text-light">Contact Us</h4>
-          <h5 class="footer-subtitle mt-lg-4 mt-md-4 mt-3">LET'S CHAT</h5>
-          <h5 class="footer-subtitle text-light fw-bold">
-            info@3bigwheels.com
-          </h5>
-        </div>
-        <!-- Our Offices -->
-        <div
-          class="col-md-5 col-sm-12 px-lg-4 px-2 right-border office-container"
-        >
-          <h4 class="footer-title text-light">Our Offices</h4>
-          <div class="row">
-            <!-- First Office -->
-            <div class="col-6 mt-3">
-              <h5 class="footer-subtitle">SAN DIEGO</h5>
-              <h5 class="footer-subtitle text-light">
-                8910 University Center Ln
-              </h5>
-              <h5 class="footer-subtitle text-light">San Diego, CA 92122</h5>
-            </div>
-            <!-- Seconds Office -->
-            <div class="col-6">
-              <h5 class="footer-subtitle"></h5>
-              <h5 class="footer-subtitle text-light"></h5>
-              <h5 class="footer-subtitle text-light"></h5>
-            </div>
+  <!-- footer -->
+  <footer class="footer-container container-fluid p-4">
+    <div class="row">
+      <!-- Contact Us -->
+      <div class="col-md-3 col-sm-12 right-border">
+        <h4 class="footer-title text-light">Contact Us</h4>
+        <h5 class="footer-subtitle mt-lg-4 mt-md-4 mt-3">LET'S CHAT</h5>
+        <h5 class="footer-subtitle text-light fw-bold">
+          info@3bigwheels.com
+        </h5>
+      </div>
+      <!-- Our Offices -->
+      <div class="col-md-5 col-sm-12 px-lg-4 px-2 right-border office-container">
+        <h4 class="footer-title text-light">Our Offices</h4>
+        <div class="row">
+          <!-- First Office -->
+          <div class="col-6 mt-3">
+            <h5 class="footer-subtitle">SAN DIEGO</h5>
+            <h5 class="footer-subtitle text-light">
+              8910 University Center Ln
+            </h5>
+            <h5 class="footer-subtitle text-light">San Diego, CA 92122</h5>
           </div>
-        </div>
-
-        <div class="col-md-4 links-container">
-          <div class="d-flex justify-content-evenly">
-            <div>
-              <a href="./brands.html" class="text-decoration-none">
-                <h4 class="footer-title text-light">Brands</h4>
-              </a>
-              <a href="./markets.html" class="text-decoration-none">
-                <h4 class="footer-title text-light">Marktets</h4>
-              </a>
-              <a href="./service.html" class="text-decoration-none">
-                <h4 class="footer-title text-light">Services</h4>
-              </a>
-            </div>
-            <div>
-              <a href="./about.html" class="text-decoration-none">
-                <h4 class="footer-title text-light">About</h4>
-              </a>
-
-              <a href="./contact.html" class="text-decoration-none">
-                <h4 class="footer-title text-light">Contact</h4>
-              </a>
-            </div>
+          <!-- Seconds Office -->
+          <div class="col-6">
+            <h5 class="footer-subtitle"></h5>
+            <h5 class="footer-subtitle text-light"></h5>
+            <h5 class="footer-subtitle text-light"></h5>
           </div>
         </div>
       </div>
 
-      <div class="row ps-4">
-        <div class="col-md-6 py-4">
-          <span class="text-light copy-right-text">
-            © 2023 3 BIG WHEELS LLC. ALL RIGHTS RESERVED.</span
-          >
+      <div class="col-md-4 links-container">
+        <div class="d-flex justify-content-evenly">
+          <div>
+            <a href="./brands.html" class="text-decoration-none">
+              <h4 class="footer-title text-light">Brands</h4>
+            </a>
+            <a href="./markets.html" class="text-decoration-none">
+              <h4 class="footer-title text-light">Marktets</h4>
+            </a>
+            <a href="./service.html" class="text-decoration-none">
+              <h4 class="footer-title text-light">Services</h4>
+            </a>
+          </div>
+          <div>
+            <a href="./about.html" class="text-decoration-none">
+              <h4 class="footer-title text-light">About</h4>
+            </a>
+
+            <a href="./contact.html" class="text-decoration-none">
+              <h4 class="footer-title text-light">Contact</h4>
+            </a>
+          </div>
         </div>
-        <div class="col-md-6"></div>
       </div>
-    </footer>
+    </div>
 
-    <!-- ** Bootsrtap v5.2.3 Js Link ** -->
-    <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+    <div class="row ps-4">
+      <div class="col-md-6 py-4">
+        <span class="text-light copy-right-text">
+          © 2023 3 BIG WHEELS LLC. ALL RIGHTS RESERVED.</span>
+      </div>
+      <div class="col-md-6"></div>
+    </div>
+  </footer>
 
-    <!-- ** AOS Animation Js Link ** -->
-    <script src="../aos/aos.js"></script>
+  <!-- ** Bootsrtap v5.2.3 Js Link ** -->
+  <script src="../bootstrap/bootstrap.bundle.min.js"></script>
 
-    <!-- ** font awesoem icons ** -->
-    <script
-      src="https://kit.fontawesome.com/71a7ac9f1f.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../js/index.js"></script>
-    <script src="../js/pages/brands.js"></script>
+  <!-- ** AOS Animation Js Link ** -->
+  <script src="../aos/aos.js"></script>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- ** font awesoem icons ** -->
+  <script src="https://kit.fontawesome.com/71a7ac9f1f.js" crossorigin="anonymous"></script>
+  <script src="../js/index.js"></script>
+  <script src="../js/pages/brands.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-      // Get the icon element
-      const icon = document.querySelector(".icon");
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-      // Add a click event listener
-      icon.addEventListener("click", () => {
-        // Scroll the page to the bottom
-        window.scrollBy(0, 1000);
-      });
-    </script>
-  </body>
+  <!-- Initialize Swiper -->
+  <script>
+    // Get the icon element
+    const icon = document.querySelector(".icon");
+
+    // Add a click event listener
+    icon.addEventListener("click", () => {
+      // Scroll the page to the bottom
+      window.scrollBy(0, 1000);
+    });
+  </script>
+</body>
+
 </html>
