@@ -1,480 +1,578 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3 Big Wheels</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>3 Big Wheels</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
 
-  <!-- favicon -->
-  <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <!-- **  Bootsrtap v5.2.3 CSS Link ** -->
+    <link href="./bootstrap/bootstrap.min.css" rel="stylesheet" />
 
-  <!-- **  Bootsrtap v5.2.3 CSS Link ** -->
-  <link href="./bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <!-- ** AOS Animation  CSS Link ** -->
+    <link href="./aos/aos.css" rel="stylesheet" />
 
-  <!-- ** AOS Animation  CSS Link ** -->
-  <link href="./aos/aos.css" rel="stylesheet" />
+    <!-- ** index CSS Link ** -->
+    <link href="./css/pages/index.css" rel="stylesheet" />
+    <link href="./css/common/global-styles.css" rel="stylesheet" />
 
-  <!-- ** index CSS Link ** -->
-  <link href="./css/pages/index.css" rel="stylesheet" />
-  <link href="./css/common/global-styles.css" rel="stylesheet" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
 
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- Email JS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("GJuDtKOV8ASRQhbKG");
+      })();
+    </script>
+  </head>
 
-  <!-- Email JS -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-  </script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("GJuDtKOV8ASRQhbKG");
-    })();
-  </script>
-</head>
+  <body>
+    <!-- Header -->
+    <header class="main-header">
+      <div class="container d-flex align-items-center justify-content-between">
+        <img
+          class="logo-img cursor-pointer"
+          src="assets/logo.png"
+          alt="logo-img"
+        />
+        <div
+          class="cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          <div
+            id="header-icon"
+            class="hamburger-icon cursor-pointer light-icon"
+          ></div>
+        </div>
+      </div>
+    </header>
 
-<body>
-  <!-- Header -->
-  <header class="main-header">
-    <div class="container d-flex align-items-center justify-content-between">
-      <img class="logo-img cursor-pointer" src="assets/logo.png" alt="logo-img" />
-      <div class="cursor-pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-        aria-controls="offcanvasRight">
-        <div id="header-icon" class="hamburger-icon cursor-pointer light-icon"></div>
+    <!-- Drawer -->
+    <div
+      class="offcanvas offcanvas-end w-100"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <a href="./index.html">
+          <img
+            class="logo-img cursor-pointer"
+            src="assets/logo.png"
+            alt="logo-img"
+          />
+        </a>
+        <div
+          class="cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          <i class="fa-solid fa-xmark drawer-close-icon"></i>
+        </div>
+      </div>
+
+      <div class="offcanvas-body px-0">
+        <ul class="list-unstyled menu-list">
+          <li class="menu-item inline-block">
+            <a href="./index.html" class="menu-item-link">HOME</a>
+          </li>
+          <li class="menu-item inline-block">
+            <a href="./pages/brands.html" class="menu-item-link">BRANDS</a>
+          </li>
+          <li class="menu-item inline-block">
+            <a href="./pages/markets.html" class="menu-item-link">MARKETS</a>
+          </li>
+          <li class="menu-item inline-block">
+            <a href="./pages/service.html" class="menu-item-link">SERVICES</a>
+          </li>
+          <li class="menu-item inline-block">
+            <a href="./pages/about.html" class="menu-item-link">ABOUT</a>
+          </li>
+          <li class="menu-item inline-block">
+            <a href="./pages/contact.html" class="menu-item-link">CONTACT</a>
+          </li>
+        </ul>
       </div>
     </div>
-  </header>
 
-  <!-- Drawer -->
-  <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-    <div class="offcanvas-header">
-      <a href="./index.html">
-        <img class="logo-img cursor-pointer" src="assets/logo.png" alt="logo-img" />
-      </a>
-      <div class="cursor-pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-        aria-controls="offcanvasRight">
-        <i class="fa-solid fa-xmark drawer-close-icon"></i>
-      </div>
-    </div>
-
-    <div class="offcanvas-body px-0">
-      <ul class="list-unstyled menu-list">
-        <li class="menu-item inline-block">
-          <a href="./index.html" class="menu-item-link">HOME</a>
-        </li>
-        <li class="menu-item inline-block">
-          <a href="./pages/brands.html" class="menu-item-link">BRANDS</a>
-        </li>
-        <li class="menu-item inline-block">
-          <a href="./pages/markets.html" class="menu-item-link">MARKETS</a>
-        </li>
-        <li class="menu-item inline-block">
-          <a href="./pages/service.html" class="menu-item-link">SERVICES</a>
-        </li>
-        <li class="menu-item inline-block">
-          <a href="./pages/about.html" class="menu-item-link">ABOUT</a>
-        </li>
-        <li class="menu-item inline-block">
-          <a href="./pages/contact.html" class="menu-item-link">CONTACT</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Hero -->
-  <div class="row g-0">
-    <div class="col-md-12">
-      <video id="my-video" width="100%" autoplay muted loop>
-        <source src="./assets/video/intro.mp4" type="video/mp4" />
-      </video>
-      <div class="position-relative">
-        <div class="video-controller d-flex align-items-center justify-content-between gap-4">
-          <i class="fa-regular fa-circle-pause controller-background video-icon cursor-pointer"
-            onclick="playToggleVideo()"></i>
-          <i class="fa-solid fa-volume-xmark video-icon mic-background" onclick="soundToggleVideo()"></i>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Section 1 -->
-  <div class="container-fluid main-background py-5" style="margin-top: -10px">
-    <div class="py-5 ps-4">
-      <div class="row">
-        <div class="col-md-10">
-          <h1 class="title text-uppercase white">
-            WE BELIEVE IN THE <br />
-            POWER OF GOING <br />
-            <span class="back-bar white">GLOBAL</span>
-          </h1>
-        </div>
-        <div class="col-md-2"></div>
-      </div>
-      <div class="row mt-5">
-        <div class="col-md-8">
-          <p class="paragraph white">
-            At 3 Big Wheels, we believe the globe is actually a very small
-            place, which makes international markets accessible for most sized
-            companies. If you are looking to expand into new markets 3 Big
-            Wheels can help.
-          </p>
-        </div>
-        <div class="col-md-4"></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Section 2 -->
-  <div class="container-fluid background-white py-5">
-    <div class="ps-4 country-section">
-      <div data-aos="fade-up" data-aos-duration="2500">
-        <span data-text="WESTERN EUROPE" class="country-title text-uppercase black">WESTERN EUROPE</span>
-      </div>
-      <div data-aos="fade-up" data-aos-duration="2500">
-        <span data-text="USA" class="country-title text-uppercase black">USA</span>
-      </div>
-      <div data-aos="fade-up" data-aos-duration="2500">
-        <span data-text="CANADA" class="country-title text-uppercase black">CANADA</span>
-      </div>
-      <div data-aos="fade-up" data-aos-duration="2500">
-        <span data-text="MEXICO" class="country-title text-uppercase black">MEXICO</span>
-      </div>
-      <div data-aos="fade-up" data-aos-duration="2500">
-        <span data-text="JAPAN" class="country-title text-uppercase black">JAPAN</span>
-      </div>
-      <div data-aos="fade-up" data-aos-duration="2500">
-        <span data-text="KOREA" class="country-title text-uppercase black">KOREA</span>
-      </div>
-      <div data-aos="fade-up" data-aos-duration="2500">
-        <span data-text="AUSTRALIA" class="country-title text-uppercase black">AUSTRALIA</span>
-      </div>
-      <div data-aos="fade-up" data-aos-duration="2500">
-        <span data-text="INDIA" class="country-title text-uppercase black">INDIA</span>
-      </div>
-      <div data-aos="fade-up" data-aos-duration="2500">
-        <span data-text="SOUTH AFRICA" class="country-title text-uppercase black">SOUTH AFRICA</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Section 3 start -->
-  <div class="container-fluid background-black py-5">
-    <div class="ps-4">
-      <div class="row">
-        <div class="col-md-6">
-          <h1 class="title text-uppercase white">INTERNATIONAL MARKETING</h1>
-          <p class="paragraph white">
-            We love to bring new products and services to the world. New
-            products, new ideas, new services and new global markets. It’s
-            about connecting to new audiences in a meaningful way and
-            eliciting positive experiences.
-          </p>
-          <button class="custom-button red-background">Go Markets</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Section 3 End -->
-
-  <!-- Section 4 Start Image section -->
-  <div class="image-section">
-    <img src="./assets/images/pic1.jpg" alt="" />
-  </div>
-  <!-- Section 4 End Image section -->
-
-  <!-- Section 5 Start  -->
-  <div class="container-fluid background-black py-5">
-    <div class="ps-4">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="title text-uppercase white">GO-TO-MARKET</h1>
-        </div>
-        <div class="col-md-6">
-          <p class="paragraph white">
-            Launching products in new markets takes a well throughout
-            strategy. Each new market offers unique challenges. The better the
-            strategy, the better the results.
-          </p>
-          <button class="custom-button red-background">Go Digital</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Section 5 End  -->
-
-  <!-- Section 6 Start Image section -->
-  <div class="image-section">
-    <img src="./assets/images/pic2.jpg" alt="" />
-  </div>
-  <!-- Section 6 End Image section -->
-
-  <!-- Section 7 Start  -->
-  <div class="container-fluid background-black py-5">
-    <div class="ps-4">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="title text-uppercase white">LIFESTYLE</h1>
-        </div>
-        <div class="col-md-6">
-          <p class="paragraph white">
-            Lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit
-            lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit
-            lorem ipsum dolor sit
-          </p>
-          <button class="custom-button red-background">Go Lifestyle</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Section 7 End  -->
-
-  <!-- Section 8 Start Image section -->
-  <div class="image-section">
-    <img src="./assets/images/pic3.jpeg" alt="" />
-  </div>
-  <!-- Section 8 End Image section -->
-
-  <!-- Section 9 Start  -->
-  <div class="container-fluid background-black py-5">
-    <div class="ps-4">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="title text-uppercase white">CONTENT CREATION</h1>
-        </div>
-        <div class="col-md-6">
-          <p class="paragraph white">
-            Lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit
-            lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit
-            lorem ipsum dolor sit
-          </p>
-          <button class="custom-button red-background">Go Creation</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Section 9 End  -->
-
-  <!-- Section 10 Start Image section -->
-  <div class="image-section">
-    <img src="./assets/images/pic3.jpeg" alt="" />
-  </div>
-  <!-- Section 10 End Image section -->
-
-  <!-- Counter Section Start -->
-  <section class="counter-container p-4">
-    <div class="container-fluid my-5">
-      <div class="row">
-        <div class="col-md-12">
-          <h5 class="counter-title text-light">PRODUCT LAUNCHES TO DATE</h5>
-        </div>
-        <div class="col-md-12">
-          <div class="px-5 py-2 counter-title-container my-2">
-            <h5 class="counter-title text-light m-0">GLOBALLY</h5>
-          </div>
-
-          <h4 class="counter-value-text text-light">
-            <span id="productCounter">800</span>+
-            <span class="counter-label">/ PRODUCTS</span>
-          </h4>
-          <h4 class="counter-value-text text-light">
-            <span id="countryCounter">0</span><span class="counter-label"> / COUNTRIES</span>
-          </h4>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Counter Section End -->
-
-  <!-- Section 11 Form Start -->
-  <div class="container-fluid background-white py-5">
-    <div class="px-4">
-      <h1 class="black title text-uppercase">
-        GET STARTED.<br />
-        GO GLOBAL.
-      </h1>
-      <div class="row">
-        <div class="col-md-7">
-          <div class="form-section py-5">
-            <form action="" id="myForm">
-              <label for="name">Your Name*</label><br />
-              <input type="text" id="name" name="" value="" placeholder="" /><br />
-              <label for="email">Email*</label><br />
-              <input type="text" id="email" placeholder="" name="" value="" /><br />
-              <label for="subject">Subject*</label><br />
-              <input type="text" placeholder="" id="subject" name="" value="" /><br />
-              <label for="message">Your Message</label><br />
-              <textarea name="" placeholder="" id="message" cols="30" rows="10"></textarea>
-              <button class="custom-button background-black white mt-5">
-                Send
-              </button>
-            </form>
+    <!-- Hero -->
+    <div class="row g-0">
+      <div class="col-md-12">
+        <video id="my-video" width="100%" autoplay muted loop>
+          <source src="./assets/video/intro.mp4" type="video/mp4" />
+        </video>
+        <div class="position-relative">
+          <div
+            class="video-controller d-flex align-items-center justify-content-between gap-4"
+          >
+            <i
+              class="fa-regular fa-circle-pause controller-background video-icon cursor-pointer"
+              onclick="playToggleVideo()"
+            ></i>
+            <i
+              class="fa-solid fa-volume-xmark video-icon mic-background"
+              onclick="soundToggleVideo()"
+            ></i>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Section 11 Form End -->
 
-  <!-- footer -->
-  <footer class="footer-container container-fluid p-4">
-    <div class="row">
-      <!-- Contact Us -->
-      <div class="col-md-3 col-sm-12 right-border">
-        <h4 class="footer-title text-light">Contact Us</h4>
-        <h5 class="footer-subtitle mt-lg-4 mt-md-4 mt-3">LET'S CHAT</h5>
-        <h5 class="footer-subtitle text-light fw-bold">
-          info@3bigwheels.com
-        </h5>
-      </div>
-      <!-- Our Offices -->
-      <div class="col-md-5 col-sm-12 px-lg-4 px-2 right-border office-container">
-        <h4 class="footer-title text-light">Our Offices</h4>
+    <!-- Section 1 -->
+    <div class="container-fluid main-background py-5" style="margin-top: -10px">
+      <div class="py-5 ps-4">
         <div class="row">
-          <!-- First Office -->
-          <div class="col-6 mt-3">
-            <h5 class="footer-subtitle">SAN DIEGO</h5>
-            <h5 class="footer-subtitle text-light">
-              8910 University Center Ln
-            </h5>
-            <h5 class="footer-subtitle text-light">San Diego, CA 92122</h5>
+          <div class="col-md-10">
+            <h1 class="title text-uppercase white">
+              WE BELIEVE IN THE <br />
+              POWER OF GOING <br />
+              <span class="back-bar white">GLOBAL</span>
+            </h1>
           </div>
-          <!-- Seconds Office -->
-          <div class="col-6">
-            <h5 class="footer-subtitle"></h5>
-            <h5 class="footer-subtitle text-light"></h5>
-            <h5 class="footer-subtitle text-light"></h5>
-          </div>
+          <div class="col-md-2"></div>
         </div>
-      </div>
-
-      <div class="col-md-4 links-container">
-        <div class="d-flex justify-content-evenly">
-          <div>
-            <a href="./pages/brands.html" class="text-decoration-none">
-              <h4 class="footer-title text-light">Brands</h4>
-            </a>
-            <a href="./pages/markets.html" class="text-decoration-none">
-              <h4 class="footer-title text-light">Marktets</h4>
-            </a>
-            <a href="./pages/service.html" class="text-decoration-none">
-              <h4 class="footer-title text-light">Services</h4>
-            </a>
+        <div class="row mt-5">
+          <div class="col-md-8">
+            <p class="paragraph white">
+              In today's hyper-connected world, going global has never been more
+              important. With the right marketing strategy, businesses can tap
+              into new markets and reach customers around the world. By
+              leveraging the latest tools and techniques, a global marketing
+              strategy can help businesses of all sizes achieve unprecedented
+              growth and success. At 3 Big Wheels, we help you harness the power
+              of going global and unlock new opportunities for your business.
+            </p>
           </div>
-          <div>
-            <a href="./pages/about.html" class="text-decoration-none">
-              <h4 class="footer-title text-light">About</h4>
-            </a>
-
-            <a href="./pages/contact.html" class="text-decoration-none">
-              <h4 class="footer-title text-light">Contact</h4>
-            </a>
-          </div>
+          <div class="col-md-4"></div>
         </div>
       </div>
     </div>
 
-    <div class="row ps-4">
-      <div class="col-md-6 py-4">
-        <span class="text-light copy-right-text">
-          © 2023 3 BIG WHEELS LLC. ALL RIGHTS RESERVED.</span>
+    <!-- Section 2 -->
+    <div class="container-fluid background-white py-5">
+      <div class="ps-4 country-section">
+        <div data-aos="fade-up" data-aos-duration="2500">
+          <span
+            data-text="WESTERN EUROPE"
+            class="country-title text-uppercase black"
+            >WESTERN EUROPE</span
+          >
+        </div>
+        <div data-aos="fade-up" data-aos-duration="2500">
+          <span data-text="USA" class="country-title text-uppercase black"
+            >USA</span
+          >
+        </div>
+        <div data-aos="fade-up" data-aos-duration="2500">
+          <span data-text="CANADA" class="country-title text-uppercase black"
+            >CANADA</span
+          >
+        </div>
+        <div data-aos="fade-up" data-aos-duration="2500">
+          <span data-text="MEXICO" class="country-title text-uppercase black"
+            >MEXICO</span
+          >
+        </div>
+        <div data-aos="fade-up" data-aos-duration="2500">
+          <span data-text="JAPAN" class="country-title text-uppercase black"
+            >JAPAN</span
+          >
+        </div>
+        <div data-aos="fade-up" data-aos-duration="2500">
+          <span data-text="KOREA" class="country-title text-uppercase black"
+            >KOREA</span
+          >
+        </div>
+        <div data-aos="fade-up" data-aos-duration="2500">
+          <span data-text="AUSTRALIA" class="country-title text-uppercase black"
+            >AUSTRALIA</span
+          >
+        </div>
+        <div data-aos="fade-up" data-aos-duration="2500">
+          <span data-text="INDIA" class="country-title text-uppercase black"
+            >INDIA</span
+          >
+        </div>
+        <div data-aos="fade-up" data-aos-duration="2500">
+          <span
+            data-text="SOUTH AFRICA"
+            class="country-title text-uppercase black"
+            >SOUTH AFRICA</span
+          >
+        </div>
       </div>
-      <div class="col-md-6"></div>
     </div>
-  </footer>
 
-  <!-- ** Bootsrtap v5.2.3 Js Link ** -->
-  <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Section 3 start -->
+    <div class="container-fluid background-black py-5">
+      <div class="ps-4">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="title text-uppercase white">INTERNATIONAL MARKETING</h1>
+            <p class="paragraph white">
+              Our expert international marketing services connect you with
+              customers around the world. With tailored solutions and
+              cutting-edge tools, we help your business succeed on a global
+              scale.
+            </p>
+            <button class="custom-button red-background">Go Markets</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 3 End -->
 
-  <!-- ** AOS Animation Js Link ** -->
-  <script src="./aos/aos.js"></script>
+    <!-- Section 4 Start Image section -->
+    <div class="image-section">
+      <img src="./assets/images/pic1.jpg" alt="" />
+    </div>
+    <!-- Section 4 End Image section -->
 
-  <!-- ** font awesoem icons ** -->
-  <script src="https://kit.fontawesome.com/71a7ac9f1f.js" crossorigin="anonymous"></script>
-  <script src="./js/index.js"></script>
+    <!-- Section 5 Start  -->
+    <div class="container-fluid background-black py-5">
+      <div class="ps-4">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="title text-uppercase white">GO-TO-MARKET</h1>
+          </div>
+          <div class="col-md-6">
+            <p class="paragraph white">
+              Our international go-to-market marketing services help businesses
+              launch their products and services into new markets around the
+              world. From market research to localized messaging and campaigns,
+              we help businesses navigate the complexities of international
+              expansion and succeed on a global scale.
+            </p>
+            <button class="custom-button red-background">Go Digital</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 5 End  -->
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Section 6 Start Image section -->
+    <div class="image-section">
+      <img src="./assets/images/pic2.jpg" alt="" />
+    </div>
+    <!-- Section 6 End Image section -->
 
-  <!-- Header JS -->
-  <script src="./js/common/header.js"></script>
+    <!-- Section 7 Start  -->
+    <div class="container-fluid background-black py-5">
+      <div class="ps-4">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="title text-uppercase white">LIFESTYLE</h1>
+          </div>
+          <div class="col-md-6">
+            <p class="paragraph white">
+              Our international lifestyle marketing services help businesses
+              appeal to customers across cultures and regions. We offer tailored
+              solutions that take into account local trends and preferences,
+              helping your brand resonate with international audiences and
+              achieve global success.
+            </p>
+            <button class="custom-button red-background">Go Lifestyle</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 7 End  -->
 
-  <!-- Initialize Swiper -->
-  <script>
-    window.onload = function () {
-      var countryCount = 0;
-      var countryCounter = document.getElementById("countryCounter");
-      var countryCounterTriggered = false;
+    <!-- Section 8 Start Image section -->
+    <div class="image-section">
+      <img src="./assets/images/pic3.jpeg" alt="" />
+    </div>
+    <!-- Section 8 End Image section -->
 
-      var productCount = 0;
-      var productCounter = document.getElementById("productCounter");
-      var productCounterTriggered = false;
+    <!-- Section 9 Start  -->
+    <div class="container-fluid background-black py-5">
+      <div class="ps-4">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="title text-uppercase white">CONTENT CREATION</h1>
+          </div>
+          <div class="col-md-6">
+            <p class="paragraph white">
+              At 3 Big Wheels, we specialize in creating high-quality content
+              that captivates audiences and drives results. Our team of expert
+              writers, designers, and creatives have worked with some of the
+              world's most iconic brands, such as Sony and GoPro. Whether you're
+              a small business or a global corporation, we offer content
+              creation services that are tailored to your needs, helping you
+              tell your story and engage your audience in a meaningful way.
+            </p>
+            <button class="custom-button red-background">Go Creation</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 9 End  -->
 
-      window.addEventListener("scroll", function () {
-        if (isScrolledIntoView(countryCounter) && !countryCounterTriggered) {
-          countryCounterTriggered = true;
-          var countryIntervalId = setInterval(function () {
-            countryCount++;
-            countryCounter.innerHTML = countryCount.toString();
-            if (countryCount >= 52) {
-              clearInterval(countryIntervalId);
-            }
-          }, 15); // adjust interval (in milliseconds) to adjust speed
-        }
+    <!-- Section 10 Start Image section -->
+    <div class="image-section">
+      <img src="./assets/images/pic3.jpeg" alt="" />
+    </div>
+    <!-- Section 10 End Image section -->
 
-        if (isScrolledIntoView(productCounter) && !productCounterTriggered) {
-          productCounterTriggered = true;
-          var productIntervalId = setInterval(function () {
-            productCount += 4;
-            productCounter.innerHTML = productCount.toString();
-            if (productCount >= 800) {
-              clearInterval(productIntervalId);
-            }
-          }, 8); // adjust interval (in milliseconds) to adjust speed
-        }
-      });
+    <!-- Counter Section Start -->
+    <section class="counter-container p-4">
+      <div class="container-fluid my-5">
+        <div class="row">
+          <div class="col-md-12">
+            <h5 class="counter-title text-light">PRODUCT LAUNCHES TO DATE</h5>
+          </div>
+          <div class="col-md-12">
+            <div class="px-5 py-2 counter-title-container my-2">
+              <h5 class="counter-title text-light m-0">GLOBALLY</h5>
+            </div>
 
-      function isScrolledIntoView(el) {
-        var rect = el.getBoundingClientRect();
-        var elemTop = rect.top;
-        var elemBottom = rect.bottom;
+            <h4 class="counter-value-text text-light">
+              <span id="productCounter">800</span>+
+              <span class="counter-label">/ PRODUCTS</span>
+            </h4>
+            <h4 class="counter-value-text text-light">
+              <span id="countryCounter">0</span
+              ><span class="counter-label"> / COUNTRIES</span>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Counter Section End -->
 
-        // Only completely visible elements return true:
-        var isVisible = elemTop < window.innerHeight && elemBottom >= 0;
-        return isVisible;
-      }
-    };
+    <!-- Section 11 Form Start -->
+    <div class="container-fluid background-white py-5">
+      <div class="px-4">
+        <h1 class="black title text-uppercase">
+          GET STARTED.<br />
+          GO GLOBAL.
+        </h1>
+        <div class="row">
+          <div class="col-md-7">
+            <div class="form-section py-5">
+              <form action="" id="myForm">
+                <label for="name">Your Name*</label><br />
+                <input
+                  type="text"
+                  id="name"
+                  name=""
+                  value=""
+                  placeholder=""
+                /><br />
+                <label for="email">Email*</label><br />
+                <input
+                  type="text"
+                  id="email"
+                  placeholder=""
+                  name=""
+                  value=""
+                /><br />
+                <label for="subject">Subject*</label><br />
+                <input
+                  type="text"
+                  placeholder=""
+                  id="subject"
+                  name=""
+                  value=""
+                /><br />
+                <label for="message">Your Message</label><br />
+                <textarea
+                  name=""
+                  placeholder=""
+                  id="message"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+                <button class="custom-button background-black white mt-5">
+                  Send
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 11 Form End -->
 
-    const form = document.querySelector('#myForm');
+    <!-- footer -->
+    <footer class="footer-container container-fluid p-4">
+      <div class="row">
+        <!-- Contact Us -->
+        <div class="col-md-3 col-sm-12 right-border">
+          <h4 class="footer-title text-light">Contact Us</h4>
+          <h5 class="footer-subtitle mt-lg-4 mt-md-4 mt-3">LET'S CHAT</h5>
+          <h5 class="footer-subtitle text-light fw-bold">
+            info@3bigwheels.com
+          </h5>
+        </div>
+        <!-- Our Offices -->
+        <div
+          class="col-md-5 col-sm-12 px-lg-4 px-2 right-border office-container"
+        >
+          <h4 class="footer-title text-light">Our Offices</h4>
+          <div class="row">
+            <!-- First Office -->
+            <div class="col-6 mt-3">
+              <h5 class="footer-subtitle">SAN DIEGO</h5>
+              <h5 class="footer-subtitle text-light">
+                8910 University Center Ln
+              </h5>
+              <h5 class="footer-subtitle text-light">San Diego, CA 92122</h5>
+            </div>
+            <!-- Seconds Office -->
+            <div class="col-6">
+              <h5 class="footer-subtitle"></h5>
+              <h5 class="footer-subtitle text-light"></h5>
+              <h5 class="footer-subtitle text-light"></h5>
+            </div>
+          </div>
+        </div>
 
-    form.addEventListener('submit', function (event) {
-      event.preventDefault();
+        <div class="col-md-4 links-container">
+          <div class="d-flex justify-content-evenly">
+            <div>
+              <a href="./pages/brands.html" class="text-decoration-none">
+                <h4 class="footer-title text-light">Brands</h4>
+              </a>
+              <a href="./pages/markets.html" class="text-decoration-none">
+                <h4 class="footer-title text-light">Marktets</h4>
+              </a>
+              <a href="./pages/service.html" class="text-decoration-none">
+                <h4 class="footer-title text-light">Services</h4>
+              </a>
+            </div>
+            <div>
+              <a href="./pages/about.html" class="text-decoration-none">
+                <h4 class="footer-title text-light">About</h4>
+              </a>
 
-      const name = document.querySelector('#name').value;
-      const email = document.querySelector('#email').value;
-      const subject = document.querySelector('#subject').value;
-      const message = document.querySelector('#message').value;
+              <a href="./pages/contact.html" class="text-decoration-none">
+                <h4 class="footer-title text-light">Contact</h4>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      const templateParams = {
-        name: name,
-        email: email,
-        subject: subject,
-        message: message
-      };
+      <div class="row ps-4">
+        <div class="col-md-6 py-4">
+          <span class="text-light copy-right-text">
+            © 2023 3 BIG WHEELS LLC. ALL RIGHTS RESERVED.</span
+          >
+        </div>
+        <div class="col-md-6"></div>
+      </div>
+    </footer>
 
-      emailjs.send('service_nmja15j', 'template_7nbn43l', templateParams)
-        .then(function (response) {
-          console.log('SUCCESS!', response.status, response.text);
-          form.reset();
-          alert("your message send successfully")
-          
-        }, function (error) {
-          console.log('FAILED...', error);
+    <!-- ** Bootsrtap v5.2.3 Js Link ** -->
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
 
+    <!-- ** AOS Animation Js Link ** -->
+    <script src="./aos/aos.js"></script>
+
+    <!-- ** font awesoem icons ** -->
+    <script
+      src="https://kit.fontawesome.com/71a7ac9f1f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Header JS -->
+    <script src="./js/common/header.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      window.onload = function () {
+        var countryCount = 0;
+        var countryCounter = document.getElementById("countryCounter");
+        var countryCounterTriggered = false;
+
+        var productCount = 0;
+        var productCounter = document.getElementById("productCounter");
+        var productCounterTriggered = false;
+
+        window.addEventListener("scroll", function () {
+          if (isScrolledIntoView(countryCounter) && !countryCounterTriggered) {
+            countryCounterTriggered = true;
+            var countryIntervalId = setInterval(function () {
+              countryCount++;
+              countryCounter.innerHTML = countryCount.toString();
+              if (countryCount >= 52) {
+                clearInterval(countryIntervalId);
+              }
+            }, 15); // adjust interval (in milliseconds) to adjust speed
+          }
+
+          if (isScrolledIntoView(productCounter) && !productCounterTriggered) {
+            productCounterTriggered = true;
+            var productIntervalId = setInterval(function () {
+              productCount += 4;
+              productCounter.innerHTML = productCount.toString();
+              if (productCount >= 800) {
+                clearInterval(productIntervalId);
+              }
+            }, 8); // adjust interval (in milliseconds) to adjust speed
+          }
         });
 
-    });
-  </script>
+        function isScrolledIntoView(el) {
+          var rect = el.getBoundingClientRect();
+          var elemTop = rect.top;
+          var elemBottom = rect.bottom;
 
-</body>
+          // Only completely visible elements return true:
+          var isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+          return isVisible;
+        }
+      };
 
+      const form = document.querySelector("#myForm");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const name = document.querySelector("#name").value;
+        const email = document.querySelector("#email").value;
+        const subject = document.querySelector("#subject").value;
+        const message = document.querySelector("#message").value;
+
+        const templateParams = {
+          name: name,
+          email: email,
+          subject: subject,
+          message: message,
+        };
+
+        emailjs
+          .send("service_nmja15j", "template_7nbn43l", templateParams)
+          .then(
+            function (response) {
+              console.log("SUCCESS!", response.status, response.text);
+              form.reset();
+              alert("your message send successfully");
+            },
+            function (error) {
+              console.log("FAILED...", error);
+            }
+          );
+      });
+    </script>
+  </body>
 </html>
