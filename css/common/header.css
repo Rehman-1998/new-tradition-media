@@ -13,6 +13,16 @@
     z-index: 5;
 }
 
+.about-main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    transition: background-color 0.5s ease;
+    padding: 5px 0px;
+    z-index: 5;
+}
+
 .light-icon {
     background: url(../../assets/icons/hamburger-light.png);
     background-size: cover;
@@ -29,6 +39,10 @@
 }
 
 .main-header.scrolled {
+    background-color: var(--white-color)
+}
+
+.about-main-header.scrolled {
     background-color: var(--white-color)
 }
 
