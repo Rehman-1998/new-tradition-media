@@ -1,413 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- favicon -->
-    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
 
-    <!-- **  Bootsrtap v5.2.3 CSS Link ** -->
-    <link href="../bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <!-- ** AOS Animation  CSS Link ** -->
-    <link href="../aos/aos.css" rel="stylesheet" />
-    <!-- ** index CSS Link ** -->
-    <link href="../css/pages/about.css" rel="stylesheet" />
-    <link href="../css/common/global-styles.css" rel="stylesheet" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
 
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <title>About Us</title>
-  </head>
+  <!-- **  Bootsrtap v5.2.3 CSS Link ** -->
+  <link href="../bootstrap/bootstrap.min.css" rel="stylesheet" />
+  <!-- ** AOS Animation  CSS Link ** -->
+  <link href="../aos/aos.css" rel="stylesheet" />
+  <!-- ** index CSS Link ** -->
+  <link href="../css/pages/about.css" rel="stylesheet" />
+  <link href="../css/common/global-styles.css" rel="stylesheet" />
 
-  <body>
-    <!-- Header -->
-    <header class="about-main-header">
-      <div class="container d-flex align-items-center justify-content-between">
-        <a href="../index.html">
-          <img
-            class="logo-img cursor-pointer"
-            src="../assets/logo.png"
-            alt="logo-img"
-          />
-        </a>
-        <div
-          class="cursor-pointer"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasRight"
-          aria-controls="offcanvasRight"
-        >
-          <div
-            id="header-icon"
-            class="hamburger-icon cursor-pointer light-icon"
-          ></div>
-        </div>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <title>About Us</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="about-main-header">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="../index.html">
+        <img class="logo-img cursor-pointer" src="../assets/logo.png" alt="logo-img" />
+      </a>
+      <div class="cursor-pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight">
+        <div id="header-icon" class="hamburger-icon cursor-pointer light-icon"></div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- Drawer -->
-    <div
-      class="offcanvas offcanvas-end w-100"
-      tabindex="-1"
-      id="offcanvasRight"
-      aria-labelledby="offcanvasRightLabel"
-    >
-      <div class="offcanvas-header">
-        <a href="../index.html">
-          <img
-            class="logo-img cursor-pointer"
-            src="../assets/logo.png"
-            alt="logo-img"
-          />
-        </a>
-        <div
-          class="cursor-pointer"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasRight"
-          aria-controls="offcanvasRight"
-        >
-          <i class="fa-solid fa-xmark drawer-close-icon"></i>
-        </div>
-      </div>
-
-      <div class="offcanvas-body px-0">
-        <ul class="list-unstyled menu-list">
-          <li class="menu-item inline-block">
-            <a href="../index.html" class="menu-item-link">HOME</a>
-          </li>
-          <li class="menu-item inline-block">
-            <a href="./brands.html" class="menu-item-link">BRANDS</a>
-          </li>
-          <li class="menu-item inline-block">
-            <a href="./markets.html" class="menu-item-link">MARKETS</a>
-          </li>
-          <li class="menu-item inline-block">
-            <a href="./service.html" class="menu-item-link">SERVICES</a>
-          </li>
-          <li class="menu-item inline-block">
-            <a href="./about.html" class="menu-item-link">ABOUT</a>
-          </li>
-          <li class="menu-item inline-block">
-            <a href="./contact.html" class="menu-item-link">CONTACT</a>
-          </li>
-        </ul>
+  <!-- Drawer -->
+  <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <a href="../index.html">
+        <img class="logo-img cursor-pointer" src="../assets/logo.png" alt="logo-img" />
+      </a>
+      <div class="cursor-pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight">
+        <i class="fa-solid fa-xmark drawer-close-icon"></i>
       </div>
     </div>
 
-    <!-- Hero Section -->
-    <section class="hero-container d-flex align-items-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h3 class="hero-title text-light">45+ CREATIVES</h3>
-            <h3 class="main-title text-light" id="spin"></h3>
-            <div class="hero-divider-line"></div>
-          </div>
+    <div class="offcanvas-body px-0">
+      <ul class="list-unstyled menu-list">
+        <li class="menu-item inline-block">
+          <a href="../index.html" class="menu-item-link">HOME</a>
+        </li>
+        <li class="menu-item inline-block">
+          <a href="./brands.html" class="menu-item-link">BRANDS</a>
+        </li>
+        <li class="menu-item inline-block">
+          <a href="./markets.html" class="menu-item-link">MARKETS</a>
+        </li>
+        <li class="menu-item inline-block">
+          <a href="./service.html" class="menu-item-link">SERVICES</a>
+        </li>
+        <li class="menu-item inline-block">
+          <a href="./about.html" class="menu-item-link">ABOUT</a>
+        </li>
+        <li class="menu-item inline-block">
+          <a href="./contact.html" class="menu-item-link">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-container d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="hero-title text-light">45+ CREATIVES</h3>
+          <h3 class="main-title text-light" id="spin"></h3>
+          <div class="hero-divider-line"></div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Coast TO Coast Section -->
-    <section class="container my-5">
-      <div class="row">
-        <div class="col-md-12" data-aos="fade-up" data-aos-duration="2500">
-          <h3 class="office-main-title">
-            WHEN CREATIVE PEOPLE GET <br />
-            TOGETHER A LOT CAN HAPPEN
-          </h3>
-          <p class="info-text">
-            At 3 Big Wheels, creativity is our lifeblood. We know that the best
-            ideas often come from unexpected sources, which is why we encourage
-            our team to bring their unique perspectives to the table. We believe
-            that creativity is key to standing out in a crowded market. But we
-            don't stop at just coming up with cool ideas – we also make sure
-            that our campaigns are backed up by solid research and strategic
-            planning. With our creative minds and analytical skills working
-            together, we're able to create campaigns that not only look great
-            but also deliver results.
+  <!-- Coast TO Coast Section -->
+  <section class="container my-5">
+    <div class="row">
+      <div class="col-md-12" data-aos="fade-up" data-aos-duration="2500">
+        <h3 class="office-main-title">
+          WHEN CREATIVE PEOPLE GET <br />
+          TOGETHER A LOT CAN HAPPEN
+        </h3>
+        <p class="info-text">
+          At 3 Big Wheels, creativity is our lifeblood. We know that the best
+          ideas often come from unexpected sources, which is why we encourage
+          our team to bring their unique perspectives to the table. We believe
+          that creativity is key to standing out in a crowded market. But we
+          don't stop at just coming up with cool ideas – we also make sure
+          that our campaigns are backed up by solid research and strategic
+          planning. With our creative minds and analytical skills working
+          together, we're able to create campaigns that not only look great
+          but also deliver results.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image section -->
+  <section class="image-section position-relative">
+    <img src="../assets/images/about/office-1.jpeg" alt="" />
+    <div class="row info-box-main-container g-0">
+      <div class="col-3"></div>
+      <div class="col-9 background-red p-lg-5 p-md-4 p-3" data-aos="fade-right" data-aos-duration="2500">
+        <div class="container">
+          <h3 class="info-box-title text-light">OUR CREATIVE SPACE</h3>
+          <p class="info-text text-light">
+            Immerse yourself in our vibrant and inspiring creative space, where ideas come to life,
+            collaborations thrive, and innovation knows no bounds.
           </p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Image section -->
-    <section class="image-section position-relative">
-      <img src="../assets/images/about/office-1.jpeg" alt="" />
-      <div class="row info-box-main-container g-0">
-        <div class="col-3"></div>
-        <div
-          class="col-9 background-red p-lg-5 p-md-4 p-3"
-          data-aos="fade-right"
-          data-aos-duration="2500"
-        >
-          <div class="container">
-            <h3 class="info-box-title text-light">OUR CREATIVE SPACE</h3>
-            <p class="info-text text-light">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
-              illum sunt sint quisquam soluta dolorem consectetur nesciunt in at
-              tenetur voluptates consequatur nisi similique labore facilis,
-              eligendi amet nobis nulla. Saepe
-            </p>
-          </div>
+  <!-- Info box bottom container -->
+  <section>
+    <div class="row g-0">
+      <div class="col-md-4 blank-section"></div>
+    </div>
+  </section>
+
+  <!-- Image 2 section -->
+  <section class="image-section position-relative">
+    <img src="../assets/images/about/office-2.jpeg" alt="" />
+    <div class="row info-2-box-main-container g-0">
+      <div class="col-9 background-red p-lg-5 p-md-4 p-3" data-aos="fade-left" data-aos-duration="2500">
+        <div class="container">
+          <h3 class="info-box-title text-light">NO LIMITS. INDEED.</h3>
+          <p class="info-text text-light">
+            We believe in pushing the boundaries and exploring new
+            possibilities. With our global reach and diverse team, there are
+            truly no limits to what we can achieve for our clients.
+          </p>
         </div>
       </div>
-    </section>
+      <div class="col-3"></div>
+    </div>
+  </section>
 
-    <!-- Info box bottom container -->
-    <section>
-      <div class="row g-0">
-        <div class="col-md-4 blank-section"></div>
+  <!-- Info box bottom container -->
+  <section>
+    <div class="row g-0">
+      <div class="col-md-4 blank-section"></div>
+    </div>
+  </section>
+
+  <!-- Black Section -->
+  <section>
+    <div class="blank-black-section" data-aos="fade-right" data-aos-duration="2500"></div>
+  </section>
+
+  <!-- Faq Section -->
+  <section>
+    <div class="row g-0">
+      <div class="col-1">
+        <div class="form-sidebar"></div>
       </div>
-    </section>
-
-    <!-- Image 2 section -->
-    <section class="image-section position-relative">
-      <img src="../assets/images/about/office-2.jpeg" alt="" />
-      <div class="row info-2-box-main-container g-0">
-        <div
-          class="col-9 background-red p-lg-5 p-md-4 p-3"
-          data-aos="fade-left"
-          data-aos-duration="2500"
-        >
-          <div class="container">
-            <h3 class="info-box-title text-light">NO LIMITS. INDEED.</h3>
-            <p class="info-text text-light">
-              We believe in pushing the boundaries and exploring new
-              possibilities. With our global reach and diverse team, there are
-              truly no limits to what we can achieve for our clients.
-            </p>
-          </div>
-        </div>
-        <div class="col-3"></div>
-      </div>
-    </section>
-
-    <!-- Info box bottom container -->
-    <section>
-      <div class="row g-0">
-        <div class="col-md-4 blank-section"></div>
-      </div>
-    </section>
-
-    <!-- Black Section -->
-    <section>
-      <div
-        class="blank-black-section"
-        data-aos="fade-right"
-        data-aos-duration="2500"
-      ></div>
-    </section>
-
-    <!-- Faq Section -->
-    <section>
-      <div class="row g-0">
-        <div class="col-1">
-          <div class="form-sidebar"></div>
-        </div>
-        <div class="col-11 py-5">
-          <div class="container mx-0 my-4">
-            <div class="row">
-              <div class="col-md-8">
-                <h3 class="main-title">
-                  GOT <br />
-                  QUESTIONS?
-                </h3>
-                <p class="sub-title">Perfect, we’ve got some answers!</p>
-                <div class="divider-line my-2"></div>
-                <div
-                  class="accordion"
-                  id="accordionExample"
-                  data-aos="fade-up"
-                  data-aos-duration="2500"
-                >
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                      <button
-                        class="accordion-button collapsed px-0"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne"
-                        aria-expanded="true"
-                        aria-controls="collapseOne"
-                      >
-                        <h6 class="faq-title">
-                          Do you do domestic marketing too?
-                        </h6>
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseOne"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingOne"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body p-0">
-                        <p class="info-text">
-                          Yes, we offer domestic marketing services in addition
-                          to our international marketing services. We believe
-                          that every business needs a solid foundation in their
-                          home market before expanding globally. Our team of
-                          experts has extensive experience in creating effective
-                          domestic marketing campaigns that drive results.
-                          Whether you're looking to build brand awareness,
-                          generate leads, or increase sales, we have the skills
-                          and expertise to help you achieve your goals. We'll
-                          work closely with you to understand your unique needs
-                          and develop a tailored marketing strategy that meets
-                          your specific objectives.
-                        </p>
-                      </div>
+      <div class="col-11 py-5">
+        <div class="container mx-0 my-4">
+          <div class="row">
+            <div class="col-md-8">
+              <h3 class="main-title">
+                GOT <br />
+                QUESTIONS?
+              </h3>
+              <p class="sub-title">Perfect, we’ve got some answers!</p>
+              <div class="divider-line my-2"></div>
+              <div class="accordion" id="accordionExample" data-aos="fade-up" data-aos-duration="2500">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <h6 class="faq-title">
+                        Do you do domestic marketing too?
+                      </h6>
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body p-0">
+                      <p class="info-text">
+                        Yes, we offer domestic marketing services in addition to our international marketing services.
+                        We
+                        believe that every business needs a solid foundation in their home market before expanding
+                        globally. Our team of experts has extensive experience in creating effective domestic marketing
+                        campaigns that drive results. Whether you're looking to build brand awareness, generate leads,
+                        or increase sales, we have the skills and expertise to help you achieve your goals. We'll work
+                        closely with you to understand your unique needs and develop a tailored marketing strategy that
+                        meets your specific objectives.
+                      </p>
                     </div>
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                      <button
-                        class="accordion-button collapsed px-0"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo"
-                        aria-expanded="true"
-                        aria-controls="collapseTwo"
-                      >
-                        <h6 class="faq-title">
-                          How do you charge for your services?
-                        </h6>
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseTwo"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingTwo"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body p-0">
-                        <p class="info-text">
-                          We offer a range of pricing options to suit the needs
-                          of our clients. We understand that every business has
-                          unique needs, and we'll work with you to develop a
-                          pricing plan that fits your budget and objectives. We
-                          offer hourly consulting services as well as
-                          project-based pricing for those who have specific
-                          marketing initiatives in mind. Our team will work
-                          closely with you to understand your goals and develop
-                          a custom pricing plan that meets your needs.
-                        </p>
-                      </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                      <h6 class="faq-title">
+                        How do you charge for your services?
+                      </h6>
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body p-0">
+                      <p class="info-text">
+                        We offer a range of pricing options to suit the needs of our clients. We understand that every
+                        business has unique needs, and we'll work with you to develop a pricing plan that fits your
+                        budget and objectives. We offer hourly consulting services as well as project-based pricing for
+                        those who have specific marketing initiatives in mind. Our team will work closely with you to
+                        understand your goals and develop a custom pricing plan that meets your needs.
+                      </p>
                     </div>
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                      <button
-                        class="accordion-button collapsed px-0"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree"
-                        aria-expanded="true"
-                        aria-controls="collapseThree"
-                      >
-                        <h6 class="faq-title">
-                          Do you do marketing for foreign companies entering the
-                          U.S.?
-                        </h6>
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseThree"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingTwo"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body p-0">
-                        <p class="info-text">
-                          Absolutely. Our team has extensive experience in
-                          helping foreign companies successfully enter the US
-                          market. We have the necessary knowledge and expertise
-                          to navigate the complexities of cultural differences
-                          and regulatory requirements to ensure your company's
-                          success in this competitive market. Let us help you
-                          take your business to the next level in the United
-                          States.
-                        </p>
-                      </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                      <h6 class="faq-title">
+                        Do you do marketing for foreign companies entering the U.S.?
+                      </h6>
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body p-0">
+                      <p class="info-text">
+                        Absolutely. Our team has extensive experience in helping foreign companies successfully enter
+                        the US market. We have the necessary knowledge and expertise to navigate the complexities of
+                        cultural differences and regulatory requirements to ensure your company's success in this
+                        competitive market. Let us help you take your business to the next level in the United States.
+                      </p>
                     </div>
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                      <button
-                        class="accordion-button collapsed px-0"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseFour"
-                        aria-expanded="true"
-                        aria-controls="collapseFour"
-                      >
-                        <h6 class="faq-title">
-                          Do you do marketing for U.S. companies looking to go
-                          international?
-                        </h6>
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseFour"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingTwo"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body p-0">
-                        <p class="info-text">
-                          Yes, we do. Our team specializes in international
-                          marketing and has extensive experience in helping US
-                          companies expand their reach globally. We can assist
-                          you in understanding new markets, creating effective
-                          strategies, and developing campaigns tailored to
-                          different cultures and languages. Our goal is to help
-                          you succeed in international markets and achieve
-                          global growth for your business.
-                        </p>
-                      </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                      <h6 class="faq-title">
+                        Do you do marketing for U.S. companies looking to go international?
+                      </h6>
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body p-0">
+                      <p class="info-text">
+                        Yes, we do. Our team specializes in international marketing and has extensive experience in
+                        helping US companies expand their reach globally. We can assist you in understanding new
+                        markets, creating effective strategies, and developing campaigns tailored to different cultures
+                        and languages. Our goal is to help you succeed in international markets and achieve global
+                        growth for your business.
+                      </p>
                     </div>
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                      <button
-                        class="accordion-button collapsed px-0"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseFive"
-                        aria-expanded="true"
-                        aria-controls="collapseFive"
-                      >
-                        <h6 class="faq-title">
-                          Our company is getting a lot of international interest
-                          can 3 Big Wheels help?
-                        </h6>
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseFive"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingTwo"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body p-0">
-                        <p class="info-text">
-                          Absolutely. When a company gets a lot of international
-                          interest, it can be overwhelming to know where to
-                          start. At 3 Big Wheels, we can help you navigate this
-                          process by providing tailored international marketing
-                          solutions that take into account your specific goals
-                          and needs. Whether you are looking to expand your
-                          reach, establish your brand in new markets, or
-                          increase sales globally, our team of experienced
-                          marketers can help you achieve success. We understand
-                          the unique challenges that come with international
-                          business and can provide guidance every step of the
-                          way.
-                        </p>
-                      </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                      <h6 class="faq-title">
+                        Our company is getting a lot of international interest can 3 Big Wheels help?
+                      </h6>
+                    </button>
+                  </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body p-0">
+                      <p class="info-text">
+                        Absolutely. When a company gets a lot of international interest, it can be overwhelming to know
+                        where to start. At 3 Big Wheels, we can help you navigate this process by providing tailored
+                        international marketing solutions that take into account your specific goals and needs. Whether
+                        you are looking to expand your reach, establish your brand in new markets, or increase sales
+                        globally, our team of experienced marketers can help you achieve success. We understand the
+                        unique challenges that come with international business and can provide guidance every step of
+                        the way
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -416,92 +297,88 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- footer -->
-    <footer class="footer-container container-fluid p-4">
-      <div class="row">
-        <!-- Contact Us -->
-        <div class="col-md-3 col-sm-12 right-border">
-          <h4 class="footer-title text-light">Contact Us</h4>
-          <h5 class="footer-subtitle mt-lg-4 mt-md-4 mt-3">LET'S CHAT</h5>
-          <h5 class="footer-subtitle text-light fw-bold">
-            info@3bigwheels.com
-          </h5>
-        </div>
-        <!-- Our Offices -->
-        <div
-          class="col-md-5 col-sm-12 px-lg-4 px-2 right-border office-container"
-        >
-          <h4 class="footer-title text-light">Our Offices</h4>
-          <div class="row">
-            <!-- First Office -->
-            <div class="col-6 mt-3">
-              <h5 class="footer-subtitle">SAN DIEGO</h5>
-              <h5 class="footer-subtitle text-light">
-                8910 University Center Ln
-              </h5>
-              <h5 class="footer-subtitle text-light">San Diego, CA 92122</h5>
-            </div>
-            <!-- Seconds Office -->
-            <div class="col-6">
-              <h5 class="footer-subtitle"></h5>
-              <h5 class="footer-subtitle text-light"></h5>
-              <h5 class="footer-subtitle text-light"></h5>
-            </div>
+  <!-- footer -->
+  <footer class="footer-container container-fluid p-4">
+    <div class="row">
+      <!-- Contact Us -->
+      <div class="col-md-3 col-sm-12 right-border">
+        <h4 class="footer-title text-light">Contact Us</h4>
+        <h5 class="footer-subtitle mt-lg-4 mt-md-4 mt-3">LET'S CHAT</h5>
+        <h5 class="footer-subtitle text-light fw-bold">
+          info@3bigwheels.com
+        </h5>
+      </div>
+      <!-- Our Offices -->
+      <div class="col-md-5 col-sm-12 px-lg-4 px-2 right-border office-container">
+        <h4 class="footer-title text-light">Our Offices</h4>
+        <div class="row">
+          <!-- First Office -->
+          <div class="col-6 mt-3">
+            <h5 class="footer-subtitle">SAN DIEGO</h5>
+            <h5 class="footer-subtitle text-light">
+              8910 University Center Ln
+            </h5>
+            <h5 class="footer-subtitle text-light">San Diego, CA 92122</h5>
           </div>
-        </div>
-
-        <div class="col-md-4 links-container">
-          <div class="d-flex justify-content-evenly">
-            <div>
-              <a href="./brands.html" class="text-decoration-none">
-                <h4 class="footer-title text-light">Brands</h4>
-              </a>
-              <a href="./markets.html" class="text-decoration-none">
-                <h4 class="footer-title text-light">Marktets</h4>
-              </a>
-              <a href="./service.html" class="text-decoration-none">
-                <h4 class="footer-title text-light">Services</h4>
-              </a>
-            </div>
-            <div>
-              <a href="./about.html" class="text-decoration-none">
-                <h4 class="footer-title text-light">About</h4>
-              </a>
-
-              <a href="./contact.html" class="text-decoration-none">
-                <h4 class="footer-title text-light">Contact</h4>
-              </a>
-            </div>
+          <!-- Seconds Office -->
+          <div class="col-6">
+            <h5 class="footer-subtitle"></h5>
+            <h5 class="footer-subtitle text-light"></h5>
+            <h5 class="footer-subtitle text-light"></h5>
           </div>
         </div>
       </div>
 
-      <div class="row ps-4">
-        <div class="col-md-6 py-4">
-          <span class="text-light copy-right-text">
-            © 2023 3 BIG WHEELS LLC. ALL RIGHTS RESERVED.</span
-          >
+      <div class="col-md-4 links-container">
+        <div class="d-flex justify-content-evenly">
+          <div>
+            <a href="./brands.html" class="text-decoration-none">
+              <h4 class="footer-title text-light">Brands</h4>
+            </a>
+            <a href="./markets.html" class="text-decoration-none">
+              <h4 class="footer-title text-light">Marktets</h4>
+            </a>
+            <a href="./service.html" class="text-decoration-none">
+              <h4 class="footer-title text-light">Services</h4>
+            </a>
+          </div>
+          <div>
+            <a href="./about.html" class="text-decoration-none">
+              <h4 class="footer-title text-light">About</h4>
+            </a>
+
+            <a href="./contact.html" class="text-decoration-none">
+              <h4 class="footer-title text-light">Contact</h4>
+            </a>
+          </div>
         </div>
-        <div class="col-md-6"></div>
       </div>
-    </footer>
+    </div>
 
-    <!-- ** Bootsrtap v5.2.3 Js Link ** -->
-    <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+    <div class="row ps-4">
+      <div class="col-md-6 py-4">
+        <span class="text-light copy-right-text">
+          © 2023 3 BIG WHEELS LLC. ALL RIGHTS RESERVED.</span>
+      </div>
+      <div class="col-md-6"></div>
+    </div>
+  </footer>
 
-    <!-- Header JS -->
-    <script src="../js/common/header.js"></script>
+  <!-- ** Bootsrtap v5.2.3 Js Link ** -->
+  <script src="../bootstrap/bootstrap.bundle.min.js"></script>
 
-    <!-- ** AOS Animation Js Link ** -->
-    <script src="../aos/aos.js"></script>
+  <!-- Header JS -->
+  <script src="../js/common/header.js"></script>
 
-    <!-- ** font awesoem icons ** -->
-    <script
-      src="https://kit.fontawesome.com/71a7ac9f1f.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../js/pages/about.js"></script>
-  </body>
+  <!-- ** AOS Animation Js Link ** -->
+  <script src="../aos/aos.js"></script>
+
+  <!-- ** font awesoem icons ** -->
+  <script src="https://kit.fontawesome.com/71a7ac9f1f.js" crossorigin="anonymous"></script>
+  <script src="../js/pages/about.js"></script>
+</body>
+
 </html>

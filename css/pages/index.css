@@ -90,6 +90,12 @@
   max-height: 360px;
 }
 
+
+.learn-more-btn-text {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
 /* Slider Style */
 .client-container {
   background-color: var(--background-color) !important;
