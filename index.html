@@ -211,6 +211,7 @@
   <div class="image-section">
     <img src="./assets/images/pic2.jpg" alt="" />
   </div>
+
   <!-- Section 6 End Image section -->
 
   <!-- Section 7 Start  -->
@@ -271,12 +272,21 @@
 
   <!-- Section 10 Start Image section -->
   <div class="image-section">
-    <img src="./assets/images/pic3.jpeg" alt="" />
+    <video id="my-video-2" width="100%" autoplay muted loop>
+      <source src="./assets/video/3BW-Content Creation.mp4" type="video/mp4" />
+    </video>
+    <div class="position-relative">
+      <div class="video-controller d-flex align-items-center justify-content-between gap-4">
+        <i class="fa-regular fa-circle-pause content-controller-background video-icon cursor-pointer"
+          onclick="playContentCreationVideoToggleVideo()"></i>
+        <i class="fa-solid fa-volume-xmark video-icon content-mic-background" onclick="soundContentCreationVideoToggleVideo()"></i>
+      </div>
+    </div>
   </div>
   <!-- Section 10 End Image section -->
 
   <!-- Counter Section Start -->
-  <section class="counter-container p-4">
+  <section class="counter-container p-4" style="margin-top: -7px;">
     <div class="container-fluid my-5">
       <div class="row">
         <div class="col-md-12">
