@@ -7,6 +7,11 @@
 
 /* Hero Section */
 
+/* Hide the default controls */
+video::-webkit-media-controls {
+  display: none !important;
+}
+
 .video-controller {
   position: absolute;
   bottom: 60px;
@@ -62,6 +67,12 @@
   object-fit: cover;
 }
 
+.life-style-image-section {
+  width: 100%;
+  object-fit: cover;
+  height: 500px;
+}
+
 /* Form section CSS */
 .form-section label {
   font-size: 13px;
@@ -69,6 +80,7 @@
   font-family: var(--sans-serif);
   margin-bottom: 8px;
 }
+
 .form-section input {
   border: 0;
   border-radius: 0;
@@ -79,6 +91,7 @@
   padding: 3px;
   margin-bottom: 32px;
 }
+
 .form-section textarea {
   background-color: #f6f6f6;
   border: 0;
@@ -252,6 +265,7 @@
     font-size: 30px;
   }
 }
+
 /* For Ipad & Ipad Pro */
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .country-title {
@@ -261,9 +275,11 @@
   .testimonial-title {
     font-size: 35px;
   }
+
   .slider-title {
     font-size: 22px;
   }
+
   .testimonial-wrapper {
     height: 300px !important;
   }
@@ -318,6 +334,13 @@
   .slider-arrow {
     font-size: 20px;
   }
+
+  .life-style-image-section {
+    width: 100%;
+    object-fit: contain;
+    height: auto;
+  }
+
 }
 
 @media screen and (max-width: 800px) and (min-width: 430px) {
@@ -338,6 +361,7 @@
   .country-title {
     font-size: 20px;
   }
+
   .title {
     font-size: 25px;
   }

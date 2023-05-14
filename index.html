@@ -62,19 +62,19 @@
           <a href="./index.html" class="menu-item-link">HOME</a>
         </li>
         <li class="menu-item inline-block">
-          <a href="./pages/brands.html" class="menu-item-link">BRANDS</a>
+          <a href="./brands.html" class="menu-item-link">BRANDS</a>
         </li>
         <li class="menu-item inline-block">
-          <a href="./pages/markets.html" class="menu-item-link">MARKETS</a>
+          <a href="./markets.html" class="menu-item-link">MARKETS</a>
         </li>
         <li class="menu-item inline-block">
-          <a href="./pages/service.html" class="menu-item-link">SERVICES</a>
+          <a href="./service.html" class="menu-item-link">SERVICES</a>
         </li>
         <li class="menu-item inline-block">
-          <a href="./pages/about.html" class="menu-item-link">ABOUT</a>
+          <a href="./about.html" class="menu-item-link">ABOUT</a>
         </li>
         <li class="menu-item inline-block">
-          <a href="./pages/contact.html" class="menu-item-link">CONTACT</a>
+          <a href="./contact.html" class="menu-item-link">CONTACT</a>
         </li>
       </ul>
     </div>
@@ -178,8 +178,8 @@
   <!-- Section 3 End -->
 
   <!-- Section 4 Start Image section -->
-  <div class="image-section">
-    <img src="./assets/images/pic1.jpg" alt="" />
+  <div>
+    <img class="life-style-image-section" src="./assets/images/pic1.jpg" alt="" />
   </div>
   <!-- Section 4 End Image section -->
 
@@ -208,8 +208,8 @@
   <!-- Section 5 End  -->
 
   <!-- Section 6 Start Image section -->
-  <div class="image-section">
-    <img src="./assets/images/pic2.jpg" alt="" />
+  <div >
+    <img  class="life-style-image-section" src="./assets/images/pic2.jpg" alt="" />
   </div>
 
   <!-- Section 6 End Image section -->
@@ -241,8 +241,8 @@
   <!-- Section 7 End  -->
 
   <!-- Section 8 Start Image section -->
-  <div class="image-section">
-    <img src="./assets/images/life-style.jpeg" alt="" />
+  <div>
+    <img class="life-style-image-section" src="./assets/images/life-style.jpeg" alt="" />
   </div>
   <!-- Section 8 End Image section -->
 
@@ -279,7 +279,8 @@
       <div class="video-controller d-flex align-items-center justify-content-between gap-4">
         <i class="fa-regular fa-circle-pause content-controller-background video-icon cursor-pointer"
           onclick="playContentCreationVideoToggleVideo()"></i>
-        <i class="fa-solid fa-volume-xmark video-icon content-mic-background" onclick="soundContentCreationVideoToggleVideo()"></i>
+        <i class="fa-solid fa-volume-xmark video-icon content-mic-background"
+          onclick="soundContentCreationVideoToggleVideo()"></i>
       </div>
     </div>
   </div>
@@ -375,22 +376,22 @@
       <div class="col-md-4 links-container">
         <div class="d-flex justify-content-evenly">
           <div>
-            <a href="./pages/brands.html" class="text-decoration-none">
+            <a href="./brands.html" class="text-decoration-none">
               <h4 class="footer-title text-light">Brands</h4>
             </a>
-            <a href="./pages/markets.html" class="text-decoration-none">
+            <a href="./markets.html" class="text-decoration-none">
               <h4 class="footer-title text-light">Marktets</h4>
             </a>
-            <a href="./pages/service.html" class="text-decoration-none">
+            <a href="./service.html" class="text-decoration-none">
               <h4 class="footer-title text-light">Services</h4>
             </a>
           </div>
           <div>
-            <a href="./pages/about.html" class="text-decoration-none">
+            <a href="./about.html" class="text-decoration-none">
               <h4 class="footer-title text-light">About</h4>
             </a>
 
-            <a href="./pages/contact.html" class="text-decoration-none">
+            <a href="./contact.html" class="text-decoration-none">
               <h4 class="footer-title text-light">Contact</h4>
             </a>
           </div>
@@ -492,7 +493,7 @@
           function (response) {
             console.log("SUCCESS!", response.status, response.text);
             form.reset();
-            alert("your message send successfully");
+            alert("Your message was sent successfully!");
           },
           function (error) {
             console.log("FAILED...", error);

@@ -5,6 +5,11 @@
 @import url("../common/drawer.css");
 @import url("../common/footer.css");
 
+/* Hide the default controls */
+video::-webkit-media-controls {
+  display: none !important;
+}
+
 .brands-main-section {
   margin-top: 100px;
 }
