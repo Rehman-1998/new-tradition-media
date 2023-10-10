@@ -8,7 +8,7 @@
   <title>Contact Us</title>
 
   <!-- favicon -->
-  <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="https://3bigwheels-landing-page-images.s3.amazonaws.com/logo.png" type="image/x-icon" />
 
   <!-- **  Bootsrtap v5.2.3 CSS Link ** -->
   <link href="./bootstrap/bootstrap.min.css" rel="stylesheet" />
@@ -28,7 +28,7 @@
   </script>
   <script type="text/javascript">
     (function () {
-      emailjs.init("GJuDtKOV8ASRQhbKG");
+      emailjs.init("ivnWKs1jsrZcgDjYi");
     })();
   </script>
 
@@ -39,7 +39,7 @@
   <header class="main-header">
     <div class="container d-flex align-items-center justify-content-between">
       <a href="./index.html">
-        <img class="logo-img cursor-pointer" src="./assets/logo.png" alt="logo-img" />
+        <img class="logo-img cursor-pointer" src="https://3bigwheels-landing-page-images.s3.amazonaws.com/logo.png" alt="logo-img" />
       </a>
       <div class="cursor-pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
         aria-controls="offcanvasRight">
@@ -52,7 +52,7 @@
   <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header">
       <a href="./index.html">
-        <img class="logo-img cursor-pointer" src="./assets/logo.png" alt="logo-img" />
+        <img class="logo-img cursor-pointer" src="https://3bigwheels-landing-page-images.s3.amazonaws.com/logo.png" alt="logo-img" />
       </a>
       <div class="cursor-pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
         aria-controls="offcanvasRight">
@@ -173,7 +173,7 @@
               <h4 class="footer-title text-light">Brands</h4>
             </a>
             <a href="./markets.html" class="text-decoration-none">
-              <h4 class="footer-title text-light">Marktets</h4>
+              <h4 class="footer-title text-light">Markets</h4>
             </a>
             <a href="./service.html" class="text-decoration-none">
               <h4 class="footer-title text-light">Services</h4>
@@ -232,14 +232,12 @@
         message: message
       };
 
-      emailjs.send('service_nmja15j', 'template_df0z41u', templateParams)
+      emailjs.send('service_f2l54dj', 'template_7xickyz', templateParams)
         .then(function (response) {
           console.log('SUCCESS!', response.status, response.text);
           form.reset();
           alert("Your message was sent successfully!")
-
         }, function (error) {
-
         });
 
     });
