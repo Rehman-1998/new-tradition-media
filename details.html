@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3 Big Wheels</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+
+    <!-- **  Bootsrtap v5.2.3 CSS Link ** -->
+    <link href="./bootstrap/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- ** AOS Animation  CSS Link ** -->
+    <link href="./aos/aos.css" rel="stylesheet" />
+
+    <!-- ** index CSS Link ** -->
+    <link href="./css/pages/index.css" rel="stylesheet" />
+    <link href="./css/common/global-styles.css" rel="stylesheet" />
+    <!-- ** BRANDS CSS Link ** -->
+    <link rel="stylesheet" href="./css/pages/brands.css" />
+    <link href="./css/pages/service.css" rel="stylesheet" />
+    <link href="./css/pages/about.css" rel="stylesheet" />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!-- Email JS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("GJuDtKOV8ASRQhbKG");
+      })();
+    </script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="main-header">
+      <div class="container d-flex align-items-center justify-content-between">
+        <img
+          class="logo-img cursor-pointer"
+          src="assets/logo.png"
+          alt="logo-img"
+        />
+        <div
+          class="cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          <div
+            id="header-icon"
+            class="hamburger-icon cursor-pointer light-icon"
+          ></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Drawer -->
+    <div
+      class="offcanvas offcanvas-end w-100"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <a href="./index.html">
+          <img
+            class="logo-img cursor-pointer"
+            src="assets/logo.png"
+            alt="logo-img"
+          />
+        </a>
+        <div
+          class="cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          <i class="fa-solid fa-xmark drawer-close-icon"></i>
+        </div>
+      </div>
+
+      <div class="offcanvas-body px-0">
+        <ul class="list-unstyled menu-list">
+          <li class="menu-item inline-block">
+            <a href="./index.html" class="menu-item-link">HOME</a>
+          </li>
+          <li class="menu-item inline-block">
+            <a href="./brands.html" class="menu-item-link">BRANDS</a>
+          </li>
+          <li class="menu-item inline-block">
+            <a href="./markets.html" class="menu-item-link">MARKETS</a>
+          </li>
+          <li class="menu-item inline-block">
+            <a href="./service.html" class="menu-item-link">SERVICES</a>
+          </li>
+          <li class="menu-item inline-block">
+            <a href="./about.html" class="menu-item-link">ABOUT</a>
+          </li>
+          <li class="menu-item inline-block">
+            <a href="./contact.html" class="menu-item-link">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Section 3 start -->
+    <div class="container-fluid background-black py-5">
+      <div class="ps-4 py-5">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="title text-uppercase white">
+              International Marketing & Lifestyle Branding
+            </h1>
+          </div>
+          <div class="col-md-6">
+            <p class="paragraph white">
+              Our expert international marketing services seamlessly connect you
+              with customers across the globe. Through customized strategies and
+              innovative approaches, we empower your business to thrive and
+              achieve global success.
+            </p>
+            <a href="./service.html">
+              <button class="custom-button red-background">LEARN MORE</button>
+            </a>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 3 End -->
+
+    <!-- Section 4 Start Image section -->
+    <div>
+      <img
+        class="life-style-image-section"
+        src="./assets/images/pic1.avif"
+        alt=""
+      />
+    </div>
+    <!-- Section 4 End Image section -->
+
+    <!-- Counter Section Start -->
+    <section class="counter-container p-4" style="margin-top: -7px">
+      <div class="container-fluid my-5">
+        <div class="row">
+          <div class="col-md-12">
+            <h5 class="counter-title text-light">PRODUCT LAUNCHES TO DATE</h5>
+          </div>
+          <div class="col-md-12">
+            <div class="px-5 py-2 counter-title-container my-2">
+              <h5 class="counter-title text-light m-0">GLOBALLY</h5>
+            </div>
+
+            <h4 class="counter-value-text text-light">
+              <span id="productCounter">800</span>+
+              <span class="counter-label">/ PRODUCTS</span>
+            </h4>
+            <h4 class="counter-value-text text-light">
+              <span id="countryCounter">0</span
+              ><span class="counter-label"> / COUNTRIES</span>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Counter Section End -->
+
+       <!--  ALl Logo's Section  Start -->
+       <section>
+        <div class="container-fluid background-white brands-main-section">
+          <div class="ps-md-4 pt-md-5 pb-md-5 pb-2">
+            <div class="mb-5">
+                <h1 class="subtitle text-uppercase black text-center">Here are the brands we’ve helped</h1>
+            </div>
+            <div class="row">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="col-md-4 col-6 text-center mb-md-5 mb-3"
+              >
+                <!-- <h1 class="brands-title-image active">NYC</h1> -->
+                <img
+                  class="brands-title-image active"
+                  src="./assets/images/brands/brand-logo/gopro (3).png"
+                  alt=""
+                />
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="col-md-4 col-6 text-center mb-md-5 mb-3"
+              >
+                <img
+                  class="brands-title-image"
+                  src="./assets/images/brands/brand-logo/Sony.png"
+                  alt=""
+                />
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="col-md-4 col-6 text-center mb-md-5 mb-3"
+              >
+                <img
+                  class="brands-title-image"
+                  src="./assets/images/brands/brand-logo/Sony Pictures.png"
+                  alt=""
+                />
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="col-md-4 col-6 text-center mb-md-5 mb-3"
+              >
+                <img
+                  class="brands-title-image"
+                  src="./assets/images/brands/brand-logo/Sony Music.png"
+                  alt=""
+                />
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="col-md-4 col-6 text-center mb-md-5 mb-3"
+              >
+                <img
+                  class="brands-title-image"
+                  src="./assets/images/brands/brand-logo/Salomon.png"
+                  alt=""
+                />
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="col-md-4 col-6 text-center mb-md-5 mb-3"
+              >
+                <img
+                  class="brands-title-image"
+                  src="./assets/images/brands/brand-logo/Assos.png"
+                  alt=""
+                />
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="col-md-4 col-6 text-center mb-md-5 mb-3"
+              >
+                <img
+                  class="brands-title-image"
+                  src="./assets/images/brands/brand-logo/Campagnolo.png"
+                  alt=""
+                />
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="col-md-4 col-6 text-center mb-md-5 mb-3"
+              >
+                <img
+                  class="brands-title-image"
+                  src="./assets/images/brands/brand-logo/chelsea.png"
+                  alt=""
+                />
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="col-md-4 col-6 text-center mb-md-5 mb-3"
+              >
+                <img
+                  class="brands-title-image"
+                  src="./assets/images/brands/brand-logo/complex.png"
+                  alt=""
+                />
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="col-md-4 col-6 text-center mb-md-5 mb-3"
+              >
+                <img
+                  class="brands-title-image"
+                  src="./assets/images/brands/brand-logo/ESPN.png"
+                  alt=""
+                />
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="col-md-4 col-6 text-center mb-md-5 mb-3"
+              >
+                <img
+                  class="brands-title-image"
+                  src="./assets/images/brands/brand-logo/F1.png"
+                  alt=""
+                />
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="col-md-4 col-6 text-center mb-md-5 mb-3"
+              >
+                <img
+                  class="brands-title-image"
+                  src="./assets/images/brands/brand-logo/Fiat.png"
+                  alt=""
+                />
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="col-md-4 col-6 text-center mb-md-5 mb-3"
+              >
+                <img
+                  class="brands-title-image"
+                  src="./assets/images/brands/brand-logo/Moto_Gp_logo.png"
+                  alt=""
+                />
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="col-md-4 col-6 text-center mb-md-5 mb-3"
+              >
+                <img
+                  class="brands-title-image"
+                  src="./assets/images/brands/brand-logo/pandora.png"
+                  alt=""
+                />
+              </div>
+  
+              <div
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="col-md-4 col-6 text-center mb-md-5 mb-3"
+              >
+                <img
+                  class="brands-title-image"
+                  src="./assets/images/brands/brand-logo/paramount.png"
+                  alt=""
+                />
+              </div>
+  
+              <div
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="col-md-4 col-6 text-center mb-md-5 mb-3"
+              >
+                <img
+                  class="brands-title-image"
+                  src="./assets/images/brands/brand-logo/PGA.png"
+                  alt=""
+                />
+              </div>
+  
+              <div
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="col-md-4 col-6 text-center mb-md-5 mb-3"
+              >
+                <img
+                  class="redbull-title-image"
+                  src="./assets/images/brands/brand-logo/Red Bull 2.png"
+                  alt=""
+                />
+              </div>
+  
+              <div
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="col-md-4 col-6 text-center mb-md-5 mb-3"
+              >
+                <img
+                  class="brands-title-image"
+                  src="./assets/images/brands/brand-logo/TdF.png"
+                  alt=""
+                />
+              </div>
+  
+              <div
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="col-md-4 col-6 text-center mb-md-5 mb-3"
+              >
+                <img
+                  class="brands-title-image"
+                  src="./assets/images/brands/brand-logo/TGR.png"
+                  alt=""
+                />
+              </div>
+  
+              <div
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="col-md-4 col-6 text-center mb-md-5 mb-3"
+              >
+                <img
+                  class="brands-title-image"
+                  src="./assets/images/brands/brand-logo/Vail.png"
+                  alt=""
+                />
+              </div>
+  
+              <div
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="col-md-4 col-6 text-center mb-md-5 mb-3"
+              >
+                <img
+                  class="brands-title-image"
+                  src="./assets/images/brands/brand-logo/Horiz_Lockup_Black.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!--  ALl Logo's Section  End -->
+
+      <!-- ******** Text Section Start ****** -->
+    <section>
+        <div class="container my-5">
+            <div class="pb-5">
+                <h1 class="subtitle text-uppercase black text-center">Our Services</h1>
+            </div>
+          <!-- INT ROW Start -->
+          <div class="row pt-5">
+            <div class="col-md-6">
+              <h3
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-title text-uppercase black"
+              >
+                International Marketing
+              </h3>
+            </div>
+            <div class="col-md-6">
+              <h5
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-sub-title"
+              >
+                Strategy
+              </h5>
+              <h5
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-sub-title"
+              >
+                Brand + Positioning
+              </h5>
+              <h5
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-sub-title"
+              >
+                Creative Direction
+              </h5>
+              <h5
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-sub-title"
+              >
+                Campaign Development
+              </h5>
+              <h5
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-sub-title"
+              >
+                Consumer Insights
+              </h5>
+              <h5
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-sub-title"
+              >
+                Launch Planning
+              </h5>
+              <h5
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-sub-title"
+              >
+                Advertising
+              </h5>
+              <h5
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-sub-title"
+              >
+                Digital + Social
+              </h5>
+              <h5
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-sub-title"
+              >
+                Localization
+              </h5>
+              <h5
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-sub-title"
+              >
+                Website Design + Development
+              </h5>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-divider"
+              ></div>
+            </div>
+          </div>
+          <!-- INT ROW End -->
+          <!-- Content Creation Start -->
+          <div class="row">
+            <div class="col-md-6">
+              <h3
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-title text-uppercase black"
+              >
+                CONTENT CREATION
+              </h3>
+            </div>
+            <div class="col-md-6">
+              <h5
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-sub-title"
+              >
+                Production
+              </h5>
+              <h5
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-sub-title"
+              >
+                Cinematic Storytelling
+              </h5>
+              <h5
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-sub-title"
+              >
+                Brand Identity Through Content
+              </h5>
+              <h5
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-sub-title"
+              >
+                Immersive Photography
+              </h5>
+              <h5
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-sub-title"
+              >
+                Virtual Reality
+              </h5>
+              <h5
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-sub-title"
+              >
+                Spherical
+              </h5>
+              <h5
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-sub-title"
+              >
+                Live Integration
+              </h5>
+              <h5
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-sub-title"
+              >
+                Live 360
+              </h5>
+              <h5
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-sub-title"
+              >
+                360 Distribution Plan
+              </h5>
+  
+              <div class="service-divider"></div>
+            </div>
+          </div>
+          <!-- Content Creation End -->
+          <!-- LifeStyle Section Start  -->
+          <div class="row">
+            <div class="col-md-6">
+              <h3
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-title text-uppercase black"
+              >
+                LIFESTYLE
+              </h3>
+            </div>
+            <div class="col-md-6">
+              <h5
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-sub-title"
+              >
+                Strategy
+              </h5>
+              <h5
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-sub-title"
+              >
+                Creative Direction
+              </h5>
+              <h5
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-sub-title"
+              >
+                Campaign Development
+              </h5>
+              <h5
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-sub-title"
+              >
+                Photography
+              </h5>
+              <h5
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-sub-title"
+              >
+                Advertising
+              </h5>
+              <h5
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-sub-title"
+              >
+                Digital + Social
+              </h5>
+  
+              <div class="service-divider"></div>
+            </div>
+          </div>
+          <!-- LifeStyle Section End  -->
+          <!-- Go-to-Market Section Start  -->
+          <div class="row">
+            <div class="col-md-6">
+              <h3
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-title text-uppercase black"
+              >
+                GO-TO-MARKET
+              </h3>
+            </div>
+            <div class="col-md-6">
+              <h5
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-sub-title"
+              >
+                Product / Market Fit
+              </h5>
+              <h5
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-sub-title"
+              >
+                Market Exploration
+              </h5>
+              <h5
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-sub-title"
+              >
+                Target Market + Persona Development
+              </h5>
+              <h5
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-sub-title"
+              >
+                Launch Planning
+              </h5>
+              <h5
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-sub-title"
+              >
+                Product Launch
+              </h5>
+              <h5
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-sub-title"
+              >
+                Demand Generation
+              </h5>
+  
+              <div class="service-divider"></div>
+            </div>
+          </div>
+          <!-- Go-to-Market Section Section End  -->
+          <!-- CONSULTING Section Start  -->
+          <div class="row">
+            <div class="col-md-6">
+              <h3
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-title text-uppercase black"
+              >
+                CONSULTING
+              </h3>
+            </div>
+            <div class="col-md-6">
+              <h5
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="service-sub-title"
+              >
+                3 Big Wheels offers consulting services on a project or hourly
+                basis.
+              </h5>
+  
+              <div class="service-divider"></div>
+            </div>
+          </div>
+          <!-- CONSULTING Section Section End  -->
+        </div>
+      </section>
+      <!-- ******** Text Section End ****** -->
+
+      <!-- Countries and Region Section -->
+    <div class="container-fluid background-white py-5">
+        <div class="pb-5">
+            <h1 class="subtitle text-uppercase black text-center">Markets</h1>
+        </div>
+        <div class="ps-4 pt-5 country-section">
+            <div data-aos="fade-up" data-aos-duration="2500">
+                <span data-text="USA" class="country-title text-uppercase black">USA</span>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2500" style="padding-left: 66px;">
+                <span data-text="New York" class="country-title text-uppercase black">New York</span>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2500" style="padding-left: 66px;">
+                <span data-text="Los Angeles" class="country-title text-uppercase black">Los Angeles</span>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2500" style="padding-left: 66px;">
+                <span data-text="San Francisco" class="country-title text-uppercase black">San Francisco</span>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2500" style="padding-left: 66px;">
+                <span data-text="Miami" class="country-title text-uppercase black">Miami</span>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2500" style="padding-left: 66px;">
+                <span data-text="Chicago" class="country-title text-uppercase black">Chicago</span>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2500">
+                <span data-text="WESTERN EUROPE" class="country-title text-uppercase black">WESTERN EUROPE</span>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2500">
+                <span data-text="CANADA" class="country-title text-uppercase black">CANADA</span>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2500">
+                <span data-text="MEXICO" class="country-title text-uppercase black">MEXICO</span>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2500">
+                <span data-text="JAPAN" class="country-title text-uppercase black">JAPAN</span>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2500">
+                <span data-text="KOREA" class="country-title text-uppercase black">KOREA</span>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2500">
+                <span data-text="AUSTRALIA" class="country-title text-uppercase black">AUSTRALIA</span>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2500">
+                <span data-text="INDIA" class="country-title text-uppercase black">INDIA</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 11 Form Start -->
+    <div class="container-fluid background-white py-5">
+      <div class="px-4">
+        <h1 class="black title text-uppercase">
+          GET STARTED.<br />
+          GO GLOBAL.
+        </h1>
+        <div class="row">
+          <div class="col-md-7">
+            <div class="form-section py-5">
+              <form action="" id="myForm">
+                <label for="name">Your Name*</label><br />
+                <input
+                  type="text"
+                  id="name"
+                  name=""
+                  value=""
+                  placeholder=""
+                /><br />
+                <label for="email">Email*</label><br />
+                <input
+                  type="text"
+                  id="email"
+                  placeholder=""
+                  name=""
+                  value=""
+                /><br />
+                <label for="subject">Subject*</label><br />
+                <input
+                  type="text"
+                  placeholder=""
+                  id="subject"
+                  name=""
+                  value=""
+                /><br />
+                <label for="message">Your Message</label><br />
+                <textarea
+                  name=""
+                  placeholder=""
+                  id="message"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+                <button class="custom-button background-black white mt-5">
+                  Send
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 11 Form End -->
+
+    <!-- footer -->
+    <footer class="footer-container container-fluid p-4">
+      <div class="row">
+        <!-- Contact Us -->
+        <div class="col-md-3 col-sm-12 right-border">
+          <h4 class="footer-title text-light">Contact Us</h4>
+          <h5 class="footer-subtitle mt-lg-4 mt-md-4 mt-3">LET'S CHAT</h5>
+          <a
+            href="mailto:info@3bigwheels.com?subject=Let's%20Chat"
+            class="text-decoration-none"
+          >
+            <h5 class="footer-subtitle text-light fw-bold">
+              info@3bigwheels.com
+            </h5>
+          </a>
+        </div>
+        <!-- Our Offices -->
+        <div
+          class="col-md-5 col-sm-12 px-lg-4 px-2 right-border office-container"
+        >
+          <h4 class="footer-title text-light">Our Offices</h4>
+          <div class="row">
+            <!-- First Office -->
+            <div class="col-6 mt-3">
+              <h5 class="footer-subtitle">SAN DIEGO</h5>
+              <h5 class="footer-subtitle text-light">
+                8910 University Center Ln
+              </h5>
+              <h5 class="footer-subtitle text-light">San Diego, CA 92122</h5>
+            </div>
+            <!-- Seconds Office -->
+            <div class="col-6">
+              <h5 class="footer-subtitle"></h5>
+              <h5 class="footer-subtitle text-light"></h5>
+              <h5 class="footer-subtitle text-light"></h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 links-container">
+          <div class="d-flex justify-content-evenly">
+            <div>
+              <a href="./brands.html" class="text-decoration-none">
+                <h4 class="footer-title text-light">Brands</h4>
+              </a>
+              <a href="./markets.html" class="text-decoration-none">
+                <h4 class="footer-title text-light">Marktets</h4>
+              </a>
+              <a href="./service.html" class="text-decoration-none">
+                <h4 class="footer-title text-light">Services</h4>
+              </a>
+            </div>
+            <div>
+              <a href="./about.html" class="text-decoration-none">
+                <h4 class="footer-title text-light">About</h4>
+              </a>
+
+              <a href="./contact.html" class="text-decoration-none">
+                <h4 class="footer-title text-light">Contact</h4>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row ps-4">
+        <div class="col-md-6 py-4">
+          <span class="text-light copy-right-text">
+            © 2023 3 BIG WHEELS LLC. ALL RIGHTS RESERVED.</span
+          >
+        </div>
+        <div class="col-md-6"></div>
+      </div>
+    </footer>
+
+    <!-- ** Bootsrtap v5.2.3 Js Link ** -->
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- ** AOS Animation Js Link ** -->
+    <script src="./aos/aos.js"></script>
+
+    <!-- ** font awesoem icons ** -->
+    <script
+      src="https://kit.fontawesome.com/71a7ac9f1f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Header JS -->
+    <script src="./js/common/header.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      window.onload = function () {
+        var countryCount = 0;
+        var countryCounter = document.getElementById("countryCounter");
+        var countryCounterTriggered = false;
+
+        var productCount = 0;
+        var productCounter = document.getElementById("productCounter");
+        var productCounterTriggered = false;
+
+        window.addEventListener("scroll", function () {
+          if (isScrolledIntoView(countryCounter) && !countryCounterTriggered) {
+            countryCounterTriggered = true;
+            var countryIntervalId = setInterval(function () {
+              countryCount++;
+              countryCounter.innerHTML = countryCount.toString();
+              if (countryCount >= 52) {
+                clearInterval(countryIntervalId);
+              }
+            }, 15); // adjust interval (in milliseconds) to adjust speed
+          }
+
+          if (isScrolledIntoView(productCounter) && !productCounterTriggered) {
+            productCounterTriggered = true;
+            var productIntervalId = setInterval(function () {
+              productCount += 4;
+              productCounter.innerHTML = productCount.toString();
+              if (productCount >= 800) {
+                clearInterval(productIntervalId);
+              }
+            }, 8); // adjust interval (in milliseconds) to adjust speed
+          }
+        });
+
+        function isScrolledIntoView(el) {
+          var rect = el.getBoundingClientRect();
+          var elemTop = rect.top;
+          var elemBottom = rect.bottom;
+
+          // Only completely visible elements return true:
+          var isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+          return isVisible;
+        }
+      };
+
+      const form = document.querySelector("#myForm");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const name = document.querySelector("#name").value;
+        const email = document.querySelector("#email").value;
+        const subject = document.querySelector("#subject").value;
+        const message = document.querySelector("#message").value;
+
+        const templateParams = {
+          name: name,
+          email: email,
+          subject: subject,
+          message: message,
+        };
+
+        emailjs
+          .send("service_nmja15j", "template_7nbn43l", templateParams)
+          .then(
+            function (response) {
+              console.log("SUCCESS!", response.status, response.text);
+              form.reset();
+              alert("Your message was sent successfully!");
+            },
+            function (error) {
+              console.log("FAILED...", error);
+            }
+          );
+      });
+    </script>
+  </body>
+</html>
