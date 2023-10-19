@@ -1,51 +1,68 @@
 .logo-img {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .main-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    transition: background-color 0.5s ease;
-    padding: 5px 0px;
-    z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: background-color 0.5s ease;
+  padding: 5px 0px;
+  z-index: 5;
 }
 
 .about-main-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    transition: background-color 0.5s ease;
-    padding: 5px 0px;
-    z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  transition: background-color 0.5s ease;
+  padding: 5px 0px;
+  z-index: 5;
 }
 
 .light-icon {
-    background: url(../../assets/icons/hamburger-light.png);
-    background-size: cover;
-    background-position: center;
-    height: 22px;
+  background: url(../../assets/icons/hamburger-light.png);
+  background-size: cover;
+  background-position: center;
+  height: 22px;
 }
 
-
 .dark-icon {
-    background: url(../../assets/icons/hamburger-dark.png);
-    background-size: cover;
-    background-position: center;
-    height: 22px;
+  background: url(../../assets/icons/hamburger-dark.png);
+  background-size: cover;
+  background-position: center;
+  height: 22px;
+}
+
+.light-call-us-button {
+  color: white;
+  font-weight: bold;
+}
+
+.light-call-us-button a {
+  color: white;
+}
+
+.dark-call-us-button {
+  color: black;
+  font-weight: bold;
+}
+
+.dark-call-us-button a {
+  color: black;
 }
 
 .main-header.scrolled {
-    background-color: var(--white-color)
+  background-color: var(--white-color);
 }
 
 .about-main-header.scrolled {
-    background-color: var(--white-color)
+  background-color: var(--white-color);
 }
 
 .hamburger-icon {
-    width: 25px;
+  width: 25px;
 }
